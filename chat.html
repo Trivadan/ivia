@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="title" content="" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<meta name="author" content="" />
+<meta name="publisher" content="" />
+<meta name="copyright" content="" />
+<meta name="creation_Date" content="06/10/2022" />
+<meta name="expires" content="" />
+<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+<title>Iavi | Chat</title>
+
+<!--StyleSheet-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="css/style.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+
+<!--Javascript-->
+<script src="js/google.api.js" type="text/Javascript"></script>
+</head>
+
+<body>
+
+<div class="mobile-search">
+  <form class="search-form">
+    <span data-feather="search"></span>
+    <input class="form-control mr-sm-2 box-shadow-none" type="text" placeholder="Search...">
+  </form>
+</div>
+<div class="mobile-author-actions"></div>
+<header class="header-top">
+  <nav class="navbar navbar-light">
+    <div class="navbar-left"> 
+        <a class="navbar-brand" href="#">
+            <img class="dark" src="images/ivai-logo.png" alt="svg">
+            <img class="light" src="images/ivai-logo.png" alt="img">
+        </a>
+        <a href="" class="sidebar-toggle"> <img class="svg" src="images/svg/bars.svg" alt="img"></a> 
+      <form action="/" class="search-form">
+        <span data-feather="search"></span>
+        <input class="form-control mr-sm-2 box-shadow-none" type="text" placeholder="Search...">
+      </form>
+    </div>
+    <!-- ends: navbar-left -->
+    
+    <div class="navbar-right">
+      <ul class="navbar-right__menu">
+        <li class="nav-search d-none"> <a href="#" class="search-toggle"> <i class="la la-search"></i> <i class="la la-times"></i> </a>
+          <form action="/" class="search-form-topMenu">
+            <span class="search-icon" data-feather="search"></span>
+            <input class="form-control mr-sm-2 box-shadow-none" type="text" placeholder="Search...">
+          </form>
+        </li>
+        <li class="nav-message">
+          <div class="dropdown-custom"> <a href="javascript:;" class="nav-item-toggle"> <span class="fas fa-envelope"></span></a>
+            <div class="dropdown-wrapper">
+              <h2 class="dropdown-wrapper__title">Messages <span class="badge-circle bg-success ml-1">2</span></h2>
+              <ul>
+                <li class="author-online has-new-message">
+                  <div class="user-avater"> <img src="images/team-1.png" alt=""> </div>
+                  <div class="user-message">
+                    <p> <a href="" class="subject stretched-link text-truncate" style="max-width: 180px;">Web Design</a> <span class="time-posted">3 hrs ago</span> </p>
+                    <p> <span class="desc text-truncate" style="max-width: 215px;">Lorem ipsum
+                      dolor amet cosec Lorem ipsum</span> <span class="msg-count badge-circle badge-success badge-sm">1</span> </p>
+                  </div>
+                </li>
+                <li class="author-offline has-new-message">
+                  <div class="user-avater"> <img src="images/team-1.png" alt=""> </div>
+                  <div class="user-message">
+                    <p> <a href="" class="subject stretched-link text-truncate" style="max-width: 180px;">Web Design</a> <span class="time-posted">3 hrs ago</span> </p>
+                    <p> <span class="desc text-truncate" style="max-width: 215px;">Lorem ipsum
+                      dolor amet cosec Lorem ipsum</span> <span class="msg-count badge-circle badge-success badge-sm">1</span> </p>
+                  </div>
+                </li>
+                <li class="author-online has-new-message">
+                  <div class="user-avater"> <img src="images/team-1.png" alt=""> </div>
+                  <div class="user-message">
+                    <p> <a href="" class="subject stretched-link text-truncate" style="max-width: 180px;">Web Design</a> <span class="time-posted">3 hrs ago</span> </p>
+                    <p> <span class="desc text-truncate" style="max-width: 215px;">Lorem ipsum
+                      dolor amet cosec Lorem ipsum</span> <span class="msg-count badge-circle badge-success badge-sm">1</span> </p>
+                  </div>
+                </li>
+                <li class="author-offline">
+                  <div class="user-avater"> <img src="images/team-1.png" alt=""> </div>
+                  <div class="user-message">
+                    <p> <a href="" class="subject stretched-link text-truncate" style="max-width: 180px;">Web Design</a> <span class="time-posted">3 hrs ago</span> </p>
+                    <p> <span class="desc text-truncate" style="max-width: 215px;">Lorem ipsum
+                      dolor amet cosec Lorem ipsum</span> </p>
+                  </div>
+                </li>
+                <li class="author-offline">
+                  <div class="user-avater"> <img src="images/team-1.png" alt=""> </div>
+                  <div class="user-message">
+                    <p> <a href="" class="subject stretched-link text-truncate" style="max-width: 180px;">Web Design</a> <span class="time-posted">3 hrs ago</span> </p>
+                    <p> <span class="desc text-truncate" style="max-width: 215px;">Lorem ipsum
+                      dolor amet cosec Lorem ipsum</span> </p>
+                  </div>
+                </li>
+              </ul>
+              <a href="" class="dropdown-wrapper__more">See All Message</a> </div>
+          </div>
+        </li>
+        <!-- ends: nav-message -->
+        <li class="nav-message">
+          <div class="dropdown-custom"> <a href="javascript:;" class="nav-item-toggle"> <span class="fas fa-sms"></span></a>
+            <div class="dropdown-wrapper">
+              <h2 class="dropdown-wrapper__title">Sms <span class="badge-circle bg-success ml-1">2</span></h2>
+              <ul>
+                <li class="author-online has-new-message">
+                  <div class="user-avater"> <img src="images/team-1.png" alt=""> </div>
+                  <div class="user-message">
+                    <p> <a href="" class="subject stretched-link text-truncate" style="max-width: 180px;">Web Design</a> <span class="time-posted">3 hrs ago</span> </p>
+                    <p> <span class="desc text-truncate" style="max-width: 215px;">Lorem ipsum
+                      dolor amet cosec Lorem ipsum</span> <span class="msg-count badge-circle badge-success badge-sm">1</span> </p>
+                  </div>
+                </li>
+                <li class="author-offline has-new-message">
+                  <div class="user-avater"> <img src="images/team-1.png" alt=""> </div>
+                  <div class="user-message">
+                    <p> <a href="" class="subject stretched-link text-truncate" style="max-width: 180px;">Web Design</a> <span class="time-posted">3 hrs ago</span> </p>
+                    <p> <span class="desc text-truncate" style="max-width: 215px;">Lorem ipsum
+                      dolor amet cosec Lorem ipsum</span> <span class="msg-count badge-circle badge-success badge-sm">1</span> </p>
+                  </div>
+                </li>
+                <li class="author-online has-new-message">
+                  <div class="user-avater"> <img src="images/team-1.png" alt=""> </div>
+                  <div class="user-message">
+                    <p> <a href="" class="subject stretched-link text-truncate" style="max-width: 180px;">Web Design</a> <span class="time-posted">3 hrs ago</span> </p>
+                    <p> <span class="desc text-truncate" style="max-width: 215px;">Lorem ipsum
+                      dolor amet cosec Lorem ipsum</span> <span class="msg-count badge-circle badge-success badge-sm">1</span> </p>
+                  </div>
+                </li>
+                <li class="author-offline">
+                  <div class="user-avater"> <img src="images/team-1.png" alt=""> </div>
+                  <div class="user-message">
+                    <p> <a href="" class="subject stretched-link text-truncate" style="max-width: 180px;">Web Design</a> <span class="time-posted">3 hrs ago</span> </p>
+                    <p> <span class="desc text-truncate" style="max-width: 215px;">Lorem ipsum
+                      dolor amet cosec Lorem ipsum</span> </p>
+                  </div>
+                </li>
+                <li class="author-offline">
+                  <div class="user-avater"> <img src="images/team-1.png" alt=""> </div>
+                  <div class="user-message">
+                    <p> <a href="" class="subject stretched-link text-truncate" style="max-width: 180px;">Web Design</a> <span class="time-posted">3 hrs ago</span> </p>
+                    <p> <span class="desc text-truncate" style="max-width: 215px;">Lorem ipsum
+                      dolor amet cosec Lorem ipsum</span> </p>
+                  </div>
+                </li>
+              </ul>
+              <a href="" class="dropdown-wrapper__more">See All Message</a> </div>
+          </div>
+        </li>
+        <!-- ends: nav-message -->
+        <li class="nav-notification">
+          <div class="dropdown-custom"> <a href="javascript:;" class="nav-item-toggle"> <span class="fas fa-bell"></span></a>
+            <div class="dropdown-wrapper">
+              <h2 class="dropdown-wrapper__title">Notifications <span class="badge-circle bg-warning ml-1">4</span></h2>
+              <ul>
+                <li class="nav-notification__single nav-notification__single--unread d-flex flex-wrap">
+                  <div class="nav-notification__type nav-notification__type--primary"> <span data-feather="inbox"></span> </div>
+                  <div class="nav-notification__details">
+                    <p> <a href="" class="subject stretched-link text-truncate" style="max-width: 180px;">James</a> <span>sent you a message</span> </p>
+                    <p> <span class="time-posted">5 hours ago</span> </p>
+                  </div>
+                </li>
+                <li class="nav-notification__single nav-notification__single--unread d-flex flex-wrap">
+                  <div class="nav-notification__type nav-notification__type--secondary"> <span data-feather="upload"></span> </div>
+                  <div class="nav-notification__details">
+                    <p> <a href="" class="subject stretched-link text-truncate" style="max-width: 180px;">James</a> <span>sent you a message</span> </p>
+                    <p> <span class="time-posted">5 hours ago</span> </p>
+                  </div>
+                </li>
+                <li class="nav-notification__single nav-notification__single--unread d-flex flex-wrap">
+                  <div class="nav-notification__type nav-notification__type--success"> <span data-feather="log-in"></span> </div>
+                  <div class="nav-notification__details">
+                    <p> <a href="" class="subject stretched-link text-truncate" style="max-width: 180px;">James</a> <span>sent you a message</span> </p>
+                    <p> <span class="time-posted">5 hours ago</span> </p>
+                  </div>
+                </li>
+                <li class="nav-notification__single nav-notification__single d-flex flex-wrap">
+                  <div class="nav-notification__type nav-notification__type--info"> <span data-feather="at-sign"></span> </div>
+                  <div class="nav-notification__details">
+                    <p> <a href="" class="subject stretched-link text-truncate" style="max-width: 180px;">James</a> <span>sent you a message</span> </p>
+                    <p> <span class="time-posted">5 hours ago</span> </p>
+                  </div>
+                </li>
+                <li class="nav-notification__single nav-notification__single d-flex flex-wrap">
+                  <div class="nav-notification__type nav-notification__type--danger"> <span data-feather="heart"></span> </div>
+                  <div class="nav-notification__details">
+                    <p> <a href="" class="subject stretched-link text-truncate" style="max-width: 180px;">James</a> <span>sent you a message</span> </p>
+                    <p> <span class="time-posted">5 hours ago</span> </p>
+                  </div>
+                </li>
+              </ul>
+              <a href="" class="dropdown-wrapper__more">See all incoming activity</a> </div>
+          </div>
+        </li>
+        <!-- ends: .nav-notification -->
+
+        <li class="nav-author">
+          <div class="dropdown-custom"> 
+            <a href="javascript:;" class="nav-item-toggle">
+            <img src="images/avatar/author-nav.png" alt="" class="rounded-circle">
+            <span>Janet Doe</span> <i class="icofont-rounded-down"></i>
+        </a>
+            <div class="dropdown-wrapper">
+              <div class="nav-author__info">
+                <div class="author-img"> 
+                    <img src="images/avatar/author-nav.png" alt="" class="rounded-circle"> 
+                </div>
+                <div>
+                  <h6>Janet Doe</h6>
+                  <span>UI Designer</span> </div>
+              </div>
+              <div class="nav-author__options">
+                <ul>
+                  <li> <a href="profile.html"> <span class="fas fa-user"></span> Profile</a> </li>
+                  <li> <a href="settings.html"> <span class="fas fa-cog"></span> Settings</a> </li>
+                  <li> <a href="activity.html"> <span class="fas fa-user"></span> Activity</a> </li>
+                  <li> <a href="help.html"> <span class="fas fa-bell"></span> Help</a> </li>
+                </ul>
+                <a href="" class="nav-author__signout"> <i class="fas fa-sign-out-alt"></i> Sign Out</a> </div>
+            </div>
+            <!-- ends: .dropdown-wrapper --> 
+          </div>
+        </li>
+        <!-- ends: .nav-author -->
+      </ul>
+      <!-- ends: .navbar-right__menu -->
+      <div class="navbar-right__mobileAction d-md-none"> 
+        <a href="#" class="btn-search"> 
+            <span data-feather="search"></span> 
+            <span data-feather="x"></span></a> 
+            <a href="#" class="btn-author-action"> <span data-feather="more-vertical"></span></a> 
+        </div>
+    </div>
+    <!-- ends: .navbar-right --> 
+  </nav>
+</header>
+<main class="main-content">
+  <aside class="sidebar-wrapper">
+    <div class="sidebar sidebar-collapse" id="sidebar">
+      <div class="sidebar__menu-group">
+        <ul class="sidebar_nav">
+          <!-- <li class="menu-title"> <span>Main menu</span> </li> -->
+          <li> <a href="dashboard.html"><span class="nav-icon fas fa-home"></span> <span class="menu-text">Dashboard</span></a></li>
+          <li><a href="crclist.html" class=""><span class="nav-icon fas fa-list"></span> <span class="menu-text">CRC list</span> </a></li>
+          <li> <a href="email-campaigns.html"><span class="nav-icon fas fa-envelope"></span> <span class="menu-text">Email Campaigns</span></a></li>
+          <li> <a href="userlist.html"><span class="nav-icon fas fa-users"></span> <span class="menu-text">Users List</span></a></li>
+          <li class="has-child"> 
+            <a href="eqa.html" class=""> 
+                <span class="nav-icon fas fa-chart-line"></span> 
+                <span class="menu-text">EQA</span> 
+                <span class="toggle-icon"></span> 
+            </a>
+            <ul>
+              <li class="l_sidebar"> <a href="programs.html" data-layout="light">Programs</a> </li>
+              <li class="l_sidebar"> <a href="results.html" data-layout="light">Results</a> </li>
+              <li class="l_sidebar"> <a href="calender.html" data-layout="light">Calender</a> </li>
+            </ul>
+          </li>
+          <li> <a href="activites-planner.html"><span class="nav-icon fas fa-calendar-alt"></span> <span class="menu-text">Activities Planner</span></a></li>
+          <li> <a href="email.html"><span class="nav-icon fas fa-envelope"></span> <span class="menu-text">Email</span></a></li>
+          <li> <a href="sms.html"><span class="nav-icon fas fa-comments"></span> <span class="menu-text">SMS</span></a></li>
+          <li> <a href="events.html"><span class="nav-icon fas fa-calendar-alt"></span> <span class="menu-text">Events</span></a></li>
+          <li> <a href="elearning.html"><span class="nav-icon fas fa-book-reader"></span> <span class="menu-text">E-Learning</span></a></li>
+           <li class="has-child open"> 
+            <a href="eqa.html" class="active"> 
+                <span class="nav-icon fas fa-chart-line"></span> 
+                <span class="menu-text">Alerts</span> 
+                <span class="toggle-icon"></span> 
+            </a>
+            <ul>
+              <li class="l_sidebar"> <a href="notifications.html" data-layout="light">Notifications</a> </li>
+              <li class="l_sidebar"> <a href="chat.html" data-layout="light" class="active">Chat</a> </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </aside>
+
+<div class="contents"> 
+  
+  <!-- CONTAINER -->
+  <div class="main-container container-fluid"> 
+    
+    <!-- PAGE-HEADER -->
+    <div class="page-header">
+      <h1 class="page-title">Chat</h1>
+    </div>
+    <!-- PAGE-HEADER END --> 
+    
+    <!-- Row -->
+    <div class="row row-sm">
+      <div class="col-lg-12">
+        <div class="chat-area d-flex mb-5">
+          <div class="mb-lg-0 mb-40 chat-sidebar">
+            <div class="sidebar-group left-sidebar chat_sidebar">
+              <div id="chat" class="left-sidebar-wrap bg-white radius-xl active">
+                <div class="chat-wrapper py-2">
+                  <div class="search-header">
+                    <form action="/" class="d-flex align-items-center">
+                      <span data-feather="search"></span>
+                      <input class="form-control mr-sm-2 border-0 box-shadow-none" type="search" placeholder="Search" aria-label="Search">
+                    </form>
+                  </div>
+                  <div class="search-body">
+                    <ul class="user-list">
+                          <li class="user-list-item">
+                            <div class="user-list-item__wrapper">
+                              <div class="avatar avatar-circle ml-0"> 
+                                <img src="images/ellipse/ellipse1.png" class="rounded-circle d-flex bg-opacity-primary" alt="image">
+                                <div class="badge-direction-bottom"> <span class="chat-badge-dot avatar-online"></span> </div>
+                              </div>
+                              <div class="users-list-body">
+                                <div class="users-list-body-title">
+                                  <h6>Meyri Carles</h6>
+                                  <div class="text-limit" data-maxlength="10">
+                                    <p class="mb-0"><span>Lorem ipsum dolor us was they amet fdsfdsf sdf dsf dsf dsf dsf dsf d</span>...</p>
+                                  </div>
+                                </div>
+                                <div class="last-chat-time unread"> <small>14:45 pm</small>
+                                  <div class="total-message mt-1 d-flex justify-content-end"> <span class="badge badge-success ">5</span> </div>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="user-list-item">
+                            <div class="user-list-item__wrapper">
+                              <div class="avatar avatar-circle ml-0"> 
+                                <img src="images/ellipse/ellipse2.png" class="rounded-circle d-flex bg-opacity-primary" alt="image">
+                                <div class="badge-direction-bottom"> <span class="chat-badge-dot avatar-offline"></span> </div>
+                              </div>
+                              <div class="users-list-body">
+                                <div class="users-list-body-title">
+                                  <h6>Shreyu Neu</h6>
+                                  <div class="text-limit" data-maxlength="10">
+                                    <p class="mb-0"><span>Lorem ipsum dolor us was they amet</span>...</p>
+                                  </div>
+                                </div>
+                                <div class="last-chat-time unread"> <small>14:45 pm</small> </div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="user-list-item">
+                            <div class="user-list-item__wrapper">
+                              <div class="avatar avatar-circle ml-0"> 
+                                <img src="images/ellipse/ellipse3.png" class="rounded-circle d-flex bg-opacity-primary" alt="image">
+                                <div class="badge-direction-bottom"> <span class="chat-badge-dot avatar-online"></span> </div>
+                              </div>
+                              <div class="users-list-body">
+                                <div class="users-list-body-title">
+                                  <h6>Domnic Harris</h6>
+                                  <div class="text-limit" data-maxlength="10">
+                                    <p class="mb-0"><span>Lorem ipsum dolor us was they amet</span>...</p>
+                                  </div>
+                                </div>
+                                <div class="last-chat-time unread"> <small>14:45 pm</small>
+                                  <div class="total-message mt-1 d-flex justify-content-end"> <span class="badge badge-success ">15</span> </div>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="user-list-item">
+                            <div class="user-list-item__wrapper">
+                              <div class="avatar avatar-circle ml-0"> 
+                                <img src="images/ellipse/ellipse4.png" class="rounded-circle d-flex bg-opacity-primary" alt="image">
+                                <div class="badge-direction-bottom"> <span class="chat-badge-dot avatar-offline"></span> </div>
+                              </div>
+                              <div class="users-list-body">
+                                <div class="users-list-body-title">
+                                  <h6>Khalid Hasan</h6>
+                                  <div class="text-limit" data-maxlength="10">
+                                    <p class="mb-0"><span>Lorem ipsum dolor us was they amet</span>...</p>
+                                  </div>
+                                </div>
+                                <div class="last-chat-time unread"> <small>14:45 pm</small> </div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="user-list-item">
+                            <div class="user-list-item__wrapper">
+                              <div class="avatar avatar-circle ml-0"> 
+                                <img src="images/ellipse/ellipse5.png" class="rounded-circle d-flex bg-opacity-primary" alt="image">
+                                <div class="badge-direction-bottom"> <span class="chat-badge-dot avatar-online"></span> </div>
+                              </div>
+                              <div class="users-list-body">
+                                <div class="users-list-body-title">
+                                  <h6>Tuhin Molla</h6>
+                                  <div class="text-limit" data-maxlength="10">
+                                    <p class="mb-0"><span>Lorem ipsum dolor us was they amet</span>...</p>
+                                  </div>
+                                </div>
+                                <div class="last-chat-time unread"> <small>14:45 pm</small> </div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="user-list-item">
+                            <div class="user-list-item__wrapper">
+                              <div class="avatar avatar-circle ml-0"> 
+                                <img src="images/ellipse/ellipse6.png" class="rounded-circle d-flex bg-opacity-primary" alt="image">
+                                <div class="badge-direction-bottom"> <span class="chat-badge-dot avatar-online"></span> </div>
+                              </div>
+                              <div class="users-list-body">
+                                <div class="users-list-body-title">
+                                  <h6>Billal Hossain</h6>
+                                  <div class="text-limit" data-maxlength="10">
+                                    <p class="mb-0"><span>Lorem ipsum dolor us was they amet</span>...</p>
+                                  </div>
+                                </div>
+                                <div class="last-chat-time unread"> <small>14:45 pm</small> </div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="user-list-item">
+                            <div class="user-list-item__wrapper">
+                              <div class="avatar avatar-circle ml-0"> 
+                                <img src="images/ellipse/ellipse7.png" class="rounded-circle d-flex bg-opacity-primary" alt="image">
+                                <div class="badge-direction-bottom"> <span class="chat-badge-dot avatar-online"></span> </div>
+                              </div>
+                              <div class="users-list-body">
+                                <div class="users-list-body-title">
+                                  <h6>Ibn Adam</h6>
+                                  <div class="text-limit" data-maxlength="10">
+                                    <p class="mb-0"><span>Lorem ipsum dolor us was they amet</span>...</p>
+                                  </div>
+                                </div>
+                                <div class="last-chat-time unread"> <small>14:45 pm</small> </div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="user-list-item">
+                            <div class="user-list-item__wrapper">
+                              <div class="avatar avatar-circle ml-0"> 
+                                <img src="images/ellipse/ellipse8.png" class="rounded-circle d-flex bg-opacity-primary" alt="image">
+                                <div class="badge-direction-bottom"> <span class="chat-badge-dot avatar-offline"></span> </div>
+                              </div>
+                              <div class="users-list-body">
+                                <div class="users-list-body-title">
+                                  <h6>Tanim</h6>
+                                  <div class="text-limit" data-maxlength="10">
+                                    <p class="mb-0"><span>Lorem ipsum dolor us was they amet</span>...</p>
+                                  </div>
+                                </div>
+                                <div class="last-chat-time unread"> <small>14:45 pm</small> </div>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                  </div>
+                  <!-- Ends: .search-body --> 
+                </div>
+                <!-- Ends: .chat-wrapper --> 
+              </div>
+            </div>
+            <!-- Ends: .sidebar group --> 
+          </div>
+          <!-- Ends: .mb-lg-0 -->
+          <div class="chat">
+                <div class="chat-body bg-white radius-xl">
+                  <div class="chat-header">
+                    <div class="media chat-name align-items-center">
+                      <div class="media-body align-self-center ">
+                        <h5 class=" mb-0 fw-500 mb-2">Domnic Harys</h5>
+                        <div class="media-body__content d-flex align-items-center"> 
+                          <span class="badge-dot dot-success me-1"></span> 
+                          <small class="d-flex color-light fs-12 text-capitalize"> active now </small> 
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Chat Options -->
+                    <ul class="nav flex-nowrap">
+                      <li class="nav-item list-inline-item mr-0">
+                        <div class="dropdown"> <a href="#" role="button" title="Details" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span data-feather="more-vertical"></span> </a>
+                          <div class="dropdown-menu dropdown-menu-right">
+                            <a class="dropdown-item align-items-center d-flex" href="#"> 
+                            <!-- Default :: Inline SVG --> 
+                            <span data-feather="trash-2"></span> <span>Delete conversation</span> </a> 
+                            <a class="dropdown-item align-items-center d-flex" href="#"> 
+                            <!-- Default :: Inline SVG --> 
+                            <span data-feather="x-octagon"></span> <span>Block & report</span> </a> 
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="chat-box"> 
+                    <!-- Start: Incomming -->
+                    <div class="flex-1 incoming-chat">
+                      <div class="chat-text-box">
+                        <div class="media ">
+                          <div class="chat-text-box__photo "> 
+                            <img src="images/author/1.jpg" class="align-self-start" alt="img"> 
+                          </div>
+                          <div class="media-body">
+                            <div class="chat-text-box__content">
+                              <div class="chat-text-box__title d-flex align-items-center">
+                                <h6 class="fs-14">Domnic Harys</h6>
+                                <span class="chat-text-box__time fs-12 color-light fw-400 ml-15">8:30 PM</span> </div>
+                              <div class="d-flex align-items-center mb-20 mt-10">
+                                <div class="chat-text-box__subtitle p-20 bg-primary">
+                                  <p class="color-white">Jam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diam voluptua..</p>
+                                </div>
+                                <div class="chat-text-box__other d-flex">
+                                  <div class="chat-text-box__reaction px-sm-15 px-2">
+                                    <div class="emotions">
+                                      <div class="dropdown  dropdown-click ">
+                                        <button class="btn-link border-0 bg-transparent p-0" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span data-feather="smile"></span> </button>
+                                        <div class="dropdown-default dropdown-bottomRight dropdown-menu-right dropdown-menu">
+                                          <ul class="emotions__parent d-flex">
+                                            <li><a class="" href="#"> <img src="images/svg/cool.png" alt="emotions"> </a> </li>
+                                            <li><a class="" href="#"> <img src="images/svg/happy2.png" alt="emotions"> </a></li>
+                                            <li><a class="" href="#"> <img src="images/svg/happy.png" alt="emotions"> </a></li>
+                                            <li><a class="" href="#"> <img src="images/svg/shocked.png" alt="emotions"> </a></li>
+                                            <li><a class="" href="#"> <img src="images/svg/like.png" alt="emotions"> </a></li>
+                                            <li><a class="" href="#"> <img src="images/svg/heart.png" alt="emotions"> </a></li>
+                                          </ul>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="dropdown dropdown-click">
+                                    <button class="btn-link border-0 bg-transparent p-0" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span data-feather="more-horizontal"></span> </button>
+                                    <div class="dropdown-default dropdown-bottomRight dropdown-menu-right dropdown-menu" style=""> 
+                                      <a class="dropdown-item" href="#">Copy</a> 
+                                      <a class="dropdown-item" href="#">Quote</a> 
+                                      <a class="dropdown-item" href="#">Forward</a> 
+                                      <a class="dropdown-item" href="#">Report</a> 
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End: Incomming -->
+                    <p class="social-connector text-center text-capitalize"> <span>today</span> </p>
+                    <!-- Start: Outgoing -->
+                    <div class="flex-1 justify-content-end d-flex outgoing-chat">
+                      <div class="chat-text-box">
+                        <div class="media ">
+                          <div class="media-body">
+                            <div class="chat-text-box__content">
+                              <div class="chat-text-box__title d-flex align-items-center justify-content-end mb-3"> 
+                                <span class="chat-text-box__time color-light">8:30 PM</span> 
+                              </div>
+                              <div class="d-flex align-items-center justify-content-end">
+                                <div class="chat-text-box__other d-flex">
+                                  <div class="px-3">
+                                    <div class="dropdown dropdown-click">
+                                      <button class="btn-link border-0 bg-transparent p-0" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span data-feather="more-horizontal"></span> </button>
+                                      <div class="dropdown-default dropdown-bottomRight dropdown-menu-right dropdown-menu" style=""> 
+                                        <a class="dropdown-item" href="#">Copy</a> 
+                                        <a class="dropdown-item" href="#">Quote</a> 
+                                        <a class="dropdown-item" href="#">Forward</a> 
+                                        <a class="dropdown-item" href="#">Report</a> 
+                                        <a class="dropdown-item" href="#">remove</a> 
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="chat-text-box__subtitle p-20 bg-deep">
+                                  <p class="color-gray">Jam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diam voluptua..</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="flex-1 justify-content-end d-flex outgoing-chat">
+                      <div class="chat-text-box">
+                        <div class="media ">
+                          <div class="media-body">
+                            <div class="chat-text-box__content">
+                              <div class="d-flex align-items-center justify-content-end">
+                                <div class="chat-text-box__other d-flex">
+                                  <div class="px-3">
+                                    <div class="dropdown dropdown-click">
+                                      <button class="btn-link border-0 bg-transparent p-0" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span data-feather="more-horizontal"></span> </button>
+                                      <div class="dropdown-default dropdown-bottomRight dropdown-menu-right dropdown-menu" style=""> 
+                                        <a class="dropdown-item" href="#">Copy</a> 
+                                        <a class="dropdown-item" href="#">Quote</a> 
+                                        <a class="dropdown-item" href="#">Forward</a> 
+                                        <a class="dropdown-item" href="#">Report</a> 
+                                        <a class="dropdown-item" href="#">remove</a> 
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="chat-text-box__subtitle p-20 bg-deep">
+                                  <p class="color-gray">Jam nonumy eirmod tempor invidunt ut labore et dolore magna.</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End: Outgoing  --> 
+                    <!-- Start: Incomming -->
+                    <div class="flex-1 incoming-chat mt-4">
+                      <div class="chat-text-box">
+                        <div class="media ">
+                          <div class="chat-text-box__photo "> 
+                            <img src="images/author/1.jpg" class="align-self-start" alt="img"> </div>
+                          <div class="media-body">
+                            <div class="chat-text-box__content">
+                              <div class="chat-text-box__title d-flex align-items-center">
+                                <h6 class="fs-14">Domnic Harys</h6>
+                                <span class="chat-text-box__time color-light">8:30 PM</span> </div>
+                              <div class="d-flex align-items-center mb-3 mt-3">
+                                <div class="chat-text-box__subtitle p-20 bg-primary">
+                                  <p class="color-white">Jam nonumy eirmod tempor invidunt ut labore et dolore magna.</p>
+                                </div>
+                                <div class="chat-text-box__other d-flex">
+                                  <div class="chat-text-box__reaction px-sm-15 px-2">
+                                    <div class="emotions">
+                                      <div class="dropdown  dropdown-click ">
+                                        <button class="btn-link border-0 bg-transparent p-0" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span data-feather="smile"></span> </button>
+                                        <div class="dropdown-default dropdown-bottomRight dropdown-menu-right dropdown-menu">
+                                          <ul class="emotions__parent d-flex">
+                                            <li> <a class="" href="#"> <img src="images/svg/cool.png" alt="emotions"> </a> </li>
+                                            <li><a class="" href="#"> <img src="images/svg/happy2.png" alt="emotions"> </a></li>
+                                            <li><a class="" href="#"> <img src="images/svg/happy.png" alt="emotions"> </a></li>
+                                            <li><a class="" href="#"> <img src="images/svg/shocked.png" alt="emotions"> </a></li>
+                                            <li><a class="" href="#"> <img src="images/svg/like.png" alt="emotions"> </a></li>
+                                            <li><a class="" href="#"> <img src="images/svg/heart.png" alt="emotions"> </a></li>
+                                          </ul>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="dropdown dropdown-click">
+                                    <button class="btn-link border-0 bg-transparent p-0" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span data-feather="more-horizontal"></span> </button>
+                                    <div class="dropdown-default dropdown-bottomRight dropdown-menu-right dropdown-menu" style=""> 
+                                      <a class="dropdown-item" href="#">Copy</a> 
+                                      <a class="dropdown-item" href="#">Quote</a> 
+                                      <a class="dropdown-item" href="#">Forward</a> 
+                                      <a class="dropdown-item" href="#">Report</a> 
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End: Incomming --> 
+                    <!-- Start: Outgoing -->
+                    <div class="flex-1 justify-content-end d-flex outgoing-chat">
+                      <div class="chat-text-box">
+                        <div class="media ">
+                          <div class="media-body">
+                            <div class="chat-text-box__content">
+                              <div class="chat-text-box__title d-flex align-items-center justify-content-end mb-2"> <span class="chat-text-box__time fs-12 color-light fw-400">8:30 PM</span> </div>
+                              <div class="d-flex align-items-center justify-content-end">
+                                <div class="chat-text-box__other d-flex">
+                                  <div class="px-3">
+                                    <div class="dropdown dropdown-click">
+                                      <button class="btn-link border-0 bg-transparent p-0" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span data-feather="more-horizontal"></span> </button>
+                                      <div class="dropdown-default dropdown-bottomRight dropdown-menu-right dropdown-menu" style=""> 
+                                        <a class="dropdown-item" href="#">Copy</a> 
+                                        <a class="dropdown-item" href="#">Quote</a> 
+                                        <a class="dropdown-item" href="#">Forward</a> 
+                                        <a class="dropdown-item" href="#">Report</a> 
+                                        <a class="dropdown-item" href="#">remove</a> 
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="chat-text-box__subtitle p-20 bg-deep">
+                                  <p class="color-gray">Jam nonumy eirmod tempor invidunt ut labore et dolore magna.</p>
+                                </div>
+                              </div>
+                              <div class="seen-chat d-flex align-items-center  justify-content-end mb-2 mt-4">
+                                <div class="chat-text-box__title d-flex align-items-center me-2"> 
+                                  <span class="chat-text-box__time color-light">Seen 9:20 PM</span> 
+                                </div>
+                                <img src="images/author/1.jpg" alt="img" class="wh-20 rounded-circle"> 
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End: Outgoing  --> 
+                    <!-- Start: Incomming -->
+                    <div class="flex-1 incoming-chat mt-30">
+                      <div class="chat-text-box">
+                        <div class="media ">
+                          <div class="chat-text-box__photo "> <img src="images/author/1.jpg" class="align-self-start mr-15 wh-46" alt="img"> </div>
+                          <div class="media-body">
+                            <div class="chat-text-box__content">
+                              <div class="d-flex align-items-center ">
+                                <div class="chat-text-box__subtitle typing cbg-light pr-30">
+                                  <p class="color-light text-capitalize">typing...</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End: Incomming --> 
+                  </div>
+                  <div class="chat-footer px-xl-30 px-lg-20 pb-lg-30 pt-1">
+                    <div class="chat-type-text">
+                      <div class="pt-0 outline-0 pb-0 pr-0 pl-0 rounded-0 position-relative d-flex align-items-center" tabindex="-1">
+                        <div class="d-flex justify-content-between align-items-center w-100 flex-wrap">
+                          <div class=" flex-1 d-flex align-items-center chat-type-text__write ml-0"> <a href="#"> <span data-feather="smile"></span></a>
+                            <input class="form-control border-0 bg-transparent box-shadow-none" placeholder="Type your message...">
+                          </div>
+                          <div class="chat-type-text__btn">
+                            <button type="button" class="border-0 btn-deep color-light wh-50 p-10 rounded-circle"> <span data-feather="image"></span></button>
+                            <button type="button" class="border-0 btn-deep color-light wh-50 p-10 rounded-circle"> <span data-feather="paperclip"></span></button>
+                            <button type="button" class="border-0 btn-primary wh-50 p-10 rounded-circle"> <span data-feather="send"></span></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- ends: .chat--> 
+        </div>
+        <!-- Ends: .chat-area --> 
+      </div>
+    </div>
+    <!-- Row --> 
+    
+  </div>
+  
+  <!-- CONTAINER END --> 
+</div>
+
+
+  <footer class="footer-wrapper">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="footer-copyright">
+            <p>2022 @<a href="#">Iavi</a> </p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="footer-menu text-right float-end">
+            <ul>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+              <li><a href="#">Help</a></li>
+            </ul>
+          </div>
+          <!-- ends: .Footer Menu --> 
+        </div>
+      </div>
+    </div>
+  </footer>
+</main>
+<div class="overlay-dark-sidebar"></div>
+
+
+<!-- jQuery -->
+<script src="js/jquery.min.js" type="text/Javascript"></script>
+<script src="js/main.js" type="text/Javascript"></script>
+</body>
+
+</html>
