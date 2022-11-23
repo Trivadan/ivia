@@ -732,8 +732,10 @@ a:hover h6 {
   color: #ffffff;
 }
 .color-info,  
-.table-social a:hover, .table-social a, 
-.atbd-notification-box.notification-info .atbd-notification-box__icon svg, 
+.table-social a:hover, 
+.table-social a, 
+.atbd-notification-box.notification-info 
+.atbd-notification-box__icon svg, 
 .badge.badge-transparent.badge-info, 
 .badge.badge-outlined.badge-info {
   color: #2c99ff;
@@ -6198,6 +6200,138 @@ button.compose-close {
 .badge-success {
     color: #fff;
     background-color: #20c997;
+}
+.notification-modal-box__btn {
+  font-size: 14px;
+  padding: 0px 15px;
+  line-height: 34px;
+  font-weight: 400;
+  border-radius: 5px;
+}
+.notification-wrapper {
+  position: fixed;
+  z-index: 9999;
+}
+.notification-wrapper.top-left {
+  top: 20px;
+  left: 20px;
+}
+@media only screen and (max-width: 479px) {
+  .notification-wrapper.top-left {
+    left: 10px;
+  }
+}
+.notification-wrapper.top-right {
+  top: 20px;
+  right: 20px;
+}
+@media only screen and (max-width: 479px) {
+  .notification-wrapper.top-right {
+    right: 10px;
+  }
+}
+.notification-wrapper.bottom-left {
+  bottom: 20px;
+  left: 20px;
+}
+@media only screen and (max-width: 479px) {
+  .notification-wrapper.bottom-left {
+    left: 10px;
+  }
+}
+.notification-wrapper.bottom-right {
+  bottom: 20px;
+  right: 20px;
+}
+@media only screen and (max-width: 479px) {
+  .notification-wrapper.bottom-right {
+    right: 10px;
+  }
+}
+.atbd-notification-box {
+  position: relative;
+  border-radius: 6px;
+  padding: 10px;
+  box-shadow: 0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 6px 16px 0 rgba(0, 0, 0, 0.08), 0 9px 28px 8px rgba(0, 0, 0, 0.05);
+  max-width: 400px;
+  padding: 15px;
+  background-color: #fff;
+}
+.atbd-notification-box:not(:last-child) {
+  margin-bottom: 20px;
+}
+.atbd-notification-box__icon {
+  margin-right: 15px;
+}
+.atbd-notification-box__text h1,
+.atbd-notification-box__text h2,
+.atbd-notification-box__text h3,
+.atbd-notification-box__text h4,
+.atbd-notification-box__text h5,
+.atbd-notification-box__text h6 {
+  margin-bottom: 15px;
+}
+.atbd-notification-box__close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+}
+.atbd-notification-box__close svg,
+.atbd-notification-box__close img {
+  max-width: 20px;
+}
+
+.notification-placement-wrap {
+  margin: -10px;
+}
+@media only screen and (max-width: 479px) {
+  .notification-placement-wrap {
+    flex-flow: column;
+  }
+}
+.notification-placement-wrap .atbd-select {
+  min-width: 140px;
+  margin: 10px;
+}
+
+.notification-content {
+  border-radius: 10px;
+  background-color: #f8f9fb;
+}
+.notification-content__body h6 {
+  font-size: 14px;
+  line-height: 1.4285714286;
+  font-weight: 500;
+}
+.notification-content__body span {
+  font-size: 14px;
+  line-height: 1.5714285714;
+  font-weight: 400;
+}
+.notification-content__body .custom-control-input:focus ~ .custom-control-label::before {
+  box-shadow: none;
+}
+.notification-content__body .custom-control-input:focus:not(:checked) ~ .custom-control-label::before {
+  border-color: transparent;
+  background-color: #e3e6ef;
+}
+.notification-content__body .custom-control-label::before {
+  background-color: #e3e6ef;
+  border: transparent;
+  box-shadow: none;
+}
+.notification-content__body .custom-switch .custom-control-label::after {
+  background-color: white;
+}
+.notification-content__body .custom-control-input:checked ~ .custom-control-label::before {
+  border-color: #5f63f2;
+}
+.atbd-notification-box__text h6{
+  font-size:18px;
+  font-weight:600;
+}
+.atbd-notification-box__text p{
+  font-size:14px;
 }
 
 /* ---------------------------------------------------
