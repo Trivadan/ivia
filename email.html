@@ -294,91 +294,29 @@
 
     <!-- PAGE-HEADER -->
     <div class="page-header">
-      <h1 class="page-title">Notifications</h1>
+      <h1 class="page-title">Send Notification</h1>
     </div>
     <!-- PAGE-HEADER END -->
     
     <!-- Row -->
-     <div class="row">
-
-      <div class="col-lg-6">
-        <div class="card card-default card-md mb-4">
-          <div class="card-header">
-            <h6>Basic</h6>
-          </div>
+    <div class="row row-sm">
+      <div class="col-lg-12">
+        <div class="card">
           <div class="card-body">
-            <button class="btn btn-primary btn-sm btn-squired btn-toast notification-modal-box__btn" data-toastType="default">Open the Notification Box</button>
-          </div>
-        </div>
-        <!-- ends: .card -->
-        <div class="card card-default card-md mb-4">
-          <div class="card-header">
-            <h6>Duration</h6>
-          </div>
-          <div class="card-body">
-            <button class="btn btn-primary btn-sm btn-squired btn-toast notification-modal-box__btn" data-toastType="default" data-duration="5000">Open the Notification Box</button>
-          </div>
-        </div>
-        <!-- ends: .card -->
-        <div class="card card-default card-md mb-4">
-          <div class="card-header">
-            <h6>Custom Close</h6>
-          </div>
-          <div class="card-body">
-            <button class="btn btn-primary btn-sm btn-squired btn-toast notification-modal-box__btn" data-toastType="default" data-customclose="true" data-duration="8000">Open the Notification Box</button>
-          </div>
-        </div>
-        <!-- ends: .card --> 
-      </div>
-      <!-- ends: .col-lg-6 -->
-      <div class="col-lg-6">
-        <div class="card card-default card-md mb-4">
-          <div class="card card-default card-md">
-            <div class="card-header">
-              <h6>With Icon</h6>
-            </div>
-            <div class="card-body">
-              <div class="button-group flex-wrap">
-                <button class="btn btn-outline-lighten btn-outline-lighten__height fw-400 btn-toast" data-toastType="info" data-toastIcon="info">Info</button>
-                <button class="btn btn-outline-lighten btn-outline-lighten__height fw-400 btn-toast" data-toastType="success" data-toastIcon="check-circle">Success</button>
-                <button class="btn btn-outline-lighten btn-outline-lighten__height fw-400 btn-toast" data-toastType="danger" data-toastIcon="x-circle">Error</button>
-                <button class="btn btn-outline-lighten btn-outline-lighten__height fw-400 btn-toast" data-toastType="warning" data-toastIcon="alert-circle">Warning</button>
+            <div class="landingblock text-center">
+              <div class="landingPic">
+                <img src="images/svg/email-campaign.svg">
               </div>
-            </div>
-          </div>
-          <!-- ends: .card --> 
-          
-        </div>
-        <!-- ends: .card -->
-        <div class="card card-default card-md mb-4">
-          <div class="card-header">
-            <h6>Placement</h6>
-          </div>
-          <div class="card-body">
-            <div class="row justify-content-end">
-              <div class="col-12 mb-2">
-                <div class="notification-placement-wrap d-flex align-items-center">
-                  <div class="atbd-select">
-                    <select name="noti-placement" id="noti-placement" class="form-control">
-                      <option value="tl">Top Left</option>
-                      <option value="tr">Top Right</option>
-                      <option value="bl">Bottom Left</option>
-                      <option value="br">Bottom Right</option>
-                    </select>
-                  </div>
-                  <button class="btn btn-primary btn-sm btn-squired btn-toast notification-modal-box__btn" data-toastType="default">Open the Notification Box</button>
-                </div>
+              <div class="landinginfo">
+                <h2>You have not created any Notification</h2>
+                <button class="btn-compose btn btn-primary btn-border" data-trigger="compose"><span data-feather="plus"></span> Create Chat</button>
               </div>
             </div>
           </div>
         </div>
-        <!-- ends: .card --> 
       </div>
-      <!-- ends: .col-lg-6 --> 
     </div>
     <!-- Row --> 
-
-    <div class="notification-wrapper top-right"></div>
     
   </div>
   
@@ -409,10 +347,57 @@
 </main>
 <div class="overlay-dark-sidebar"></div>
 
+<div class="atbd-mailCompose atbd-mailCompose--position">
+    <form action="#">
+        <div class="atbd-mailCompose__header d-flex justify-content-between align-items-center">
+            <h6 class="mailCompose-title">New Message</h6>
+            <div class="atbd-mailCompose__action">
+                <a href="#">
+                    <span data-feather="maximize-2"></span></a>
+                <button class="compose-close" data-trigger="compose"><span data-feather="x"></span></button>
+            </div>
+        </div>
+        <!-- ends: .atbd-mailCompose__header -->
+        <div class="atbd-mailCompose__body">
+            <div class="mailCompose-form-content">
+                <div class="form-group positon-relative">
+                    <select name="mail-to" id="mail-to" class="form-control-lg" multiple="multiple">
+                        <option value="01">demo@example.com</option>
+                        <option value="02">test@example.com</option>
+                        <option value="03">xxx@example.com</option>
+                    </select>
+                    <span class="input-label">To</span>
+                </div>
+                <div class="form-group positon-relative">
+                    <input type="text" class="form-control-lg" name="mail-to" placeholder="Subject">
+
+                </div>
+                <div class="form-group">
+                    <textarea name="message" id="mail-message" class="form-control-lg" placeholder="Type your message..."></textarea>
+                </div>
+            </div>
+        </div>
+        <!-- ends: .atbd-mailCompose__body -->
+        <div class="atbd-mailCompose__footer d-flex justify-content-between align-items-center">
+            <div class="footer-left d-flex align-items-center">
+                <button class="btn btn-md btn-primary">Send</button>
+                <a href="#"><span data-feather="paperclip"></span></a>
+                <a href="#"><span data-feather="smile"></span></a>
+            </div>
+            <div class="footer-right">
+                <a href="#" class="btn-remove">
+                    <span data-feather="trash-2"></span></a>
+            </div>
+        </div>
+        <!-- ends: .atbd-mailCompose__footer -->
+    </form>
+</div>
+<!-- ends: .atbd-mailCompose -->
+
 
 <!-- jQuery -->
 <script src="js/jquery.min.js" type="text/Javascript"></script>
-<script src="js/notification.js" type="text/Javascript"></script>
+<script src="js/assests/trumbowyg/trumbowyg.fontfamily.js" type="text/Javascript"></script>
 <script src="js/main.js" type="text/Javascript"></script>
 </body>
 
