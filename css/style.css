@@ -6380,6 +6380,95 @@ button.compose-close {
   content: "\eedb";
 }
 
+.custom-radio input[type=radio] + label:before, 
+.custom-radio input[type=radio]:checked + label:after{
+  background: #5f63f2;
+}
+.custom-radio input[type=radio]:checked + label:after{
+  border: 1px solid #5f63f2;
+}
+.custom-radio input[type=radio]:checked + label{
+  color: #272b41;
+}
+.custom-radio input[type=radio] + label{
+  color: #5a5f7d;
+}
+.custom-radio input[type=radio] + label:before, 
+.custom-radio input[type=radio] + label:after{
+  background: #ffffff;
+}
+.custom-radio input[type=radio] + label:after, 
+.custom-radio.disabled input[type=radio]:checked + label:after, 
+.custom-checkbox.disabled input[type=checkbox]:checked + label:after, 
+.custom-checkbox input[type=checkbox] + label:after {
+  border: 1px solid #c6d0dc;
+}
+.custom-radio input {
+  display: none;
+}
+.custom-radio label {
+  display: inline-block !important;
+  font-size: 14px;
+}
+.custom-radio.disabled input[type=radio]:checked + label:after {
+  background: #c6d0dc;
+}
+.custom-radio.disabled label {
+  cursor: not-allowed;
+}
+.custom-radio input[type=radio] + label {
+  min-width: 18px;
+  min-height: 18px;
+  font-size: 14px;
+  display: flex;
+  flex-flow: column;
+  position: relative;
+  padding-left: 28px;
+  margin-bottom: 0;
+  line-height: 1.2;
+  font-weight: 400;
+}
+.custom-radio input[type=radio] + label:after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  content: "";
+  border-width: 1px;
+  border-style: solid;
+}
+.custom-radio input[type=radio] + label:before {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  left: 5px;
+  top: 46%;
+  font-weight: 900;
+  display: block;
+  opacity: 0;
+  transition: all 0.3s ease 0s;
+  z-index: 2;
+  transform: translateY(-50%);
+  content: "";
+}
+.custom-radio input[type=radio]:checked + label:before {
+  opacity: 1;
+  color: #fff;
+}
+.radio-horizontal-list:not(:last-child) {
+  margin-bottom: 14px;
+}
+.radio-horizontal-list .custom-radio {
+  margin-right: 20px;
+}
+
+.extra-fields-customer{
+  background-color: #18558c !important;
+  border-color: #18558c;
+}
 
 /* ---------------------------------------------------
     MEDIAQUERIES
