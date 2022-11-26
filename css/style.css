@@ -3669,6 +3669,12 @@ table.fc-scrollgrid thead .fc-scroller-harness .fc-scroller {
 .card-header .card-title {
     margin-bottom: 0;
 }
+.card-header .card-title span {
+    display: block;
+    font-size: 16px;
+    margin-top: 10px;
+    color: #18558c;
+}
 .card-header.border-0+.card-body {
     padding-top: 0;
 }
@@ -4632,6 +4638,7 @@ div.table-responsive>div.dataTables_wrapper>div.row>div[class^=col-]:last-child 
 .formsection label.form-label {
     font-size: 15px;
     color: #000;
+    font-weight: 500;
 }
 .formsection .form-control {
     font-size: 15px;
@@ -6468,6 +6475,10 @@ button.compose-close {
 .extra-fields-customer{
     background-color: #18558c !important;
     border-color: #18558c;
+}
+.attachment_records_dynamic .remove,
+.customer_records_dynamic .remove{
+    margin: 15px 0;
 }
 
 /* ---------------------------------------------------
