@@ -6333,6 +6333,53 @@ button.compose-close {
 .atbd-notification-box__text p{
   font-size:14px;
 }
+.chat-type-text__btn {
+    display: flex;
+}
+.file-upload {
+  position: relative;
+  width:50px;
+  height: 50px;
+  margin-right:10px;
+}
+.file-upload .file-edit {
+  position: absolute;
+  z-index: 1;
+}
+.file-upload .file-edit input {
+  display: none;
+}
+.file-upload .file-edit input + label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 0;
+    border-radius: 100%;
+    background: #efefef;
+    cursor: pointer;
+    font-weight: normal;
+    transition: all 0.2s ease-in-out;
+}
+.file-upload .file-edit input + label:hover {
+  background: #f1f1f1;
+  border-color: #d6d6d6;
+}
+.file-upload .file-edit input + label:after {
+  content: "\ef4b";
+  font-family: 'icofont';
+  color: #757575;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  margin: auto;
+  font-size: 20px;
+}
+.file-upload.file-attach .file-edit input + label:after {
+  content: "\eedb";
+}
+
 
 /* ---------------------------------------------------
     MEDIAQUERIES
