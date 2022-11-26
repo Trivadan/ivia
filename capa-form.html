@@ -353,7 +353,7 @@
                     <!-- Dynamic input-->
                     <div class="row">
                       <div class="customer_records">
-                        <div class="row align-items-center">
+                        <div class="row align-items-center mb-2 bt-2">
                         <div class="col-md-3">
                           <div class="form-group">
                             <label for="fullName" class="form-label">Specimen Number</label>
@@ -445,7 +445,7 @@ $('.extra-fields-customer').click(function() {
   $('.customer_records').clone().appendTo('.customer_records_dynamic');
   $('.customer_records_dynamic .customer_records').addClass('single remove');
   $('.single .extra-fields-customer').remove();
-  $('.single').append('<a href="#" class="remove-field btn-remove-customer">Remove Customer</a>');
+  $('.single').append('<a href="#" class="remove-field btn-remove-customer btn btn-danger">Remove Eqa</a>');
   $('.customer_records_dynamic > .single').attr("class", "remove");
   
   $('.customer_records_dynamic input').each(function() {
