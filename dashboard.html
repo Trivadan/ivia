@@ -20,6 +20,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 <link href="css/style.min.css" rel="stylesheet">
+<link rel="stylesheet" href="css/fullcalendar@5.2.0.css">
 <link href="css/style.css" rel="stylesheet">
 
 <!--Javascript-->
@@ -289,11 +290,685 @@
 
   <div class="contents">
     <div class="container-fluid">
-      <div class="social-dash-wrap">
-        <div class="row">
-          <div class="col-lg-12"><!-- Content Goes Here--></div>
+      <!-- PAGE-HEADER -->
+      <div class="page-header">
+        <h1 class="page-title">Dashboard</h1> 
+      </div>
+      <!-- PAGE-HEADER END -->
+
+      <!-- Row -->
+      <div class="row">
+        <div class="col-xl-3 col-md-6 mb-2"> 
+          <!-- Card Start  -->
+          <div class="card">
+            <div class="card-header cardheader-center">
+              <h3 class="card-title">Capa forms numbers</h3>
+              <div class="dropdown no-arrow"> 
+                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fas fa-ellipsis-h fa-sm fa-fw text-gray-400"></i> </a>
+                    <div class="dropdown-menu dropdown-menu-right shadow" aria-labelledby="dropdownMenuLink">
+                      <div class="dropdown-header">Actions</div>
+                      <a class="dropdown-item" href="#"><i class="icofont-edit me-2"></i> Edit</a> 
+                      <a class="dropdown-item" href="#"><i class="icofont-plus me-2"></i> Add</a> 
+                      <a class="dropdown-item" href="#"><i class="icofont-ui-delete me-2"></i> Delete</a> 
+                  </div>
+                  </div>
+            </div>
+            <div class="card-body">
+              <div class="overview-content">
+                <h2>836</h2>
+                <div class="lms-details-time"> <span class="color-success"><i class="las la-arrow-up"></i> <strong>25%</strong></span></div>
+              </div>
+            </div>
+          </div>
+          <!-- Card 2 End  --> 
+        </div>
+        <div class="col-xl-3 col-md-6 mb-2"> 
+          <!-- Card Start  -->
+          <div class="card">
+            <div class="card-header cardheader-center">
+              <h3 class="card-title">Users Registered</h3>
+              <div class="dropdown no-arrow"> 
+                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fas fa-ellipsis-h fa-sm fa-fw text-gray-400"></i> </a>
+                    <div class="dropdown-menu dropdown-menu-right shadow" aria-labelledby="dropdownMenuLink">
+                      <div class="dropdown-header">Actions</div>
+                      <a class="dropdown-item" href="#"><i class="icofont-edit me-2"></i> Edit</a> 
+                      <a class="dropdown-item" href="#"><i class="icofont-plus me-2"></i> Add</a> 
+                      <a class="dropdown-item" href="#"><i class="icofont-ui-delete me-2"></i> Delete</a> 
+                  </div>
+                  </div>
+            </div>
+            <div class="card-body">
+              <div class="overview-content">
+                <h2>12</h2>
+                <div class="lms-details-time"> <span class="color-darkblue"><i class="las la-arrow-up"></i> <strong>140%</strong></span></div>
+              </div>
+            </div>
+          </div>
+          <!-- Card 2 End  --> 
+        </div>
+        <div class="col-xl-3 col-md-6 mb-2"> 
+          <!-- Card Start  -->
+          <div class="card">
+            <div class="card-header cardheader-center">
+              <h3 class="card-title">Number of Crcs</h3>
+              <div class="dropdown no-arrow"> 
+                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fas fa-ellipsis-h fa-sm fa-fw text-gray-400"></i> </a>
+                    <div class="dropdown-menu dropdown-menu-right shadow" aria-labelledby="dropdownMenuLink">
+                      <div class="dropdown-header">Actions</div>
+                      <a class="dropdown-item" href="#"><i class="icofont-edit me-2"></i> Edit</a> 
+                      <a class="dropdown-item" href="#"><i class="icofont-plus me-2"></i> Add</a> 
+                      <a class="dropdown-item" href="#"><i class="icofont-ui-delete me-2"></i> Delete</a> 
+                  </div>
+                  </div>
+            </div>
+            <div class="card-body">
+              <div class="overview-content">
+                <h2>34%</h2>
+                <div class="lms-details-time"> <span class="color-warning"><i class="las la-arrow-up"></i> <strong>13%</strong></span></div>
+              </div>
+            </div>
+          </div>
+          <!-- Card 2 End  --> 
+        </div>
+        <div class="col-xl-3 col-md-6 mb-2"> 
+          <!-- Card Start  -->
+          <div class="card">
+            <div class="card-header cardheader-center">
+              <h3 class="card-title">Turn Around Time</h3>
+              <div class="dropdown no-arrow"> 
+                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fas fa-ellipsis-h fa-sm fa-fw text-gray-400"></i> </a>
+                    <div class="dropdown-menu dropdown-menu-right shadow" aria-labelledby="dropdownMenuLink">
+                      <div class="dropdown-header">Actions</div>
+                      <a class="dropdown-item" href="#"><i class="icofont-edit me-2"></i> Edit</a> 
+                      <a class="dropdown-item" href="#"><i class="icofont-plus me-2"></i> Add</a> 
+                      <a class="dropdown-item" href="#"><i class="icofont-ui-delete me-2"></i> Delete</a> 
+                  </div>
+                  </div>
+            </div>
+            <div class="card-body">
+              <div class="overview-content">
+                <h2>12 <span>min</span></h2>
+                <div class="lms-details-time"> <span class="color-blue"><i class="las la-arrow-up"></i> <strong>45%</strong></span></div>
+              </div>
+            </div>
+          </div>
+          <!-- Card 2 End  --> 
         </div>
       </div>
+
+      <div class="row row-sm">
+        <div class="col-lg-6">
+          <div class="card">
+            <div class="card-header cardheader-center">
+              <div class="col-lg-6 d-flex justify-content-between">
+                  <h3 class="card-title">Events</h3>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="card-block eventscard">
+                      <div class="row mb-3">
+                      <div class="col-lg-8">
+                      <h6 class="m-b-5">Covid 19</h6>
+                      <p class="text-c-pink m-b-0">Holisticly generate enterprise e-services through turnkey benefits.</p>
+                      </div>
+                      <div class="col-lg-4">
+                      <span class="tag bg-primary">2022-12-05 11:40</span>
+                      </div>
+                      </div>
+                       <div class="row mb-3">
+                      <div class="col-lg-8">
+                      <h6 class="m-b-5">Covid 19</h6>
+                      <p class="text-c-pink m-b-0">Holisticly generate enterprise e-services through turnkey benefits.</p>
+                      </div>
+                      <div class="col-lg-4">
+                      <span class="tag bg-primary">2022-12-05 11:40</span>
+                      </div>
+                      </div>
+                       <div class="row mb-3">
+                      <div class="col-lg-8">
+                      <h6 class="m-b-5">Covid 19</h6>
+                      <p class="text-c-pink m-b-0">Holisticly generate enterprise e-services through turnkey benefits.</p>
+                      </div>
+                      <div class="col-lg-4">
+                      <span class="tag bg-primary">2022-12-05 11:40</span>
+                      </div>
+                      </div>
+                      </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="card">
+            <div class="card-header cardheader-center">
+              <div class="col-lg-6 d-flex justify-content-between">
+                  <h3 class="card-title">Calender</h3>
+              </div>
+            </div>
+          <div class="card-body">
+              <div class="date-picker">
+                  <div class="date-picker__calendar"></div>
+                  <!-- ends: .date-picker__calendar -->
+              </div>
+            </div>
+        </div>
+      </div>
+
+      <div class="row row-sm">
+        <div class="col-lg-6">
+          <div class="card">
+            <div class="card-header cardheader-center">
+              <div class="col-lg-6 d-flex justify-content-between">
+                  <h3 class="card-title">Notifications</h3>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="card-block">
+                    <div class="search-body">
+                      <div class="row mb-3">
+                      <div class="col-lg-8">
+                      <h6 class="m-b-5">Notification One</h6>
+                      <p class="text-c-pink m-b-0">Holisticly generate enterprise e-services through turnkey benefits.</p>
+                      </div>
+                      <div class="col-lg-4">
+                      <span class="tag bg-yellow">2022-12-05 11:40</span>
+                      </div>
+                      </div>
+                       <div class="row mb-3">
+                      <div class="col-lg-8">
+                      <h6 class="m-b-5">Notification One</h6>
+                      <p class="text-c-pink m-b-0">Holisticly generate enterprise e-services through turnkey benefits.</p>
+                      </div>
+                      <div class="col-lg-4">
+                      <span class="tag bg-yellow">2022-12-05 11:40</span>
+                      </div>
+                      </div>
+                       <div class="row mb-3">
+                      <div class="col-lg-8">
+                      <h6 class="m-b-5">Notification One</h6>
+                      <p class="text-c-pink m-b-0">Holisticly generate enterprise e-services through turnkey benefits.</p>
+                      </div>
+                      <div class="col-lg-4">
+                      <span class="tag bg-yellow">2022-12-05 11:40</span>
+                      </div>
+                      </div>
+                      <div class="row mb-3">
+                      <div class="col-lg-8">
+                      <h6 class="m-b-5">Notification One</h6>
+                      <p class="text-c-pink m-b-0">Holisticly generate enterprise e-services through turnkey benefits.</p>
+                      </div>
+                      <div class="col-lg-4">
+                      <span class="tag bg-yellow">2022-12-05 11:40</span>
+                      </div>
+                      </div>
+                      <div class="row mb-3">
+                      <div class="col-lg-8">
+                      <h6 class="m-b-5">Notification One</h6>
+                      <p class="text-c-pink m-b-0">Holisticly generate enterprise e-services through turnkey benefits.</p>
+                      </div>
+                      <div class="col-lg-4">
+                      <span class="tag bg-yellow">2022-12-05 11:40</span>
+                      </div>
+                      </div>
+                      <div class="row mb-3">
+                      <div class="col-lg-8">
+                      <h6 class="m-b-5">Notification One</h6>
+                      <p class="text-c-pink m-b-0">Holisticly generate enterprise e-services through turnkey benefits.</p>
+                      </div>
+                      <div class="col-lg-4">
+                      <span class="tag bg-yellow">2022-12-05 11:40</span>
+                      </div>
+                      </div>
+                      <div class="row mb-3">
+                      <div class="col-lg-8">
+                      <h6 class="m-b-5">Notification One</h6>
+                      <p class="text-c-pink m-b-0">Holisticly generate enterprise e-services through turnkey benefits.</p>
+                      </div>
+                      <div class="col-lg-4">
+                      <span class="tag bg-yellow">2022-12-05 11:40</span>
+                      </div>
+                      </div>
+                      <div class="row mb-3">
+                      <div class="col-lg-8">
+                      <h6 class="m-b-5">Notification One</h6>
+                      <p class="text-c-pink m-b-0">Holisticly generate enterprise e-services through turnkey benefits.</p>
+                      </div>
+                      <div class="col-lg-4">
+                      <span class="tag bg-yellow">2022-12-05 11:40</span>
+                      </div>
+                      </div>
+                      </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="card">
+            <div class="card-header cardheader-center">
+              <div class="col-lg-6 d-flex justify-content-between">
+                  <h3 class="card-title">Chats</h3>
+              </div>
+            </div>
+          <div class="card-body">
+            <div class="search-body">
+                    <ul class="user-list">
+                          <li class="user-list-item">
+                            <div class="user-list-item__wrapper">
+                              <div class="avatar avatar-circle ml-0"> 
+                                <img src="images/ellipse/ellipse1.png" class="rounded-circle d-flex bg-opacity-primary" alt="image">
+                                <div class="badge-direction-bottom"> <span class="chat-badge-dot avatar-online"></span> </div>
+                              </div>
+                              <div class="users-list-body">
+                                <div class="users-list-body-title">
+                                  <h6>Meyri Carles</h6>
+                                  <div class="text-limit" data-maxlength="10">
+                                    <p class="mb-0"><span>Lorem ipsum dolor us was they amet fdsfdsf sdf dsf dsf dsf dsf dsf d</span>...</p>
+                                  </div>
+                                </div>
+                                <div class="last-chat-time unread"> <small>14:45 pm</small>
+                                  <div class="total-message mt-1 d-flex justify-content-end"> <span class="badge badge-success ">5</span> </div>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="user-list-item">
+                            <div class="user-list-item__wrapper">
+                              <div class="avatar avatar-circle ml-0"> 
+                                <img src="images/ellipse/ellipse2.png" class="rounded-circle d-flex bg-opacity-primary" alt="image">
+                                <div class="badge-direction-bottom"> <span class="chat-badge-dot avatar-offline"></span> </div>
+                              </div>
+                              <div class="users-list-body">
+                                <div class="users-list-body-title">
+                                  <h6>Shreyu Neu</h6>
+                                  <div class="text-limit" data-maxlength="10">
+                                    <p class="mb-0"><span>Lorem ipsum dolor us was they amet</span>...</p>
+                                  </div>
+                                </div>
+                                <div class="last-chat-time unread"> <small>14:45 pm</small> </div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="user-list-item">
+                            <div class="user-list-item__wrapper">
+                              <div class="avatar avatar-circle ml-0"> 
+                                <img src="images/ellipse/ellipse3.png" class="rounded-circle d-flex bg-opacity-primary" alt="image">
+                                <div class="badge-direction-bottom"> <span class="chat-badge-dot avatar-online"></span> </div>
+                              </div>
+                              <div class="users-list-body">
+                                <div class="users-list-body-title">
+                                  <h6>Domnic Harris</h6>
+                                  <div class="text-limit" data-maxlength="10">
+                                    <p class="mb-0"><span>Lorem ipsum dolor us was they amet</span>...</p>
+                                  </div>
+                                </div>
+                                <div class="last-chat-time unread"> <small>14:45 pm</small>
+                                  <div class="total-message mt-1 d-flex justify-content-end"> <span class="badge badge-success ">15</span> </div>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="user-list-item">
+                            <div class="user-list-item__wrapper">
+                              <div class="avatar avatar-circle ml-0"> 
+                                <img src="images/ellipse/ellipse4.png" class="rounded-circle d-flex bg-opacity-primary" alt="image">
+                                <div class="badge-direction-bottom"> <span class="chat-badge-dot avatar-offline"></span> </div>
+                              </div>
+                              <div class="users-list-body">
+                                <div class="users-list-body-title">
+                                  <h6>Khalid Hasan</h6>
+                                  <div class="text-limit" data-maxlength="10">
+                                    <p class="mb-0"><span>Lorem ipsum dolor us was they amet</span>...</p>
+                                  </div>
+                                </div>
+                                <div class="last-chat-time unread"> <small>14:45 pm</small> </div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="user-list-item">
+                            <div class="user-list-item__wrapper">
+                              <div class="avatar avatar-circle ml-0"> 
+                                <img src="images/ellipse/ellipse5.png" class="rounded-circle d-flex bg-opacity-primary" alt="image">
+                                <div class="badge-direction-bottom"> <span class="chat-badge-dot avatar-online"></span> </div>
+                              </div>
+                              <div class="users-list-body">
+                                <div class="users-list-body-title">
+                                  <h6>Tuhin Molla</h6>
+                                  <div class="text-limit" data-maxlength="10">
+                                    <p class="mb-0"><span>Lorem ipsum dolor us was they amet</span>...</p>
+                                  </div>
+                                </div>
+                                <div class="last-chat-time unread"> <small>14:45 pm</small> </div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="user-list-item">
+                            <div class="user-list-item__wrapper">
+                              <div class="avatar avatar-circle ml-0"> 
+                                <img src="images/ellipse/ellipse6.png" class="rounded-circle d-flex bg-opacity-primary" alt="image">
+                                <div class="badge-direction-bottom"> <span class="chat-badge-dot avatar-online"></span> </div>
+                              </div>
+                              <div class="users-list-body">
+                                <div class="users-list-body-title">
+                                  <h6>Billal Hossain</h6>
+                                  <div class="text-limit" data-maxlength="10">
+                                    <p class="mb-0"><span>Lorem ipsum dolor us was they amet</span>...</p>
+                                  </div>
+                                </div>
+                                <div class="last-chat-time unread"> <small>14:45 pm</small> </div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="user-list-item">
+                            <div class="user-list-item__wrapper">
+                              <div class="avatar avatar-circle ml-0"> 
+                                <img src="images/ellipse/ellipse7.png" class="rounded-circle d-flex bg-opacity-primary" alt="image">
+                                <div class="badge-direction-bottom"> <span class="chat-badge-dot avatar-online"></span> </div>
+                              </div>
+                              <div class="users-list-body">
+                                <div class="users-list-body-title">
+                                  <h6>Ibn Adam</h6>
+                                  <div class="text-limit" data-maxlength="10">
+                                    <p class="mb-0"><span>Lorem ipsum dolor us was they amet</span>...</p>
+                                  </div>
+                                </div>
+                                <div class="last-chat-time unread"> <small>14:45 pm</small> </div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="user-list-item">
+                            <div class="user-list-item__wrapper">
+                              <div class="avatar avatar-circle ml-0"> 
+                                <img src="images/ellipse/ellipse8.png" class="rounded-circle d-flex bg-opacity-primary" alt="image">
+                                <div class="badge-direction-bottom"> <span class="chat-badge-dot avatar-offline"></span> </div>
+                              </div>
+                              <div class="users-list-body">
+                                <div class="users-list-body-title">
+                                  <h6>Tanim</h6>
+                                  <div class="text-limit" data-maxlength="10">
+                                    <p class="mb-0"><span>Lorem ipsum dolor us was they amet</span>...</p>
+                                  </div>
+                                </div>
+                                <div class="last-chat-time unread"> <small>14:45 pm</small> </div>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                  </div>
+              </div>
+        </div>
+      </div>
+
+      <div class="row row-sm">
+        <div class="col-lg-12">
+          <div class="card">
+            <div class="card-header cardheader-center">
+              <div class="col-lg-6 d-flex justify-content-between">
+                  <h3 class="card-title">Activity Log</h3>
+              </div>
+            </div>
+            <div class="card-body">
+              <table id="settings" class="table table-striped usertables eventstable">
+            <thead>
+              <tr>
+                <th class="border-bottom-0"><input class="form-check-input" type="checkbox" value="" id="settingcheck"></th>
+                <th class="border-bottom-0">No</th>
+                <th class="border-bottom-0">Date</th>
+                <th class="border-bottom-0">Title</th>
+                <th class="border-bottom-0">Catergory</th>
+                <th class="border-bottom-0">Status</th>
+                <th class="border-bottom-0">Short Description</th>
+                <th class="border-bottom-0">By</th>
+                <th class="border-bottom-0">Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><input class="form-check-input" type="checkbox" value="" id="settingcheck"></td>
+                <td>1.</td>
+                <td>22-07-2022</td>
+                <td>Real Estate Joint Venture in Kenya:</td>
+                <td>Marketing</td>
+                <td><i class="fa fa-circle color-green me-1"></i> Published</td>
+                <td>Need to know the best places to invest in real estate JV for high returns? We have listed the top areas to concentrate on for maximum returns.  </td>
+                <td>Charles Doe</td>
+                <td>
+                  <div class="dropdown no-arrow"> 
+                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i> </a>
+                    <div class="dropdown-menu dropdown-menu-right shadow" aria-labelledby="dropdownMenuLink">
+                      <div class="dropdown-header">Actions</div>
+                      <a class="dropdown-item" href="#"><i class="icofont-eye-alt me-2"></i> View</a>
+                      <a class="dropdown-item" href="#"><i class="icofont-edit me-2"></i> Edit</a> 
+                      <a class="dropdown-item" href="#"><i class="icofont-ui-delete me-2"></i> Delete</a> 
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td><input class="form-check-input" type="checkbox" value="" id="settingcheck"></td>
+                <td>2.</td>
+                <td>22-07-2022</td>
+                <td>Real Estate Joint Venture in Kenya:</td>
+                <td>Marketing</td>
+                <td><i class="fa fa-circle color-danger me-1"></i> Published</td>
+                <td>Need to know the best places to invest in real estate JV for high returns? We have listed the top areas to concentrate on for maximum returns.  </td>
+                <td>Charles Doe</td>
+                <td>
+                  <div class="dropdown no-arrow"> 
+                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i> </a>
+                    <div class="dropdown-menu dropdown-menu-right shadow" aria-labelledby="dropdownMenuLink">
+                      <div class="dropdown-header">Actions</div>
+                      <a class="dropdown-item" href="#"><i class="icofont-eye-alt me-2"></i> View</a>
+                      <a class="dropdown-item" href="#"><i class="icofont-edit me-2"></i> Edit</a> 
+                      <a class="dropdown-item" href="#"><i class="icofont-ui-delete me-2"></i> Delete</a> 
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td><input class="form-check-input" type="checkbox" value="" id="settingcheck"></td>
+                <td>3.</td>
+                <td>22-07-2022</td>
+                <td>Real Estate Joint Venture in Kenya:</td>
+                <td>Marketing</td>
+                <td><i class="fa fa-circle color-green me-1"></i> Published</td>
+                <td>Need to know the best places to invest in real estate JV for high returns? We have listed the top areas to concentrate on for maximum returns.  </td>
+                <td>Charles Doe</td>
+                <td>
+                  <div class="dropdown no-arrow"> 
+                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i> </a>
+                    <div class="dropdown-menu dropdown-menu-right shadow" aria-labelledby="dropdownMenuLink">
+                      <div class="dropdown-header">Actions</div>
+                      <a class="dropdown-item" href="#"><i class="icofont-eye-alt me-2"></i> View</a>
+                      <a class="dropdown-item" href="#"><i class="icofont-edit me-2"></i> Edit</a> 
+                      <a class="dropdown-item" href="#"><i class="icofont-ui-delete me-2"></i> Delete</a> 
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td><input class="form-check-input" type="checkbox" value="" id="settingcheck"></td>
+                <td>4.</td>
+                <td>22-07-2022</td>
+                <td>Real Estate Joint Venture in Kenya:</td>
+                <td>Marketing</td>
+                <td><i class="fa fa-circle color-danger me-1"></i> Published</td>
+                <td>Need to know the best places to invest in real estate JV for high returns? We have listed the top areas to concentrate on for maximum returns.  </td>
+                <td>Charles Doe</td>
+                <td>
+                  <div class="dropdown no-arrow"> 
+                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i> </a>
+                    <div class="dropdown-menu dropdown-menu-right shadow" aria-labelledby="dropdownMenuLink">
+                      <div class="dropdown-header">Actions</div>
+                      <a class="dropdown-item" href="#"><i class="icofont-eye-alt me-2"></i> View</a>
+                      <a class="dropdown-item" href="#"><i class="icofont-edit me-2"></i> Edit</a> 
+                      <a class="dropdown-item" href="#"><i class="icofont-ui-delete me-2"></i> Delete</a> 
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td><input class="form-check-input" type="checkbox" value="" id="settingcheck"></td>
+                <td>5.</td>
+                <td>22-07-2022</td>
+                <td>Real Estate Joint Venture in Kenya:</td>
+                <td>Marketing</td>
+                <td><i class="fa fa-circle color-green me-1"></i> Published</td>
+                <td>Need to know the best places to invest in real estate JV for high returns? We have listed the top areas to concentrate on for maximum returns.  </td>
+                <td>Charles Doe</td>
+                <td>
+                  <div class="dropdown no-arrow"> 
+                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i> </a>
+                    <div class="dropdown-menu dropdown-menu-right shadow" aria-labelledby="dropdownMenuLink">
+                      <div class="dropdown-header">Actions</div>
+                      <a class="dropdown-item" href="#"><i class="icofont-eye-alt me-2"></i> View</a>
+                      <a class="dropdown-item" href="#"><i class="icofont-edit me-2"></i> Edit</a> 
+                      <a class="dropdown-item" href="#"><i class="icofont-ui-delete me-2"></i> Delete</a> 
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td><input class="form-check-input" type="checkbox" value="" id="settingcheck"></td>
+                <td>6.</td>
+                <td>22-07-2022</td>
+                <td>Real Estate Joint Venture in Kenya:</td>
+                <td>Marketing</td>
+                <td><i class="fa fa-circle color-danger me-1"></i> Published</td>
+                <td>Need to know the best places to invest in real estate JV for high returns? We have listed the top areas to concentrate on for maximum returns.  </td>
+                <td>Charles Doe</td>
+                <td>
+                  <div class="dropdown no-arrow"> 
+                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i> </a>
+                    <div class="dropdown-menu dropdown-menu-right shadow" aria-labelledby="dropdownMenuLink">
+                      <div class="dropdown-header">Actions</div>
+                      <a class="dropdown-item" href="#"><i class="icofont-eye-alt me-2"></i> View</a>
+                      <a class="dropdown-item" href="#"><i class="icofont-edit me-2"></i> Edit</a> 
+                      <a class="dropdown-item" href="#"><i class="icofont-ui-delete me-2"></i> Delete</a> 
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td><input class="form-check-input" type="checkbox" value="" id="settingcheck"></td>
+                <td>7.</td>
+                <td>22-07-2022</td>
+                <td>Real Estate Joint Venture in Kenya:</td>
+                <td>Marketing</td>
+                <td><i class="fa fa-circle color-green me-1"></i> Published</td>
+                <td>Need to know the best places to invest in real estate JV for high returns? We have listed the top areas to concentrate on for maximum returns.  </td>
+                <td>Charles Doe</td>
+                <td>
+                  <div class="dropdown no-arrow"> 
+                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i> </a>
+                    <div class="dropdown-menu dropdown-menu-right shadow" aria-labelledby="dropdownMenuLink">
+                      <div class="dropdown-header">Actions</div>
+                      <a class="dropdown-item" href="#"><i class="icofont-eye-alt me-2"></i> View</a>
+                      <a class="dropdown-item" href="#"><i class="icofont-edit me-2"></i> Edit</a> 
+                      <a class="dropdown-item" href="#"><i class="icofont-ui-delete me-2"></i> Delete</a> 
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td><input class="form-check-input" type="checkbox" value="" id="settingcheck"></td>
+                <td>8.</td>
+                <td>22-07-2022</td>
+                <td>Real Estate Joint Venture in Kenya:</td>
+                <td>Marketing</td>
+                <td><i class="fa fa-circle color-danger me-1"></i> Published</td>
+                <td>Need to know the best places to invest in real estate JV for high returns? We have listed the top areas to concentrate on for maximum returns.  </td>
+                <td>Charles Doe</td>
+                <td>
+                  <div class="dropdown no-arrow"> 
+                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i> </a>
+                    <div class="dropdown-menu dropdown-menu-right shadow" aria-labelledby="dropdownMenuLink">
+                      <div class="dropdown-header">Actions</div>
+                      <a class="dropdown-item" href="#"><i class="icofont-eye-alt me-2"></i> View</a>
+                      <a class="dropdown-item" href="#"><i class="icofont-edit me-2"></i> Edit</a> 
+                      <a class="dropdown-item" href="#"><i class="icofont-ui-delete me-2"></i> Delete</a> 
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td><input class="form-check-input" type="checkbox" value="" id="settingcheck"></td>
+                <td>9.</td>
+                <td>22-07-2022</td>
+                <td>Real Estate Joint Venture in Kenya:</td>
+                <td>Marketing</td>
+                <td><i class="fa fa-circle color-green me-1"></i> Published</td>
+                <td>Need to know the best places to invest in real estate JV for high returns? We have listed the top areas to concentrate on for maximum returns.  </td>
+                <td>Charles Doe</td>
+                <td>
+                  <div class="dropdown no-arrow"> 
+                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i> </a>
+                    <div class="dropdown-menu dropdown-menu-right shadow" aria-labelledby="dropdownMenuLink">
+                      <div class="dropdown-header">Actions</div>
+                      <a class="dropdown-item" href="#"><i class="icofont-eye-alt me-2"></i> View</a>
+                      <a class="dropdown-item" href="#"><i class="icofont-edit me-2"></i> Edit</a> 
+                      <a class="dropdown-item" href="#"><i class="icofont-ui-delete me-2"></i> Delete</a> 
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td><input class="form-check-input" type="checkbox" value="" id="settingcheck"></td>
+                <td>10.</td>
+                <td>22-07-2022</td>
+                <td>Real Estate Joint Venture in Kenya:</td>
+                <td>Marketing</td>
+                <td><i class="fa fa-circle color-danger me-1"></i> Published</td>
+                <td>Need to know the best places to invest in real estate JV for high returns? We have listed the top areas to concentrate on for maximum returns.  </td>
+                <td>Charles Doe</td>
+                <td>
+                  <div class="dropdown no-arrow"> 
+                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i> </a>
+                    <div class="dropdown-menu dropdown-menu-right shadow" aria-labelledby="dropdownMenuLink">
+                      <div class="dropdown-header">Actions</div>
+                      <a class="dropdown-item" href="#"><i class="icofont-eye-alt me-2"></i> View</a>
+                      <a class="dropdown-item" href="#"><i class="icofont-edit me-2"></i> Edit</a> 
+                      <a class="dropdown-item" href="#"><i class="icofont-ui-delete me-2"></i> Delete</a> 
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td><input class="form-check-input" type="checkbox" value="" id="settingcheck"></td>
+                <td>11.</td>
+                <td>22-07-2022</td>
+                <td>Real Estate Joint Venture in Kenya:</td>
+                <td>Marketing</td>
+                <td><i class="fa fa-circle color-green me-1"></i> Published</td>
+                <td>Need to know the best places to invest in real estate JV for high returns? We have listed the top areas to concentrate on for maximum returns.  </td>
+                <td>Charles Doe</td>
+                <td>
+                  <div class="dropdown no-arrow"> 
+                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i> </a>
+                    <div class="dropdown-menu dropdown-menu-right shadow" aria-labelledby="dropdownMenuLink">
+                      <div class="dropdown-header">Actions</div>
+                      <a class="dropdown-item" href="#"><i class="icofont-eye-alt me-2"></i> View</a> 
+                      <a class="dropdown-item" href="#"><i class="icofont-edit me-2"></i> Edit</a> 
+                      <a class="dropdown-item" href="#"><i class="icofont-ui-delete me-2"></i> Delete</a> 
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+              <!-- <di class="position-relative">
+              <div id="morris-area-chart" style="height:400px;"></div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      
     </div>
   </div>
 
@@ -324,6 +999,24 @@
 
 <!-- jQuery -->
 <script src="js/jquery.min.js" type="text/Javascript"></script>
+
+<!-- DATA TABLE JS-->
+<script src="assets/datatable/js/jquery.dataTables.min.js"></script>
+<script src="assets/datatable/js/dataTables.bootstrap5.js"></script>
+<script src="assets/datatable/js/dataTables.buttons.min.js"></script>
+<script src="assets/datatable/js/buttons.bootstrap5.min.js"></script>
+<script src="assets/datatable/js/jszip.min.js"></script>
+<script src="assets/datatable/pdfmake/pdfmake.min.js"></script>
+<script src="assets/datatable/pdfmake/vfs_fonts.js"></script>
+<script src="assets/datatable/js/buttons.html5.min.js"></script>
+<script src="assets/datatable/js/buttons.print.min.js"></script>
+<script src="assets/datatable/js/buttons.colVis.min.js"></script>
+<script src="assets/datatable/dataTables.responsive.min.js"></script>
+<script src="assets/datatable/responsive.bootstrap5.min.js"></script>
+<script src="js/datatable.js" type="text/Javascript"></script>
+<!-- <script src="js/fullcalendar@5.2.0.js" type="text/Javascript"></script>
+<script src="js/full-calendar.js" type="text/Javascript"></script> -->
+
 <script src="js/main.js" type="text/Javascript"></script>
 </body>
 
