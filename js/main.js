@@ -198,6 +198,9 @@
   }
 
   //click to move specific page
+
+  // Date Picker
+  $(".date-picker__calendar").datepicker();
   
 
   //Modal Show

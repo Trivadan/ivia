@@ -6517,6 +6517,133 @@ button.compose-close {
     vertical-align: middle;
 }
 
+.overview-content h2{
+  font-size:32px;
+}
+.overview-content h4{
+  font-size:14px;
+  margin-bottom: 10px;
+}
+.overview-content h2 span{
+  font-size:18px;
+}
+.lms-details-time{
+  margin:10px 0;
+}
+.lms-details-time strong{
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.list-inline {
+    padding-left: 0;
+    list-style: none;
+}
+ul.list-inline li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.progress-header{
+  margin-bottom: 5px;
+}
+.progress-header h3{
+  font-size:14px;
+  font-weight: 400;
+}
+.progress-percentage{
+  font-size: 14px;
+}
+.progress {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 8px;
+    overflow: hidden;
+    line-height: 0;
+    font-size: 12px;
+    background-color: #eff0f3;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 0;
+    box-shadow: 0 0;
+}
+.selct-card{
+  border: none;
+  text-transform: capitalize;
+}
+.card-height.card{
+  min-height:280px;
+}
+
+.side-bottomlink {
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    width: 100%;
+}
+.side-bottomlink .sidebar__menu-group ul.sidebar_nav {
+    margin:0;
+}
+
+.tag{
+  padding:5px 10px;
+  font-size: 12px;
+  float: right;
+}
+.tag.bg-primary{
+  background:#18558c !important;
+  color:#FFF;
+}
+.tag.bg-yellow {
+    background: #cbaf01;
+    color: #FFF;
+}
+.card-block h6{
+  font-weight:600;
+  margin-bottom:5px;
+}
+.card-block p{
+  font-size: 14px;
+}
+
+.formtext h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #18558c;
+    font-weight: 700;
+}
+.formtext label{
+  font-size:14px;
+}
+.formtext h3{
+  font-size:16px;
+}
+.formtext p{
+  font-size:14px;
+  font-style: italic;
+  margin-top:10px;
+}
+.action-btn .btn {
+    border-radius: 3px;
+    font-weight: 500;
+    height: 34px;
+    padding: 0 7.5px;
+    background: #fff;
+    box-shadow: 0 3px 5px rgb(146 153 184 / 5%);
+    color:#5a5f7d;
+}
+.action-btn .btn i{
+  color:#18558c;
+}
+.action-btn .btn:hover{
+  background:#18558c;
+  color:#FFF;
+}
+.action-btn .btn:hover i{
+  color:#FFF;
+}
+
 /* ---------------------------------------------------
     MEDIAQUERIES
 ----------------------------------------------------- */
