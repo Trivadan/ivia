@@ -6959,6 +6959,174 @@ ul.list-inline li {
     color: #18558c;
 }
 
+/** Folder Stucture **/
+.stage{
+  max-width:100%;
+/*  margin:60px 0;*/
+  position:relative;  
+}
+/*.folder-wrap{
+  display: flex;
+  flex-wrap:wrap;
+}
+.folder-wrap::before{
+  content:'Folder name';
+  display: block;
+  position: absolute;
+  top:-40px;
+}
+.folder-wrap:first-child::before{
+  content:'Home (top of file structure)';
+  display: block;
+  position: absolute;
+  top:-40px;
+}*/
+/*.tile {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #eeeeee;
+    border-top: 1px solid #eeeeee;
+    transition: 0.2s all cubic-bezier(0.4, 0.0, 0.2, 1);
+    position: relative;
+    padding:5px 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.tile:hover{
+  box-shadow: 0px 7px 5px -6px rgba(0, 0, 0, 0.12);
+}
+.tile i {
+    color: #00A8FF;
+    margin-bottom: 5px;
+    display: block;
+    cursor: pointer;
+}
+.tile i.mdi-file-document{
+  color:#8fd9ff;
+}*/
+
+.folder-row{
+    display: inline-flex;
+    border-top: 1px solid #eeeeee;
+    transition: 0.2s all cubic-bezier(0.4, 0.0, 0.2, 1);
+    background: #fff;
+    color: #605e5c;
+    min-width: 100%;
+    white-space: nowrap;
+    padding: 0;
+    box-sizing: border-box;
+    vertical-align: top;
+    outline: transparent;
+    position: relative;
+    cursor:pointer;
+}
+
+.folder-col {
+    display: inline-block;
+    position: relative;
+    box-sizing: border-box;
+    vertical-align: top;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    font-size: 12px;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: default;
+
+    padding-right: 8px;
+    padding-left: 12px;
+}
+.fileicon {
+    width: 40px;
+    overflow: hidden;
+    font-weight: normal;
+    font-style: normal;
+}
+.fileicon i{
+    width:20px;
+    height: 20px;
+    overflow: hidden;
+    font-weight: normal;
+    font-style: normal;
+}
+.fileicon img{
+  display: block;
+}
+.filename{
+  width:300px;
+}
+.folder-col h3,
+.filename h3{
+  font-size: 14px;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #323130;
+  white-space: pre;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.modifiedby,
+.filesize,
+.modifiedon{
+  width:150px;
+}
+.folder-col p{
+  font-size:13px;
+  margin: 0;
+}
+
+/*.back{
+  font-size: 26px;
+  border-radius: 50px;
+  background: #00a8ff;
+  border: 0;
+  color: white;
+  width: 60px;
+  height: 60px;
+  margin: 20px 20px 0;
+  outline:none;
+  cursor:pointer;
+}*/
+/* Transitioning */
+.folder-wrap{
+  position: absolute;
+  width: 100%;
+  transition: .365s all cubic-bezier(.4,0,.2,1);
+  pointer-events: none;
+  opacity: 0;
+  top: 0;
+}
+.folder-wrap.level-up{
+  transform: scale(1.2);
+}
+.folder-wrap.level-current{
+  transform: scale(1);
+  pointer-events:all;
+  opacity:1;
+  position:relative;
+  height: auto;
+  overflow: visible;
+}
+.folder-wrap.level-down{
+  transform: scale(0.8);  
+}
+
+button.btn.btn-sm.btn-primary {
+    color: #FFF;
+}
+button.btn.btn-sm.btn-primary i{
+    color: #FFF;
+}
+.folderheader .folder-row{
+  border-top: none;
+}
+
 /* ---------------------------------------------------
     MEDIAQUERIES
 ----------------------------------------------------- */
