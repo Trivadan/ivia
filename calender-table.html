@@ -13,7 +13,7 @@
 <meta name="creation_Date" content="06/10/2022" />
 <meta name="expires" content="" />
 <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-<title>Iavi | Events</title>
+<title>Iavi | Events Calender</title>
 
 <!--StyleSheet-->
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -250,7 +250,7 @@
       <div class="sidebar__menu-group">
         <ul class="sidebar_nav">
           <!-- <li class="menu-title"> <span>Main menu</span> </li> -->
-          <li> <a href="dashboard.html" class="active"><span class="nav-icon fas fa-home"></span> <span class="menu-text">Dashboard</span></a></li>
+          <li> <a href="dashboard.html"><span class="nav-icon fas fa-home"></span> <span class="menu-text">Dashboard</span></a></li>
           <li><a href="crclist.html" class=""><span class="nav-icon fas fa-list"></span> <span class="menu-text">CRC list</span> </a></li>
           <li> <a href="email-campaigns.html"><span class="nav-icon fas fa-envelope"></span> <span class="menu-text">Email Campaigns</span></a></li>
           <li> <a href="userlist.html"><span class="nav-icon fas fa-users"></span> <span class="menu-text">Users List</span></a></li>
@@ -282,54 +282,263 @@
               <li class="l_sidebar"> <a href="chat.html" data-layout="light">Chat</a> </li>
             </ul>
           </li>
-          <li> <a href="event-calender.html"><span class="nav-icon fas fa-calendar-alt"></span> <span class="menu-text">Events Calender</span></a></li>
+          <li> <a href="event-calender.html" class="active"><span class="nav-icon fas fa-calendar-alt"></span> <span class="menu-text">Events Calender</span></a></li>
         </ul>
       </div>
     </div>
   </aside>
 
-<div class="contents"> 
-  
-  <!-- CONTAINER -->
-  <div class="main-container container-fluid"> 
-
-    <!-- PAGE-HEADER -->
+  <div class="contents">
+    <div class="main-container container-fluid">
+      <!-- PAGE-HEADER -->
     <div class="page-header">
-      <h1 class="page-title">Events</h1>
+      <h1 class="page-title">Events Calender list</h1>
     </div>
     <!-- PAGE-HEADER END -->
-    
+
     <!-- Row -->
     <div class="row row-sm">
-      <div class="col-lg-12">
-        <div class="card">
-          <div class="card-body">
-            <div class="landingblock text-center">
-              <div class="landingPic">
-                <img src="images/svg/email-campaign.svg">
-              </div>
-              <div class="landinginfo">
-                <h2>You have not created any event</h2>
-                <a href="add-event.html" class="btn btn-primary btn-border">Create Event</a>
-              </div>
-            </div>
-          </div>
+  <div class="col-lg-12">
+    <div class="card">
+      <div class="card-header d-flex justify-content-between">
+        <h3 class="card-title">Events Calender</h3>
+        <div class="action-btn float-end"> 
+          <button type="button" class="btn btn-sm btn-primary btn-add btn-border" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="la la-plus"></i> Add New Event</button>
+          <a  class="btn btn-sm btn-outline-primary btn-add btn-border" href="add-event.html"> <i class="la la-plus"></i> View Calender</a>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="table-responsive">
+          <table id="settings" class="table table-striped usertables eventstable">
+            <thead>
+              <tr>
+                <th class="border-bottom-0"><input class="form-check-input" type="checkbox" value="" id="settingcheck"></th>
+                <th class="border-bottom-0">No</th>
+                <th class="border-bottom-0">Date</th>
+                <th class="border-bottom-0">Title</th>
+                <th class="border-bottom-0">Short Description</th>
+                <!-- <th class="border-bottom-0">Catergory</th>
+                <th class="border-bottom-0">Status</th>
+                <th class="border-bottom-0">Short Description</th>
+                <th class="border-bottom-0">By</th> -->
+                <th class="border-bottom-0 text-center">Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><input class="form-check-input" type="checkbox" value="" id="settingcheck"></td>
+                <td>1.</td>
+                <td>01-02-2022</td>
+                <td>Real Estate Joint Venture in Kenya:</td>
+                <td>Need to know the best places to invest in real estate JV for high returns.</td>
+                <td>
+                  <div class="dropdown no-arrow"> 
+                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i> </a>
+                    <div class="dropdown-menu dropdown-menu-right shadow" aria-labelledby="dropdownMenuLink">
+                      <div class="dropdown-header">Actions</div>
+                      <a class="dropdown-item" href="#"><i class="icofont-eye-alt me-2"></i> View</a>
+                      <a class="dropdown-item" href="#"><i class="icofont-edit me-2"></i> Edit</a> 
+                      <a class="dropdown-item" href="#"><i class="icofont-ui-delete me-2"></i> Delete</a> 
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td><input class="form-check-input" type="checkbox" value="" id="settingcheck"></td>
+                <td>2.</td>
+                <td>01-02-2022</td>
+                <td>Real Estate Joint Venture in Kenya:</td>
+                <td>Need to know the best places to invest in real estate JV for high returns.</td>
+                <td>
+                  <div class="dropdown no-arrow"> 
+                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i> </a>
+                    <div class="dropdown-menu dropdown-menu-right shadow" aria-labelledby="dropdownMenuLink">
+                      <div class="dropdown-header">Actions</div>
+                      <a class="dropdown-item" href="#"><i class="icofont-eye-alt me-2"></i> View</a>
+                      <a class="dropdown-item" href="#"><i class="icofont-edit me-2"></i> Edit</a> 
+                      <a class="dropdown-item" href="#"><i class="icofont-ui-delete me-2"></i> Delete</a> 
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td><input class="form-check-input" type="checkbox" value="" id="settingcheck"></td>
+                <td>3.</td>
+                <td>01-02-2022</td>
+                <td>Real Estate Joint Venture in Kenya:</td>
+                <td>Need to know the best places to invest in real estate JV for high returns.</td>
+                <td>
+                  <div class="dropdown no-arrow"> 
+                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i> </a>
+                    <div class="dropdown-menu dropdown-menu-right shadow" aria-labelledby="dropdownMenuLink">
+                      <div class="dropdown-header">Actions</div>
+                      <a class="dropdown-item" href="#"><i class="icofont-eye-alt me-2"></i> View</a>
+                      <a class="dropdown-item" href="#"><i class="icofont-edit me-2"></i> Edit</a> 
+                      <a class="dropdown-item" href="#"><i class="icofont-ui-delete me-2"></i> Delete</a> 
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td><input class="form-check-input" type="checkbox" value="" id="settingcheck"></td>
+                <td>4.</td>
+                <td>01-02-2022</td>
+                <td>Real Estate Joint Venture in Kenya:</td>
+                <td>Need to know the best places to invest in real estate JV for high returns.</td>
+                <td>
+                  <div class="dropdown no-arrow"> 
+                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i> </a>
+                    <div class="dropdown-menu dropdown-menu-right shadow" aria-labelledby="dropdownMenuLink">
+                      <div class="dropdown-header">Actions</div>
+                      <a class="dropdown-item" href="#"><i class="icofont-eye-alt me-2"></i> View</a>
+                      <a class="dropdown-item" href="#"><i class="icofont-edit me-2"></i> Edit</a> 
+                      <a class="dropdown-item" href="#"><i class="icofont-ui-delete me-2"></i> Delete</a> 
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td><input class="form-check-input" type="checkbox" value="" id="settingcheck"></td>
+                <td>5.</td>
+                <td>01-02-2022</td>
+                <td>Real Estate Joint Venture in Kenya:</td>
+                <td>Need to know the best places to invest in real estate JV for high returns.</td>
+                <td>
+                  <div class="dropdown no-arrow"> 
+                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i> </a>
+                    <div class="dropdown-menu dropdown-menu-right shadow" aria-labelledby="dropdownMenuLink">
+                      <div class="dropdown-header">Actions</div>
+                      <a class="dropdown-item" href="#"><i class="icofont-eye-alt me-2"></i> View</a>
+                      <a class="dropdown-item" href="#"><i class="icofont-edit me-2"></i> Edit</a> 
+                      <a class="dropdown-item" href="#"><i class="icofont-ui-delete me-2"></i> Delete</a> 
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td><input class="form-check-input" type="checkbox" value="" id="settingcheck"></td>
+                <td>6.</td>
+                <td>01-02-2022</td>
+                <td>Real Estate Joint Venture in Kenya:</td>
+                <td>Need to know the best places to invest in real estate JV for high returns.</td>
+                <td>
+                  <div class="dropdown no-arrow"> 
+                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i> </a>
+                    <div class="dropdown-menu dropdown-menu-right shadow" aria-labelledby="dropdownMenuLink">
+                      <div class="dropdown-header">Actions</div>
+                      <a class="dropdown-item" href="#"><i class="icofont-eye-alt me-2"></i> View</a>
+                      <a class="dropdown-item" href="#"><i class="icofont-edit me-2"></i> Edit</a> 
+                      <a class="dropdown-item" href="#"><i class="icofont-ui-delete me-2"></i> Delete</a> 
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td><input class="form-check-input" type="checkbox" value="" id="settingcheck"></td>
+                <td>7.</td>
+                <td>01-02-2022</td>
+                <td>Real Estate Joint Venture in Kenya:</td>
+                <td>Need to know the best places to invest in real estate JV for high returns.</td>
+                <td>
+                  <div class="dropdown no-arrow"> 
+                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i> </a>
+                    <div class="dropdown-menu dropdown-menu-right shadow" aria-labelledby="dropdownMenuLink">
+                      <div class="dropdown-header">Actions</div>
+                      <a class="dropdown-item" href="#"><i class="icofont-eye-alt me-2"></i> View</a>
+                      <a class="dropdown-item" href="#"><i class="icofont-edit me-2"></i> Edit</a> 
+                      <a class="dropdown-item" href="#"><i class="icofont-ui-delete me-2"></i> Delete</a> 
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td><input class="form-check-input" type="checkbox" value="" id="settingcheck"></td>
+                <td>8.</td>
+                <td>01-02-2022</td>
+                <td>Real Estate Joint Venture in Kenya:</td>
+                <td>Need to know the best places to invest in real estate JV for high returns.</td>
+                <td>
+                  <div class="dropdown no-arrow"> 
+                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i> </a>
+                    <div class="dropdown-menu dropdown-menu-right shadow" aria-labelledby="dropdownMenuLink">
+                      <div class="dropdown-header">Actions</div>
+                      <a class="dropdown-item" href="#"><i class="icofont-eye-alt me-2"></i> View</a>
+                      <a class="dropdown-item" href="#"><i class="icofont-edit me-2"></i> Edit</a> 
+                      <a class="dropdown-item" href="#"><i class="icofont-ui-delete me-2"></i> Delete</a> 
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td><input class="form-check-input" type="checkbox" value="" id="settingcheck"></td>
+                <td>9.</td>
+                <td>01-02-2022</td>
+                <td>Real Estate Joint Venture in Kenya:</td>
+                <td>Need to know the best places to invest in real estate JV for high returns.</td>
+                <td>
+                  <div class="dropdown no-arrow"> 
+                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i> </a>
+                    <div class="dropdown-menu dropdown-menu-right shadow" aria-labelledby="dropdownMenuLink">
+                      <div class="dropdown-header">Actions</div>
+                      <a class="dropdown-item" href="#"><i class="icofont-eye-alt me-2"></i> View</a>
+                      <a class="dropdown-item" href="#"><i class="icofont-edit me-2"></i> Edit</a> 
+                      <a class="dropdown-item" href="#"><i class="icofont-ui-delete me-2"></i> Delete</a> 
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td><input class="form-check-input" type="checkbox" value="" id="settingcheck"></td>
+                <td>10.</td>
+                <td>01-02-2022</td>
+                <td>Real Estate Joint Venture in Kenya:</td>
+                <td>Need to know the best places to invest in real estate JV for high returns.</td>
+                <td>
+                  <div class="dropdown no-arrow"> 
+                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i> </a>
+                    <div class="dropdown-menu dropdown-menu-right shadow" aria-labelledby="dropdownMenuLink">
+                      <div class="dropdown-header">Actions</div>
+                      <a class="dropdown-item" href="#"><i class="icofont-eye-alt me-2"></i> View</a>
+                      <a class="dropdown-item" href="#"><i class="icofont-edit me-2"></i> Edit</a> 
+                      <a class="dropdown-item" href="#"><i class="icofont-ui-delete me-2"></i> Delete</a> 
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td><input class="form-check-input" type="checkbox" value="" id="settingcheck"></td>
+                <td>11.</td>
+                <td>22-07-2022</td>
+                <td>Real Estate Joint Venture in Kenya:</td>
+                <td>Need to know the best places to invest in real estate JV for high returns.</td>
+                <td>
+                  <div class="dropdown no-arrow"> 
+                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i> </a>
+                    <div class="dropdown-menu dropdown-menu-right shadow" aria-labelledby="dropdownMenuLink">
+                      <div class="dropdown-header">Actions</div>
+                      <a class="dropdown-item" href="#"><i class="icofont-eye-alt me-2"></i> View</a> 
+                      <a class="dropdown-item" href="#"><i class="icofont-edit me-2"></i> Edit</a> 
+                      <a class="dropdown-item" href="#"><i class="icofont-ui-delete me-2"></i> Delete</a> 
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
     </div>
-    <!-- Row --> 
-    
   </div>
-  
-  <!-- CONTAINER END --> 
 </div>
+    </div>
+  </div>
 
   <footer class="footer-wrapper">
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-6">
           <div class="footer-copyright">
-            <p>2023 @<a href="#">Iavi</a> </p>
+            <p>2022 @<a href="#">Iavi</a> </p>
           </div>
         </div>
         <div class="col-md-6">
@@ -348,9 +557,55 @@
 </main>
 <div class="overlay-dark-sidebar"></div>
 
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Add Events Calender</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-2">
+            <label for="recipient-name" class="col-form-label">Add Date</label>
+            <input type="date" class="form-control" id="event-date">
+          </div>
+          <div class="mb-2">
+            <label for="message-text" class="col-form-label">Add Title</label>
+            <input type="text" class="form-control" id="event-title">
+          </div>
+          <div class="mb-2">
+            <label for="message-text" class="col-form-label">Add Description</label>
+            <input type="text" class="form-control" id="event-title">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 <!-- jQuery -->
 <script src="js/jquery.min.js" type="text/Javascript"></script>
+
+<!-- DATA TABLE JS-->
+<script src="assets/datatable/js/jquery.dataTables.min.js"></script>
+<script src="assets/datatable/js/dataTables.bootstrap5.js"></script>
+<script src="assets/datatable/js/dataTables.buttons.min.js"></script>
+<script src="assets/datatable/js/buttons.bootstrap5.min.js"></script>
+<script src="assets/datatable/js/jszip.min.js"></script>
+<script src="assets/datatable/pdfmake/pdfmake.min.js"></script>
+<script src="assets/datatable/pdfmake/vfs_fonts.js"></script>
+<script src="assets/datatable/js/buttons.html5.min.js"></script>
+<script src="assets/datatable/js/buttons.print.min.js"></script>
+<script src="assets/datatable/js/buttons.colVis.min.js"></script>
+<script src="assets/datatable/dataTables.responsive.min.js"></script>
+<script src="assets/datatable/responsive.bootstrap5.min.js"></script>
+<script src="js/datatable.js" type="text/Javascript"></script>
+
 <script src="js/main.js" type="text/Javascript"></script>
 </body>
 
