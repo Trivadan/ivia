@@ -567,21 +567,25 @@
       <div class="modal-body">
         <form>
           <div class="mb-2">
-            <label for="recipient-name" class="col-form-label">Add Date</label>
-            <input type="date" class="form-control" id="event-date">
+           <select class="form-select" id="event_catergory" >
+              <option>Select Catergory</option>
+              <option>CAP</option>
+              <option>SmartSportQ</option>
+            </select>
           </div>
           <div class="mb-2">
-            <label for="message-text" class="col-form-label">Add Title</label>
-            <input type="text" class="form-control" id="event-title">
+            <input type="text" class="form-control" id="event-title" placeholder="Add Title">
           </div>
           <div class="mb-2">
-            <label for="message-text" class="col-form-label">Add Description</label>
-            <input type="text" class="form-control" id="event-title">
+            <textarea class="form-control mt-3" id="commentarea" rows="3">Add Description</textarea>
+          </div>
+          <div class="mb-2">
+            <input type="date" class="form-control" id="event-date" placeholder="Add Date">
           </div>
         </form>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-primary">Submit</button>
+        <button type="button" class="btn btn-primary">Save</button>
       </div>
     </div>
   </div>
