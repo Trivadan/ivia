@@ -7339,6 +7339,24 @@ button.btn.btn-sm.btn-primary i{
     color: #fff;
 }
 
+.print-capa .contents {
+    padding: 0 100px 72px 100px;
+    margin: 0 auto;
+}
+.printheader{
+  margin-top:30px;
+}
+.printheader img{
+  height:60px;
+}
+
+.footer-wrapper.printfooter {
+    padding: 24px 0;
+}
+.printfooter .footer-copyright {
+    padding-left: 0;
+}
+
 /* ---------------------------------------------------
     MEDIAQUERIES
 ----------------------------------------------------- */
