@@ -7204,6 +7204,8 @@ button.btn.btn-sm.btn-primary i{
     color: #fff;
     background: #18558c;
     border-radius: 5px;
+    text-transform: capitalize;
+    font-size: 14px;
 }
 .cal1 .clndr .clndr-controls .clndr-control-button .clndr-previous-button:hover {
     color: #fff;
@@ -7324,9 +7326,12 @@ button.btn.btn-sm.btn-primary i{
     border-left: 1px solid #e9edf4;
     border-top: 1px solid #e9edf4;
 }
-.cal1 .clndr .clndr-table tr .day.event,
-.cal1 .clndr .clndr-table tr .day.my-event {
-    background: #fafafb !important;
+.cal1 .clndr .clndr-table tr .day.event, .cal1 .clndr .clndr-table tr .day.my-event {
+    background: #79bfff !important;
+    color: #FFF !important;
+}
+.cal1 .clndr .clndr-table tr td.day.past.event {
+    background: #607d8b !important;
 }
 .cal1 .clndr .clndr-table tr .day:last-child {
     border-right: 1px solid #e9edf4;
@@ -7337,6 +7342,9 @@ button.btn.btn-sm.btn-primary i{
 .cal1 .clndr .clndr-controls .clndr-control-button .clndr-previous-button,
 .cal1 .clndr .clndr-controls .clndr-control-button .clndr-next-button {
     color: #fff;
+}
+.fc-month-view span.fc-title{
+     white-space: normal;
 }
 
 .print-capa .contents {
@@ -7349,7 +7357,6 @@ button.btn.btn-sm.btn-primary i{
 .printheader img{
   height:60px;
 }
-
 .footer-wrapper.printfooter {
     padding: 24px 0;
 }

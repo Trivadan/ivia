@@ -25,7 +25,23 @@ $(function() {
         }, {
             date: thisMonth + '-27',
             title: 'Single Day Event'
-        }
+        }, {
+            title: 'Birthday',
+            date: '2023-03-16'
+        }, {
+            title: 'Single Event',
+            date: '2023-04-16'
+        }, {
+            title: 'Past Event',
+            date: '2023-02-01'
+        }, { 
+             date: '2023-02-16',
+            title: 'Persian Kitten Auction', 
+            location: 'Center for Beautiful Cats' 
+            },
+        // { date: currentMonth + '-' + '19', title: 'Cat Frisbee', location: 'Jefferson Park' },
+        // { date: currentMonth + '-' + '23', title: 'Kitten Demonstration', location: 'Center for Beautiful Cats' },
+        // { date: nextMonth + '-' + '07',    title: 'Small Cat Photo Session', location: 'Center for Cat Photography' },
     ];
 
     // The order of the click handlers is predictable. Direct click action
@@ -78,6 +94,5 @@ $(function() {
         showAdjacentMonths: true,
         adjacentDaysChangeMonth: false
     });
-
     
 });
