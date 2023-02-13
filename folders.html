@@ -307,7 +307,8 @@
       <div class="card-header d-flex justify-content-between">
         <h3 class="card-title">My Files</h3>
         <div class="action-btn float-end"> 
-          <button  class="btn btn-sm btn-primary btn-add btn-border back" data-bs-toggle="modal" data-bs-target="#modal-form"> <i class="icofont-rounded-left"></i> Back</button> 
+          <!-- <button  class="btn btn-sm btn-primary btn-add btn-border back" data-bs-toggle="modal" data-bs-target="#modal-form"> <i class="icofont-rounded-left"></i> Back</button>  -->
+           <button  class="btn btn-sm btn-primary btn-add btn-border" data-bs-toggle="modal" data-bs-target="#addfolder"> <i class="la la-plus"></i> Add New</button> 
         </div>
       </div>
             <div class="card-body">
@@ -317,6 +318,14 @@
               <!-- <button class="back">
   <i class="mdi mdi-arrow-left"></i>
 </button> -->
+
+<ul class="folder-breadcrumb nav">
+  <li class="folder-breadcrumb__item"> <a href="#"> Home </a> <span class="breadcrumb__seperator"> <span class="la la-angle-right"></span> </span> </li>
+  <li class="folder-breadcrumb__item"> <a href="#">Folder 1</a> <span class="breadcrumb__seperator"> <span class="la la-angle-right"></span> </span> </li>
+  <li class="folder-breadcrumb__item"> <a href="#">Folder 2</a> <span class="breadcrumb__seperator"> <span class="la la-angle-right"></span> </span> </li>
+  <li class="folder-breadcrumb__item"> <span>File</span> </li>
+</ul>
+
 
   <div class="folderheader">
     <div class="folder-row">
@@ -622,6 +631,36 @@
 </main>
 <div class="overlay-dark-sidebar"></div>
 
+<div class="modal fade" id="addfolder" tabindex="-1" aria-labelledby="addfolder" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Add Folder</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="add_folder row align-items-center">
+          <div class="col-md-6 mb-2">
+            <label>Folder Name</label>
+            <input type="text" class="form-control" id="event-title" placeholder="">
+          </div>
+          <div class="col-md-6 mb-2">
+            <label>Upload Icon</label>
+            <input type="file" class="form-control" id="uploadicon" placeholder="">
+          </div>
+          <div class="col-md-12"> <a class="btn btn-primary extra-fields-customer" href="javascript:void(0)"><i class="la la-plus"></i> Add Folder</a> </div>
+        </div>
+        <div class="add_folder_dynamic"></div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 <!-- jQuery -->
 <script src="js/jquery.min.js" type="text/Javascript"></script>
@@ -661,6 +700,29 @@ $( document ).ready(function() {
   
 });
 </script>
+
+<script type="text/javascript">
+  $('.extra-fields-customer').click(function() {
+  $('.add_folder').clone().appendTo('.add_folder_dynamic');
+  $('.add_folder_dynamic .add_folder').addClass('single remove');
+  $('.single .extra-fields-customer').remove();
+  $('.single').append('<a href="#" class="remove-field btn-remove-folder btn btn-danger">Remove Folder</a>');
+  $('.add_folder_dynamic > .single').attr("class", "remove row align-items-center");
+  
+  $('.add_folder_dynamic input').each(function() {
+    var count = 0;
+    var fieldname = $(this).attr("name");
+    $(this).attr('name', fieldname + count );
+    count++;
+  });
+});
+
+$(document).on('click', '.remove-field', function(e) {
+  $(this).parent('.remove').remove();
+  e.preventDefault();
+});
+</script>
+
 </body>
 
 </html>
