@@ -44,6 +44,8 @@ $(function() {
         // { date: nextMonth + '-' + '07',    title: 'Small Cat Photo Session', location: 'Center for Cat Photography' },
     ];
 
+    $('#eventDetails').modal('toggle');
+
     // The order of the click handlers is predictable. Direct click action
     // callbacks come first: click, nextMonth, previousMonth, nextYear,
     // previousYear, nextInterval, previousInterval, or today. Then

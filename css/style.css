@@ -7382,6 +7382,27 @@ a.remove-field.btn-remove-folder{
 .folder-breadcrumb span{
   margin:0 3px;
 }
+.cd-timeline-event li{
+  display:flex;
+  margin:10px 0;
+}
+.cd-timeline-event li span {
+    min-width: 200px;
+    color: #18558c;
+    font-weight:500;
+    font-size:15px;
+}
+.cd-timeline-event li span i{
+/*    color:#000;*/
+    margin-right:5px;
+}
+.cd-timeline-event li h3 {
+    font-size: 16px;
+    color:#000;
+}
+.cd-timeline-event li p{
+  font-size:14px;
+}
 
 /* ---------------------------------------------------
     MEDIAQUERIES
