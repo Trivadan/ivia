@@ -199,11 +199,11 @@
 
   //click to move specific page
 
+  //Modal Show
+  var myModal = new bootstrap.Modal(document.getElementById('modal-form'), {show:true});
+
   // Date Picker
   $(".date-picker__calendar").datepicker();
   
-
-  //Modal Show
-    var myModal = new bootstrap.Modal(document.getElementById('modal-form'), {show:true});
 
 })(window.jQuery);

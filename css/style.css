@@ -7363,6 +7363,46 @@ button.btn.btn-sm.btn-primary i{
 .printfooter .footer-copyright {
     padding-left: 0;
 }
+.remove{
+    margin-top: 15px;
+}
+a.remove-field.btn-remove-folder{
+    display: inline-block;
+    width: auto;
+    margin-left: 15px;
+}
+
+.folder-breadcrumb:first-child a {
+    color: #2a6598;
+}
+.folder-breadcrumb a, .folder-breadcrumb span {
+    font-size: 14px;
+    color: #111111;
+}
+.folder-breadcrumb span{
+  margin:0 3px;
+}
+.cd-timeline-event li{
+  display:flex;
+  margin:10px 0;
+}
+.cd-timeline-event li span {
+    min-width: 200px;
+    color: #18558c;
+    font-weight:500;
+    font-size:15px;
+}
+.cd-timeline-event li span i{
+/*    color:#000;*/
+    margin-right:5px;
+}
+.cd-timeline-event li h3 {
+    font-size: 16px;
+    color:#000;
+}
+.cd-timeline-event li p{
+  font-size:14px;
+}
 
 /* ---------------------------------------------------
     MEDIAQUERIES
