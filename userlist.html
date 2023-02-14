@@ -303,7 +303,8 @@
       <div class="card-header d-flex justify-content-between">
         <h3 class="card-title">Users</h3>
         <div class="action-btn float-end"> 
-          <a  class="btn btn-sm btn-primary btn-add btn-border" href="add-user.html"> <i class="la la-plus"></i> Add New</a> 
+          <button  class="btn btn-sm btn-primary btn-add btn-border" data-bs-toggle="modal" data-bs-target="#adduser"> <i class="la la-plus"></i> Add New</button> 
+          <!-- <button  class="btn btn-sm btn-primary btn-add btn-border" data-bs-toggle="modal" data-bs-target="#adduser"> <i class="la la-plus"></i> Add New</button>  -->
         </div>
       </div>
       <div class="card-body">
@@ -523,7 +524,7 @@
 <div class="overlay-dark-sidebar"></div>
 
 <!--  .modal-Campaign -->
-<div class="modal-form modal fade show" id="modal-form" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-form modal fade" id="adduser" tabindex="-1" role="adduser" aria-hidden="true">
     <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
         <div class="modal-content modal-bg-white ">
             <div class="modal-header">
@@ -538,51 +539,65 @@
                       <div class="col-md-6">
                         <div class="form-group">
                           <label for="fullName" class="form-label">First name</label>
-                          <input type="text" class="form-control" id="fullName" placeholder="">
+                          <input type="text" class="form-control" id="title" placeholder="">
                         </div>
                       </div>
                       <div class="col-md-6">
                         <div class="form-group">
                           <label for="fullName" class="form-label">Last name</label>
-                          <input type="text" class="form-control" id="fullName" placeholder="">
+                          <input type="text" class="form-control" id="title" placeholder="">
                         </div>
                       </div>
                       <div class="col-md-6">
                         <div class="form-group">
-                          <label for="phoneNumber" class="form-label">Role</label>
-                          <select data-placeholder="Role" class="form-control" >
-                              <option>Role</option> 
-                              <option>Super Admin</option>
-                              <option>Admin</option>
-                              <option>Editor</option>
+                          <label for="status" class="form-label">Role</label>
+                          <select data-placeholder="Country" class="form-select" >
+                              <option disabled>Select Role</option>
+                              <option>Branch Admin</option>
+                              <option>Head of Sales</option> 
                           </select>
                         </div>
                       </div>
                       <div class="col-md-6">
                         <div class="form-group">
                           <label for="fullName" class="form-label">Email</label>
-                          <input type="email" class="form-control" id="email" placeholder="Email Address">
+                          <input type="email" class="form-control" id="fullName" placeholder="">
                         </div>
                       </div>
                       <div class="col-md-6">
                         <div class="form-group">
-                          <label for="status" class="form-label">Country</label>
-                          <select data-placeholder="Country" class="form-control" >
-                              <option>Country</option>
-                              <option>Kenya</option> 
-                              <option>Uganda</option>
-                              <option>Tanzania</option>
-                              <option>Rwanda</option>
+                          <label for="fullName" class="form-label">Country</label>
+                           <select data-placeholder="Country" class="form-select" >
+                              <option disabled>Select Role</option>
+                              <option>Kenya</option>
+                              <option>Uganda</option> 
+                              <option>Tanzania</option> 
+                              <option>Rwanda</option> 
+                              <option>Burundi</option> 
+                              <option>Congo</option> 
+                              <option>Ethopia</option> 
                           </select>
                         </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label for="fullName" class="form-label">Password</label>
+                          <input type="password" class="form-control" id="title" placeholder="">
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label for="fullName" class="form-label">Confirm Password</label>
+                          <input type="password" class="form-control" id="title" placeholder="">
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                          <button type="button" class="btn btn-outline-secondary btn-border" data-bs-dismiss="modal">Cancel</button>
+                          <button type="button" class="btn btn-primary btn-border">Save</button>
                       </div>
                     </div>
                   </form>
                 </div>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-outline-secondary btn-border" data-bs-dismiss="modal">Cancel</button>
-                <button type="button" class="btn btn-primary btn-border">Save</button>
             </div>
         </div>
     </div>

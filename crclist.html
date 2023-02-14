@@ -13,7 +13,7 @@
 <meta name="creation_Date" content="06/10/2022" />
 <meta name="expires" content="" />
 <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-<title>Iavi | Add User</title>
+<title>Iavi |  Crc List</title>
 
 <!--StyleSheet-->
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -292,7 +292,7 @@
     <div class="main-container container-fluid">
       <!-- PAGE-HEADER -->
     <div class="page-header">
-      <h1 class="page-title">Add User</h1>
+      <h1 class="page-title">Crc list</h1>
     </div>
     <!-- PAGE-HEADER END -->
 
@@ -300,8 +300,241 @@
     <div class="row row-sm">
   <div class="col-lg-12">
     <div class="card">
+      <div class="card-header d-flex justify-content-between">
+        <h3 class="card-title">Crc</h3>
+        <div class="action-btn float-end"> 
+          <button  class="btn btn-sm btn-primary btn-add btn-border" data-bs-toggle="modal" data-bs-target="#adduser"> <i class="la la-plus"></i> Add New</button> 
+          <!-- <button  class="btn btn-sm btn-primary btn-add btn-border" data-bs-toggle="modal" data-bs-target="#adduser"> <i class="la la-plus"></i> Add New</button>  -->
+        </div>
+      </div>
       <div class="card-body">
-          <div class="form-modal formsection">
+        <div class="table-responsive">
+          <table id="settings" class="table table-striped usertables">
+            <thead>
+              <tr>
+                <th class="border-bottom-0"><input class="form-check-input" type="checkbox" value="" id="settingcheck"></th>
+                <th class="border-bottom-0">First Name</th>
+                <th class="border-bottom-0">Last Name</th>
+                <th class="border-bottom-0">Role</th>
+                <th class="border-bottom-0">Email</th>
+                <th class="border-bottom-0">Country</th>
+                <th class="border-bottom-0">Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><input class="form-check-input" type="checkbox" value="" id="settingcheck"></td>
+                <td>Joseph</td>
+                <td>Walter</td>
+                <td>Branch Administrator</td>
+                <td>M.Murimi@company.co.ke</td>
+                <td>Kenya</td>
+                <td>
+                  <div class="dropdown no-arrow"> 
+                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i> </a>
+                    <div class="dropdown-menu dropdown-menu-right shadow" aria-labelledby="dropdownMenuLink">
+                      <div class="dropdown-header">Actions</div>
+                      <a class="dropdown-item" href="#"><i class="icofont-edit me-2"></i> Edit</a> 
+                      <a class="dropdown-item" href="#"><i class="icofont-ui-delete me-2"></i> Delete</a> 
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td><input class="form-check-input" type="checkbox" value="" id="settingcheck"></td>
+                <td>Kani </td>
+                <td>Odili</td>
+                <td>Country Head of Sales</td>
+                <td>A.Kyeti@company.co.ke</td>
+                <td>Kenya</td>
+                <td>
+                  <div class="dropdown no-arrow"> 
+                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i> </a>
+                    <div class="dropdown-menu dropdown-menu-right shadow" aria-labelledby="dropdownMenuLink">
+                      <div class="dropdown-header">Actions</div>
+                      <a class="dropdown-item" href="#"><i class="icofont-edit me-2"></i> Edit</a> 
+                      <a class="dropdown-item" href="#"><i class="icofont-ui-delete me-2"></i> Delete</a> 
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td><input class="form-check-input" type="checkbox" value="" id="settingcheck"></td>
+                <td>Sanaa </td>
+                <td>Anikulapo-Kuti</td>
+                <td>Global Markering Head</td>
+                <td>J.Wafula@company.co.ke</td>
+                <td>Uganda</td>
+                <td>
+                  <div class="dropdown no-arrow"> 
+                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i> </a>
+                    <div class="dropdown-menu dropdown-menu-right shadow" aria-labelledby="dropdownMenuLink">
+                      <div class="dropdown-header">Actions</div>
+                      <a class="dropdown-item" href="#"><i class="icofont-edit me-2"></i> Edit</a> 
+                      <a class="dropdown-item" href="#"><i class="icofont-ui-delete me-2"></i> Delete</a> 
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td><input class="form-check-input" type="checkbox" value="" id="settingcheck"></td>
+                <td>Imara</td>
+                <td>Akintola</td>
+                <td>CX Head</td>
+                <td>N.Adera@company.co.ke</td>
+                <td>Kenya</td>
+                <td>
+                  <div class="dropdown no-arrow"> 
+                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i> </a>
+                    <div class="dropdown-menu dropdown-menu-right shadow" aria-labelledby="dropdownMenuLink">
+                      <div class="dropdown-header">Actions</div>
+                      <a class="dropdown-item" href="#"><i class="icofont-edit me-2"></i> Edit</a> 
+                      <a class="dropdown-item" href="#"><i class="icofont-ui-delete me-2"></i> Delete</a> 
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td><input class="form-check-input" type="checkbox" value="" id="settingcheck"></td>
+                <td>Mtupeni</td>
+                <td>Ibori</td>
+                <td>Data Analytics</td>
+                <td>J.Mwakazi@company.co.ke</td>
+                <td>Uganda</td>
+                <td>
+                  <div class="dropdown no-arrow"> 
+                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i> </a>
+                    <div class="dropdown-menu dropdown-menu-right shadow" aria-labelledby="dropdownMenuLink">
+                      <div class="dropdown-header">Actions</div>
+                      <a class="dropdown-item" href="#"><i class="icofont-edit me-2"></i> Edit</a> 
+                      <a class="dropdown-item" href="#"><i class="icofont-ui-delete me-2"></i> Delete</a> 
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td><input class="form-check-input" type="checkbox" value="" id="settingcheck"></td>
+                <td>Khary</td>
+                <td>Fagbure</td>
+                <td>Risk</td>
+                <td>A.Kyeti@company.co.ke</td>
+                <td>Rwanda</td>
+                <td>
+                  <div class="dropdown no-arrow"> 
+                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i> </a>
+                    <div class="dropdown-menu dropdown-menu-right shadow" aria-labelledby="dropdownMenuLink">
+                      <div class="dropdown-header">Actions</div> 
+                      <a class="dropdown-item" href="#"><i class="icofont-edit me-2"></i> Edit</a> 
+                      <a class="dropdown-item" href="#"><i class="icofont-ui-delete me-2"></i> Delete</a> 
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td><input class="form-check-input" type="checkbox" value="" id="settingcheck"></td>
+                <td>Jabali</td>
+                <td>Nnamani</td>
+                <td>Branch Product Manager</td>
+                <td>J.Wafula@companyup.co.ke</td>
+                <td>Tanzania</td>
+                <td>
+                  <div class="dropdown no-arrow"> 
+                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i> </a>
+                    <div class="dropdown-menu dropdown-menu-right shadow" aria-labelledby="dropdownMenuLink">
+                      <div class="dropdown-header">Actions</div>
+                      <a class="dropdown-item" href="#"><i class="icofont-edit me-2"></i> Edit</a> 
+                      <a class="dropdown-item" href="#"><i class="icofont-ui-delete me-2"></i> Delete</a> 
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td><input class="form-check-input" type="checkbox" value="" id="settingcheck"></td>
+                <td>Kalere</td>
+                <td>Biobaku</td>
+                <td>Branch Manager</td>
+                <td>N.Adera@company.co.ke</td>
+                <td>Kenya</td>
+                <td>
+                  <div class="dropdown no-arrow"> 
+                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i> </a>
+                    <div class="dropdown-menu dropdown-menu-right shadow" aria-labelledby="dropdownMenuLink">
+                      <div class="dropdown-header">Actions</div>
+                      <a class="dropdown-item" href="#"><i class="icofont-edit me-2"></i> Edit</a> 
+                      <a class="dropdown-item" href="#"><i class="icofont-ui-delete me-2"></i> Delete</a> 
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td><input class="form-check-input" type="checkbox" value="" id="settingcheck"></td>
+                <td>Shomari</td>
+                <td>Jaja</td>
+                <td>Central Team Manager</td>
+                <td>J.Mwakazi@company.co.ke</td>
+                <td>Burundi</td>
+                <td>
+                  <div class="dropdown no-arrow"> 
+                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i> </a>
+                    <div class="dropdown-menu dropdown-menu-right shadow" aria-labelledby="dropdownMenuLink">
+                      <div class="dropdown-header">Actions</div>
+                      <a class="dropdown-item" href="#"><i class="icofont-edit me-2"></i> Edit</a> 
+                      <a class="dropdown-item" href="#"><i class="icofont-ui-delete me-2"></i> Delete</a> 
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <!-- <div class="social-dash-wrap">
+        <div class="row">
+          <div class="col-lg-12"></div>
+        </div>
+      </div> -->
+    </div>
+  </div>
+
+
+  <footer class="footer-wrapper">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="footer-copyright">
+            <p>2023 @<a href="#">Iavi</a> </p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="footer-menu text-right float-end">
+            <ul>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+              <li><a href="#">Help</a></li>
+            </ul>
+          </div>
+          <!-- ends: .Footer Menu --> 
+        </div>
+      </div>
+    </div>
+  </footer>
+</main>
+<div class="overlay-dark-sidebar"></div>
+
+<!--  .modal-Campaign -->
+<div class="modal-form modal fade" id="adduser" tabindex="-1" role="adduser" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content modal-bg-white ">
+            <div class="modal-header">
+                <h6 class="modal-title">Add A New User</h6>
+                <button type="button" class="close" data-bs-dismiss="modal"aria-label="Close">
+                    <span class="icofont-close-circled"></span></button>
+            </div>
+            <div class="modal-body">
+                <div class="form-modal formsection">
                   <form class="formareaModal" action="">
                     <div class="row">
                       <div class="col-md-6">
@@ -347,6 +580,18 @@
                           </select>
                         </div>
                       </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label for="fullName" class="form-label">Password</label>
+                          <input type="password" class="form-control" id="title" placeholder="">
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label for="fullName" class="form-label">Confirm Password</label>
+                          <input type="password" class="form-control" id="title" placeholder="">
+                        </div>
+                      </div>
                       <div class="modal-footer">
                           <button type="button" class="btn btn-outline-secondary btn-border" data-bs-dismiss="modal">Cancel</button>
                           <button type="button" class="btn btn-primary btn-border">Save</button>
@@ -354,48 +599,30 @@
                     </div>
                   </form>
                 </div>
-      </div>
+            </div>
+        </div>
     </div>
-  </div>
 </div>
-    </div>
-  </div>
-
-  <footer class="footer-wrapper">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-6">
-          <div class="footer-copyright">
-            <p>2023 @<a href="#">Iavi</a> </p>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="footer-menu text-right float-end">
-            <ul>
-              <li><a href="#">Privacy Policy</a></li>
-              <li><a href="#">Terms & Conditions</a></li>
-              <li><a href="#">Help</a></li>
-            </ul>
-          </div>
-          <!-- ends: .Footer Menu --> 
-        </div>
-      </div>
-    </div>
-  </footer>
-</main>
-<div class="overlay-dark-sidebar"></div>
+<!-- ends: .modal-Campaign -->
 
 
 <!-- jQuery -->
 <script src="js/jquery.min.js" type="text/Javascript"></script>
 
-<!-- FILE UPLOADES JS -->
-<script src="assets/fileuploads/js/fileupload.js"></script>
-<script src="assets/fileuploads/js/file-upload.js"></script>
-
-<!-- INTERNAL SUMMERNOTE Editor JS -->
-<script src="js/summernote/summernote1.js"></script>
-<script src="js/summernote.js"></script>
+<!-- DATA TABLE JS-->
+<script src="assets/datatable/js/jquery.dataTables.min.js"></script>
+<script src="assets/datatable/js/dataTables.bootstrap5.js"></script>
+<script src="assets/datatable/js/dataTables.buttons.min.js"></script>
+<script src="assets/datatable/js/buttons.bootstrap5.min.js"></script>
+<script src="assets/datatable/js/jszip.min.js"></script>
+<script src="assets/datatable/pdfmake/pdfmake.min.js"></script>
+<script src="assets/datatable/pdfmake/vfs_fonts.js"></script>
+<script src="assets/datatable/js/buttons.html5.min.js"></script>
+<script src="assets/datatable/js/buttons.print.min.js"></script>
+<script src="assets/datatable/js/buttons.colVis.min.js"></script>
+<script src="assets/datatable/dataTables.responsive.min.js"></script>
+<script src="assets/datatable/responsive.bootstrap5.min.js"></script>
+<script src="js/datatable.js" type="text/Javascript"></script>
 
 <script src="js/main.js" type="text/Javascript"></script>
 </body>
