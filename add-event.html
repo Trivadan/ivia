@@ -313,7 +313,8 @@
                       <div class="col-md-6">
                         <div class="form-group">
                           <label for="fullName" class="form-label">Date</label>
-                          <input type="date" class="form-control" id="fullName" placeholder="">
+                          <input type="text" id="basicDate" class="form-control" placeholder="Please select Date Time" data-input>
+                          <!-- <input type="date" class="form-control" id="fullName" placeholder=""> -->
                         </div>
                       </div>
                       <div class="col-md-6">
@@ -402,6 +403,12 @@
 <script src="js/summernote.js"></script>
 
 <script src="js/main.js" type="text/Javascript"></script>
+<script type="text/javascript">
+$("#basicDate").flatpickr({
+    enableTime: false,
+    dateFormat: "F, d m Y"
+});
+</script>
 </body>
 
 </html>
