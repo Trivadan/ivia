@@ -1,171 +1,132 @@
-//FULL CALENDAR
-
-document.addEventListener('DOMContentLoaded', function() {
-    var containerEl = document.getElementById('external-events');
-    new FullCalendar.Draggable(containerEl, {
-        itemSelector: '.fc-event',
-        eventData: function(eventEl) {
-            return {
-                title: eventEl.innerText.trim(),
-                title: eventEl.innerText,
-                className: eventEl.className + ' overflow-hidden '
-            }
-        }
+(function ($) {
+  // initialize the external events
+  $("#external-events .fc-event").each(function () {
+    // store data so the calendar knows to render an event upon drop
+    $(this).data("event", {
+      title: $.trim($(this).text()), // use the element's text as the event title
+      stick: true, // maintain when user navigates (see docs on the renderEvent method)
     });
-    var calendarEl = document.getElementById('calendar2');
-
-    var calendar = new FullCalendar.Calendar(calendarEl, {
-        headerToolbar: {
-            left: 'prev,next today',
-            center: 'title',
-            right: 'dayGridMonth,timeGridWeek,timeGridDay'
-        },
-
-        // defaultView: 'month',
-        navLinks: true, // can click day/week names to navigate views
-        businessHours: true, // display business hours
-        editable: true,
-        selectable: true,
-        selectMirror: true,
-        droppable: true, // this allows things to be dropped onto the calendar
-        select: function(arg) {
-            var title = prompt('Event Title:');
-            if (title) {
-                calendar.addEvent({
-                    title: title,
-                    start: arg.start,
-                    end: arg.end,
-                    allDay: arg.allDay
-                })
-            }
-            calendar.unselect()
-        },
-        eventClick: function(arg) {
-            if (confirm('Are you sure you want to delete this event?')) {
-                arg.event.remove()
-            }
-        },
-        editable: true,
-        dayMaxEvents: true, // allow "more" link when too many events
-        events: [{
-                title: 'Business Lunch',
-                start: '2021-03-03T13:00:00',
-                constraint: 'businessHours'
-            }, {
-                title: 'Meeting',
-                start: '2021-03-13T11:00:00',
-                constraint: 'availableForMeeting', // defined below
-                color: '#f35e90'
-            }, {
-                title: 'Conference',
-                start: '2021-07-18',
-                end: '2021-07-20',
-                color: '#e67e22'
-            }, {
-                title: 'Party',
-                start: '2021-07-29T20:00:00',
-                color: '#22c865'
-            },
-            // areas where "Meeting" must be dropped
-            {
-                id: 'availableForMeeting',
-                start: '2021-03-11T10:00:00',
-                end: '2021-03-11T16:00:00',
-                rendering: 'background',
-                color: '#5e72e4'
-            }, {
-                id: 'availableForMeeting',
-                start: '2021-03-13T10:00:00',
-                end: '2021-03-13T16:00:00',
-                rendering: 'background'
-            },
-            // red areas where no events can be dropped
-            {
-                start: '2021-03-24',
-                end: '2021-03-28',
-                overlap: false,
-                rendering: 'background',
-                color: 'rgba(0,0,0,0.1)'
-            }, {
-                start: '2021-03-06',
-                end: '2021-03-11',
-                overlap: false,
-                rendering: 'background',
-                color: 'rgba(0,0,0,0.1)'
-            }
-        ]
+    // make the event draggable using jQuery UI
+    $(this).draggable({
+      zIndex: 999,
+      revert: true, // will cause the event to go back to its
+      revertDuration: 0, //  original position after the drag 
     });
+  });
 
-    calendar.render();
-});
+  let date = new Date();
 
-//LIST FULLCALENDAR
-document.addEventListener('DOMContentLoaded', function() {
-    var calendarEl = document.getElementById('calendar');
-    var calendar = new FullCalendar.Calendar(calendarEl, {
-        height: 'auto',
+  let familyEvents = {
+    id: 1,
+    events: [
+      
+      {
+        id: "1",
+        start: moment().format('YYYY-MM-17') + "T08:30:00",
+        title: "Family Events",
+      },
+      {
+        id: "2",
+        start: moment().format('YYYY-MM-DD') + "T10:30:00",
+        end: moment().format('YYYY-MM-DD') + "T12:00:00",
+        title: "Dinner with Family",
+      },
+    ],
+    className: "primary",
+    textColor: "#5F63F2",
+  };
+
+  let productLaunch = {
+    id: 2,
+    events: [
+      {
+        id: "1",
+        start: moment().format('YYYY-MM-20') + "T01:00:00",
+        title: "Product Lunch",
+      },
+    ],
+    className: "secondary",
+    textColor: "#FF69A5",
+  };
+
+  let teamMeeting = {
+    id: 3,
+    events: [
+      {
+        id: "1",
+        start: moment().format('YYYY-MM-DD') + "T18:30:00",
+        title: "Team Meeting",
+      },
+    ],
+    className: "success",
+    textColor: "#20C997",
+  };
+
+  let projectUpdate = {
+    id: 4,
+    events: [
+      {
+        id: "1",
+        start: moment().format('YYYY-MM-25') + "T11:00:00",
+        title: "Team Meeting",
+      },
+      {
+        id: "2",
+        start: moment().format('YYYY-MM-DD') + "T07:00:00",
+        end: moment().format('YYYY-MM-DD') + "T08:30:00",
+        title: "StrikingDash Calendar App",
+      },
+    ],
+    className: "warning",
+    textColor: "#FA8B0C",
+  };
+
+  document.addEventListener("DOMContentLoaded", function () {
+    var fullCalendar = document.getElementById("full-calendar");
+    if (fullCalendar) {
+      var calendar = new FullCalendar.Calendar(fullCalendar, {
         headerToolbar: {
-            left: 'prev,next today',
-            center: 'title',
-            right: 'listDay,listWeek'
+          left: "today,prev,title,next",
+          right: "timeGridDay,timeGridWeek,dayGridMonth,listMonth",
         },
-
-        // customize the button names,
-        // otherwise they'd all just say "list"
         views: {
-            listDay: { buttonText: 'list day' },
-            listWeek: { buttonText: 'list week' }
+          listMonth: {
+            buttonText: "Schedule",
+            titleFormat: { month: "short", weekday: "short" },
+          }
         },
-        initialView: 'listWeek',
-        initialDate: '2021-07-12',
-        navLinks: true, // can click day/week names to navigate views
+        listDayFormat: true,
+        listDayAltFormat: true,
+        allDaySlot: false,
         editable: true,
-        // eventLimit: true, // allow "more" link when too many events
-        dayMaxEvents: true, // allow "more" link when too many events
-        events: [{
-            title: 'All Day Event',
-            start: '2021-11-01'
-        }, {
-            title: 'Long Event',
-            start: '2019-11-07',
-            end: '2021-03-10'
-        }, {
-            id: 999,
-            title: 'Repeating Event',
-            start: '2021-11-09T16:00:00'
-        }, {
-            id: 999,
-            title: 'Repeating Event',
-            start: '2021-11-16T16:00:00'
-        }, {
-            title: 'Conference',
-            start: '2019-11-11',
-            end: '2021-11-13'
-        }, {
-            title: 'Meeting',
-            start: '2019-11-12T10:30:00',
-            end: '2021-11-12T12:30:00'
-        }, {
-            title: 'Lunch',
-            start: '2021-11-12T12:00:00'
-        }, {
-            title: 'Meeting',
-            start: '2021-11-12T14:30:00'
-        }, {
-            title: 'Happy Hour',
-            start: '2021-11-12T17:30:00'
-        }, {
-            title: 'Dinner',
-            start: '2021-11-12T20:00:00'
-        }, {
-            title: 'Birthday Party',
-            start: '2021-11-13T07:00:00'
-        }, {
-            title: 'Click for Google',
-            url: 'http://google.com/',
-            start: '2021-11-28'
-        }]
-    });
+        eventSources: [familyEvents, productLaunch, teamMeeting, projectUpdate],
+        contentHeight: 800,
+        initialView: "timeGridDay",
+        eventDidMount: function (view) {
+          $(".fc-list-day").each(function () {});
+        },
+        eventClick: function (infoEvent) {
+          console.log(infoEvent.event.title);
+          let infoModal = $("#e-info-modal");
+          infoModal.modal("show");
+          console.log(infoModal.find(".e-info-title"));
+          infoModal.find(".e-info-title").text(infoEvent.event.title);
+        },
+      });
 
-    calendar.render();
-});
+      let eventElement = document.getElementById("draggable-events");
+      let draggable = new FullCalendar.Draggable(eventElement, {
+        itemSelector: ".draggable-event-list__single",
+        eventData: function (eEl) {
+          return {
+            title: eEl.innerText,
+            className: $(eEl).data("class"),
+          };
+        },
+      });
+      calendar.render();
+      $('.fc-button-group .fc-listMonth-button').prepend( '<i class="las la-list"></i>' );
+    }
+  });
+  
+})(jQuery);

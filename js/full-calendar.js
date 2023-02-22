@@ -1,18 +1,5 @@
 (function ($) {
   // initialize the external events
-  $("#external-events .fc-event").each(function () {
-    // store data so the calendar knows to render an event upon drop
-    $(this).data("event", {
-      title: $.trim($(this).text()), // use the element's text as the event title
-      stick: true, // maintain when user navigates (see docs on the renderEvent method)
-    });
-    // make the event draggable using jQuery UI
-    $(this).draggable({
-      zIndex: 999,
-      revert: true, // will cause the event to go back to its
-      revertDuration: 0, //  original position after the drag 
-    });
-  });
 
   let date = new Date();
 
@@ -86,8 +73,11 @@
     if (fullCalendar) {
       var calendar = new FullCalendar.Calendar(fullCalendar, {
         headerToolbar: {
-          left: "today,prev,title,next",
-          right: "timeGridDay,timeGridWeek,dayGridMonth,listMonth",
+          // left: "today,prev,title,next",
+          // right: "timeGridDay,timeGridWeek,dayGridMonth,listMonth",
+          left: 'prev,next today',
+          center: 'title',
+          right: 'dayGridMonth,listYear'
         },
         views: {
           listMonth: {
@@ -101,7 +91,7 @@
         editable: true,
         eventSources: [familyEvents, productLaunch, teamMeeting, projectUpdate],
         contentHeight: 800,
-        initialView: "timeGridDay",
+        // initialView: "timeGridDay",
         eventDidMount: function (view) {
           $(".fc-list-day").each(function () {});
         },
@@ -114,16 +104,16 @@
         },
       });
 
-      let eventElement = document.getElementById("draggable-events");
-      let draggable = new FullCalendar.Draggable(eventElement, {
-        itemSelector: ".draggable-event-list__single",
-        eventData: function (eEl) {
-          return {
-            title: eEl.innerText,
-            className: $(eEl).data("class"),
-          };
-        },
-      });
+      // let eventElement = document.getElementById("draggable-events");
+      // let draggable = new FullCalendar.Draggable(eventElement, {
+      //   itemSelector: ".draggable-event-list__single",
+      //   eventData: function (eEl) {
+      //     return {
+      //       title: eEl.innerText,
+      //       className: $(eEl).data("class"),
+      //     };
+      //   },
+      // });
       calendar.render();
       $('.fc-button-group .fc-listMonth-button').prepend( '<i class="las la-list"></i>' );
     }
