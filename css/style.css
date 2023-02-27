@@ -7580,6 +7580,10 @@ a.remove-field.btn-remove-folder{
   }
 }
 
+.fc-event {
+  background: #15b6e2;
+  border: 1px solid transparent !important; 
+}
 .fc-view .fc-col-header tr th {
   padding: 12.5px 0;
 }
@@ -7611,7 +7615,8 @@ a.remove-field.btn-remove-folder{
 .fc-timegrid-event .fc-event-resizer.fc-event-resizer-end {
   position: relative;
 }
-.fc-timegrid-event .fc-event-resizer.fc-event-resizer-end:after, .fc-timegrid-event .fc-event-resizer.fc-event-resizer-end:before {
+.fc-timegrid-event .fc-event-resizer.fc-event-resizer-end:after, 
+.fc-timegrid-event .fc-event-resizer.fc-event-resizer-end:before {
   position: absolute;
   left: 50%;
   height: 1px;
@@ -7624,16 +7629,20 @@ a.remove-field.btn-remove-folder{
 .fc-timegrid-event .fc-event-resizer.fc-event-resizer-end:before {
   top: -5px;
 }
-.fc-timegrid-event.primary .fc-event-resizer.fc-event-resizer-end:after, .fc-timegrid-event.primary .fc-event-resizer.fc-event-resizer-end:before {
+.fc-timegrid-event.primary .fc-event-resizer.fc-event-resizer-end:after, 
+.fc-timegrid-event.primary .fc-event-resizer.fc-event-resizer-end:before {
   background-color: rgba(95, 99, 242, 0.5);
 }
-.fc-timegrid-event.secondary .fc-event-resizer.fc-event-resizer-end:after, .fc-timegrid-event.secondary .fc-event-resizer.fc-event-resizer-end:before {
+.fc-timegrid-event.secondary .fc-event-resizer.fc-event-resizer-end:after, 
+.fc-timegrid-event.secondary .fc-event-resizer.fc-event-resizer-end:before {
   background-color: rgba(255, 105, 165, 0.5);
 }
-.fc-timegrid-event.success .fc-event-resizer.fc-event-resizer-end:after, .fc-timegrid-event.success .fc-event-resizer.fc-event-resizer-end:before {
+.fc-timegrid-event.success .fc-event-resizer.fc-event-resizer-end:after, 
+.fc-timegrid-event.success .fc-event-resizer.fc-event-resizer-end:before {
   background-color: rgba(32, 201, 151, 0.5);
 }
-.fc-timegrid-event.warning .fc-event-resizer.fc-event-resizer-end:after, .fc-timegrid-event.warning .fc-event-resizer.fc-event-resizer-end:before {
+.fc-timegrid-event.warning .fc-event-resizer.fc-event-resizer-end:after, 
+.fc-timegrid-event.warning .fc-event-resizer.fc-event-resizer-end:before {
   background-color: rgba(250, 139, 12, 0.5);
 }
 
