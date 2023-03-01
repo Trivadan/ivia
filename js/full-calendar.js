@@ -61,7 +61,7 @@
         id: "2",
         start: moment().format('YYYY-MM-DD') + "T07:00:00",
         end: moment().format('YYYY-MM-DD') + "T08:30:00",
-        title: "StrikingDash Calendar App",
+        title: "Iavi Calendar App",
       },
     ],
     className: "warning",
