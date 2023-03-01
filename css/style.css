@@ -1450,10 +1450,13 @@ table.table-basic .table-actions a img, .order-search__form svg,
   background-color: #4347d9;
   border-color: #4347d9;
 }
+.btn-secondary{
+  background:#15b6e2;
+}
 .btn-secondary:hover {
   color: #fff;
-  background-color: #e34a87;
-  border-color: #e34a87;
+  background-color: #18558c;
+  border-color: #18558c;
 }
 .btn-success:hover {
   color: #fff;
@@ -2721,9 +2724,12 @@ a.sidebar-toggle img {
     overflow-y: auto;
     box-shadow: 0 0 30px rgb(146 153 184 / 10%);
     width: 230px;
-    background: #15b6e2;
+    background: #18558c;
     padding: 0px;
     transition: all 0.3s ease;
+}
+.sidebar-main{
+  background: #15b6e2;
 }
 .sidebar::-webkit-scrollbar {
   width: 8px;
