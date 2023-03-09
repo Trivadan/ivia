@@ -20,6 +20,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 <link href="css/style.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js">
 <link href="css/style.css" rel="stylesheet">
 
 <!--Javascript-->
@@ -292,312 +293,326 @@
   
   <!-- CONTAINER -->
   <div class="main-container container-fluid"> 
-
+    
     <!-- PAGE-HEADER -->
     <div class="page-header">
       <h1 class="page-title">Folder Structure</h1>
     </div>
-    <!-- PAGE-HEADER END -->
+    <!-- PAGE-HEADER END --> 
     
     <!-- Row -->
-     <div class="row">
+    <div class="row">
       <div class="col-lg-12">
-
         <div class="card">
-      <div class="card-header d-flex justify-content-between">
-        <h3 class="card-title">My Files</h3>
-        <div class="action-btn float-end"> 
-          <!-- <button  class="btn btn-sm btn-primary btn-add btn-border back" data-bs-toggle="modal" data-bs-target="#modal-form"> <i class="icofont-rounded-left"></i> Back</button>  -->
-           <button  class="btn btn-sm btn-primary btn-add btn-border" data-bs-toggle="modal" data-bs-target="#addfolder"> <i class="la la-plus"></i> Add New</button> 
-        </div>
-      </div>
-            <div class="card-body">
-              <!-- <div id="wizard1">
-                <h3>Survey Information</h3>
-              </div> -->
-              <!-- <button class="back">
-  <i class="mdi mdi-arrow-left"></i>
-</button> -->
-
-<ul class="folder-breadcrumb nav">
-  <li class="folder-breadcrumb__item"> <a href="#"> Home </a> <span class="breadcrumb__seperator"> <span class="la la-angle-right"></span> </span> </li>
-  <li class="folder-breadcrumb__item"> <a href="#">Folder 1</a> <span class="breadcrumb__seperator"> <span class="la la-angle-right"></span> </span> </li>
-  <li class="folder-breadcrumb__item"> <a href="#">Folder 2</a> <span class="breadcrumb__seperator"> <span class="la la-angle-right"></span> </span> </li>
-  <li class="folder-breadcrumb__item"> <span>File</span> </li>
-</ul>
-
-
-  <div class="folderheader">
-    <div class="folder-row">
-      <div class="fileicon folder-col"><i class="icofont-file-file"></i></div>
-      <div class="filename folder-col"><h3>Name</h3></div>
-      <div class="modifiedon folder-col"><h3>Modified</h3></div>
-      <div class="modifiedby folder-col"><h3>Modified By</h3></div>
-      <div class="filesize folder-col"><h3>File size</h3></div>
-    </div><!-- .tile.folder -->
-  </div>
-
-<div class="stage">
-
-  <div class="folder-wrap level-current scrolling">
-    
-    <div class="tile folder folder-row">
-      <div class="fileicon folder-col"><i><img src="images/icons/folder.svg" alt="Iavi"></i></div>
-      <div class="filename folder-col"><h3>Microsoft Teams Chat Files</h3></div>
-      <div class="modifiedon folder-col"><p>Jan 26, 2023</p></div>
-      <div class="modifiedby folder-col"><p>Team Iavi</p></div>
-      <div class="filesize folder-col"><p>200 items</p></div>
-    </div><!-- .tile.folder -->
-    
-    <div class="tile folder folder-row">
-      <div class="fileicon folder-col"><i><img src="images/icons/folder.svg" alt="Iavi"></i></div>
-      <div class="filename folder-col"><h3>CAPA Teams Chat Files</h3></div>
-      <div class="modifiedon folder-col"><p>Jan 26, 2023</p></div>
-      <div class="modifiedby folder-col"><p>Team Iavi</p></div>
-      <div class="filesize folder-col"><p>200 items</p></div>
-    </div><!-- .tile.folder -->
-    
-    <div class="tile folder folder-row">
-      <div class="fileicon folder-col"><i><img src="images/icons/folder.svg" alt="Iavi"></i></div>
-      <div class="filename folder-col"><h3>EQA Teams Chat Files</h3></div>
-      <div class="modifiedon folder-col"><p>Jan 26, 2023</p></div>
-      <div class="modifiedby folder-col"><p>Team Iavi</p></div>
-      <div class="filesize folder-col"><p>200 items</p></div>
-    </div><!-- .tile.folder -->
-    
-    <div class="tile folder folder-row">
-      <div class="fileicon folder-col"><i><img src="images/icons/folder.svg" alt="Iavi"></i></div>
-      <div class="filename folder-col"><h3>Microsoft Teams Chat Files</h3></div>
-      <div class="modifiedon folder-col"><p>Jan 26, 2023</p></div>
-      <div class="modifiedby folder-col"><p>Team Iavi</p></div>
-      <div class="filesize folder-col"><p>200 items</p></div>
-    </div><!-- .tile.folder -->
-    
-    <div class="tile form folder-row">
-      <div class="fileicon folder-col"><i><img src="images/icons/pptx.svg" alt="Iavi"></i></div>
-      <div class="filename folder-col"><h3>File one</h3></div>
-      <div class="modifiedon folder-col"><p>Jan 26, 2023</p></div>
-      <div class="modifiedby folder-col"><p>Team Iavi</p></div>
-      <div class="filesize folder-col"><p>2.95 MB</p></div>
-    </div><!-- .tile.form -->
-    
-    <div class="tile form folder-row">
-      <div class="fileicon folder-col"><i><img src="images/icons/pdf.svg" alt="Iavi"></i></div>
-      <div class="filename folder-col"><h3>File Two</h3></div>
-      <div class="modifiedon folder-col"><p>Jan 26, 2023</p></div>
-      <div class="modifiedby folder-col"><p>Team Iavi</p></div>
-      <div class="filesize folder-col"><p>200 KB</p></div>
-    </div><!-- .tile.form -->
-    
-    <div class="tile form folder-row">
-      <div class="fileicon folder-col"><i><img src="images/icons/xlsx.svg" alt="Iavi"></i></div>
-      <div class="filename folder-col"><h3>File Three</h3></div>
-      <div class="modifiedon folder-col"><p>Jan 26, 2023</p></div>
-      <div class="modifiedby folder-col"><p>Team Iavi</p></div>
-      <div class="filesize folder-col"><p>1.29 MB</p></div>
-    </div><!-- .tile.form -->
-    
-    <div class="tile form folder-row">
-      <div class="fileicon folder-col"><i><img src="images/icons/photo.svg" alt="Iavi"></i></div>
-      <div class="filename folder-col"><h3>File three</h3></div>
-      <div class="modifiedon folder-col"><p>Jan 26, 2023</p></div>
-      <div class="modifiedby folder-col"><p>Team Iavi</p></div>
-      <div class="filesize folder-col"><p>200 KB</p></div>
-    </div><!-- .tile.form -->
-
-    <div class="tile form folder-row">
-      <div class="fileicon folder-col"><i><img src="images/icons/docx.svg" alt="Iavi"></i></div>
-      <div class="filename folder-col"><h3>File three</h3></div>
-      <div class="modifiedon folder-col"><p>Jan 26, 2023</p></div>
-      <div class="modifiedby folder-col"><p>Team Iavi</p></div>
-      <div class="filesize folder-col"><p>200 KB</p></div>
-    </div><!-- .tile.form -->
-    
-  </div>
-
-  <!-- .folder-wrap -->
-  <div class="folder-wrap level-down">
-    
-    <div class="tile folder folder-row">
-      <div class="fileicon folder-col"><i><img src="images/icons/folder.svg" alt="Iavi"></i></div>
-      <div class="filename folder-col"><h3>Microsoft Teams Chat Files</h3></div>
-      <div class="modifiedon folder-col"><p>Jan 26, 2023</p></div>
-      <div class="modifiedby folder-col"><p>Team Iavi</p></div>
-      <div class="filesize folder-col"><p>200 items</p></div>
-    </div><!-- .tile.folder -->
-    
-    <div class="tile folder folder-row">
-      <div class="fileicon folder-col"><i><img src="images/icons/folder.svg" alt="Iavi"></i></div>
-      <div class="filename folder-col"><h3>Microsoft Teams Chat Files</h3></div>
-      <div class="modifiedon folder-col"><p>Jan 26, 2023</p></div>
-      <div class="modifiedby folder-col"><p>Team Iavi</p></div>
-      <div class="filesize folder-col"><p>200 items</p></div>
-    </div><!-- .tile.folder -->
-    
-    <div class="tile folder folder-row">
-      <div class="fileicon folder-col"><i><img src="images/icons/folder.svg" alt="Iavi"></i></div>
-      <div class="filename folder-col"><h3>Microsoft Teams Chat Files</h3></div>
-      <div class="modifiedon folder-col"><p>Jan 26, 2023</p></div>
-      <div class="modifiedby folder-col"><p>Team Iavi</p></div>
-      <div class="filesize folder-col"><p>200 items</p></div>
-    </div><!-- .tile.folder -->
-    
-    <div class="tile form folder-row">
-      <div class="fileicon folder-col"><i><img src="images/icons/photo.svg" alt="Iavi"></i></div>
-      <div class="filename folder-col"><h3>File three</h3></div>
-      <div class="modifiedon folder-col"><p>Jan 26, 2023</p></div>
-      <div class="modifiedby folder-col"><p>Team Iavi</p></div>
-      <div class="filesize folder-col"><p>200 KB</p></div>
-    </div><!-- .tile.form -->
-    
-    <div class="tile form folder-row">
-      <div class="fileicon folder-col"><i><img src="images/icons/photo.svg" alt="Iavi"></i></div>
-      <div class="filename folder-col"><h3>File three</h3></div>
-      <div class="modifiedon folder-col"><p>Jan 26, 2023</p></div>
-      <div class="modifiedby folder-col"><p>Team Iavi</p></div>
-      <div class="filesize folder-col"><p>200 KB</p></div>
-    </div><!-- .tile.form -->
-    
-    <div class="tile form folder-row">
-      <div class="fileicon folder-col"><i><img src="images/icons/photo.svg" alt="Iavi"></i></div>
-      <div class="filename folder-col"><h3>File three</h3></div>
-      <div class="modifiedon folder-col"><p>Jan 26, 2023</p></div>
-      <div class="modifiedby folder-col"><p>Team Iavi</p></div>
-      <div class="filesize folder-col"><p>200 KB</p></div>
-    </div><!-- .tile.form -->
-    
-  </div><!-- .folder-wrap -->
-  <div class="folder-wrap">
-    
-    <div class="tile folder folder-row">
-      <div class="fileicon folder-col"><i><img src="images/icons/folder.svg" alt="Iavi"></i></div>
-      <div class="filename folder-col"><h3>Microsoft Teams Chat Files</h3></div>
-      <div class="modifiedon folder-col"><p>Jan 26, 2023</p></div>
-      <div class="modifiedby folder-col"><p>Team Iavi</p></div>
-      <div class="filesize folder-col"><p>200 items</p></div>
-    </div><!-- .tile.folder -->
-    
-    <div class="tile folder folder-row">
-      <div class="fileicon folder-col"><i><img src="images/icons/folder.svg" alt="Iavi"></i></div>
-      <div class="filename folder-col"><h3>Microsoft Teams Chat Files</h3></div>
-      <div class="modifiedon folder-col"><p>Jan 26, 2023</p></div>
-      <div class="modifiedby folder-col"><p>Team Iavi</p></div>
-      <div class="filesize folder-col"><p>200 items</p></div>
-    </div><!-- .tile.folder -->
-
-    <div class="tile form folder-row">
-      <div class="fileicon folder-col"><i><img src="images/icons/photo.svg" alt="Iavi"></i></div>
-      <div class="filename folder-col"><h3>File three</h3></div>
-      <div class="modifiedon folder-col"><p>Jan 26, 2023</p></div>
-      <div class="modifiedby folder-col"><p>Team Iavi</p></div>
-      <div class="filesize folder-col"><p>200 KB</p></div>
-    </div><!-- .tile.form -->
-    
-    <div class="tile form folder-row">
-      <div class="fileicon folder-col"><i><img src="images/icons/photo.svg" alt="Iavi"></i></div>
-      <div class="filename folder-col"><h3>File three</h3></div>
-      <div class="modifiedon folder-col"><p>Jan 26, 2023</p></div>
-      <div class="modifiedby folder-col"><p>Team Iavi</p></div>
-      <div class="filesize folder-col"><p>200 KB</p></div>
-    </div><!-- .tile.form -->
-    
-  </div><!-- .folder-wrap -->
-  <div class="folder-wrap">
-    
-    <div class="tile folder folder-row">
-      <div class="fileicon folder-col"><i><img src="images/icons/folder.svg" alt="Iavi"></i></div>
-      <div class="filename folder-col"><h3>Microsoft Teams Chat Files</h3></div>
-      <div class="modifiedon folder-col"><p>Jan 26, 2023</p></div>
-      <div class="modifiedby folder-col"><p>Team Iavi</p></div>
-      <div class="filesize folder-col"><p>200 items</p></div>
-    </div><!-- .tile.folder -->
-    
-    <div class="tile folder folder-row">
-      <div class="fileicon folder-col"><i><img src="images/icons/folder.svg" alt="Iavi"></i></div>
-      <div class="filename folder-col"><h3>Microsoft Teams Chat Files</h3></div>
-      <div class="modifiedon folder-col"><p>Jan 26, 2023</p></div>
-      <div class="modifiedby folder-col"><p>Team Iavi</p></div>
-      <div class="filesize folder-col"><p>200 items</p></div>
-    </div><!-- .tile.folder -->
-    
-    <div class="tile folder folder-row">
-      <div class="fileicon folder-col"><i><img src="images/icons/folder.svg" alt="Iavi"></i></div>
-      <div class="filename folder-col"><h3>Microsoft Teams Chat Files</h3></div>
-      <div class="modifiedon folder-col"><p>Jan 26, 2023</p></div>
-      <div class="modifiedby folder-col"><p>Team Iavi</p></div>
-      <div class="filesize folder-col"><p>200 items</p></div>
-    </div><!-- .tile.folder -->
-    
-    <div class="tile form folder-row">
-      <div class="fileicon folder-col"><i><img src="images/icons/photo.svg" alt="Iavi"></i></div>
-      <div class="filename folder-col"><h3>File three</h3></div>
-      <div class="modifiedon folder-col"><p>Jan 26, 2023</p></div>
-      <div class="modifiedby folder-col"><p>Team Iavi</p></div>
-      <div class="filesize folder-col"><p>200 KB</p></div>
-    </div><!-- .tile.form -->
-    
-    <div class="tile form folder-row">
-      <div class="fileicon folder-col"><i><img src="images/icons/photo.svg" alt="Iavi"></i></div>
-      <div class="filename folder-col"><h3>File three</h3></div>
-      <div class="modifiedon folder-col"><p>Jan 26, 2023</p></div>
-      <div class="modifiedby folder-col"><p>Team Iavi</p></div>
-      <div class="filesize folder-col"><p>200 KB</p></div>
-    </div><!-- .tile.form -->
-    
-    <div class="tile form folder-row">
-      <div class="fileicon folder-col"><i><img src="images/icons/photo.svg" alt="Iavi"></i></div>
-      <div class="filename folder-col"><h3>File three</h3></div>
-      <div class="modifiedon folder-col"><p>Jan 26, 2023</p></div>
-      <div class="modifiedby folder-col"><p>Team Iavi</p></div>
-      <div class="filesize folder-col"><p>200 KB</p></div>
-    </div><!-- .tile.form -->
-    
-  </div><!-- .folder-wrap -->
-  <div class="folder-wrap">
-    
-    <div class="tile folder folder-row">
-      <div class="fileicon folder-col"><i><img src="images/icons/folder.svg" alt="Iavi"></i></div>
-      <div class="filename folder-col"><h3>Microsoft Teams Chat Files</h3></div>
-      <div class="modifiedon folder-col"><p>Jan 26, 2023</p></div>
-      <div class="modifiedby folder-col"><p>Team Iavi</p></div>
-      <div class="filesize folder-col"><p>200 items</p></div>
-    </div><!-- .tile.folder -->
-    
-    <div class="tile form folder-row">
-      <div class="fileicon folder-col"><i><img src="images/icons/photo.svg" alt="Iavi"></i></div>
-      <div class="filename folder-col"><h3>File three</h3></div>
-      <div class="modifiedon folder-col"><p>Jan 26, 2023</p></div>
-      <div class="modifiedby folder-col"><p>Team Iavi</p></div>
-      <div class="filesize folder-col"><p>200 KB</p></div>
-    </div><!-- .tile.form -->
-    
-    <div class="tile form folder-row">
-      <div class="fileicon folder-col"><i><img src="images/icons/photo.svg" alt="Iavi"></i></div>
-      <div class="filename folder-col"><h3>File three</h3></div>
-      <div class="modifiedon folder-col"><p>Jan 26, 2023</p></div>
-      <div class="modifiedby folder-col"><p>Team Iavi</p></div>
-      <div class="filesize folder-col"><p>200 KB</p></div>
-    </div><!-- .tile.form -->
-    
-  </div><!-- .folder-wrap -->
-  <div class="folder-wrap">
-    
-    <div class="tile form folder-row">
-      <div class="fileicon folder-col"><i><img src="images/icons/photo.svg" alt="Iavi"></i></div>
-      <div class="filename folder-col"><h3>File three</h3></div>
-      <div class="modifiedon folder-col"><p>Jan 26, 2023</p></div>
-      <div class="modifiedby folder-col"><p>Team Iavi</p></div>
-      <div class="filesize folder-col"><p>200 KB</p></div>
-    </div><!-- .tile.form -->
-    
-  </div><!-- .folder-wrap -->
-  
-   
-  
-</div><!-- .stage -->
+          <div class="card-header d-flex justify-content-between">
+            <h3 class="card-title">My Files</h3>
+            <div class="action-btn float-end"> 
+              <!-- <button  class="btn btn-sm btn-primary btn-add btn-border back" data-bs-toggle="modal" data-bs-target="#modal-form"> <i class="icofont-rounded-left"></i> Back</button>  -->
+              <button  class="btn btn-sm btn-primary btn-add btn-border" data-bs-toggle="modal" data-bs-target="#addfolder"> <i class="la la-plus"></i> Add New</button>
             </div>
           </div>
+          <div class="card-body">
+            <ul class="folder-breadcrumb nav">
+              <li class="folder-breadcrumb__item"> 
+                <a href="#"> Home </a> <span class="breadcrumb__seperator"> <span class="la la-angle-right"></span> </span> 
+              </li>
+              <li class="folder-breadcrumb__item"> 
+                <a href="#">Folder 1</a> <span class="breadcrumb__seperator"> <span class="la la-angle-right"></span> </span> 
+              </li>
+              <li class="folder-breadcrumb__item"> 
+                <a href="#">Folder 2</a> <span class="breadcrumb__seperator"> <span class="la la-angle-right"></span> </span> 
+              </li>
+              <li class="folder-breadcrumb__item"> <span>File</span> </li>
+            </ul>
+            <section>
+              <div class="folderheader">
+                <div class="folder-row">
+                  <div class="fileicon folder-col"><i class="icofont-file-file"></i></div>
+                  <div class="crcname folder-col"><h3>Crc name</h3></div>
+                  <div class="filename folder-col"><h3>Name</h3></div>
+                  <div class="modifiedon folder-col"><h3>Modified</h3></div>
+                  <div class="modifiedby folder-col"><h3>Modified By</h3></div>
+                  <div class="filesize folder-col"><h3>File size</h3></div>
+                </div>
+                <!-- .tile.folder --> 
+              </div>
+              <!-- <div class="cm-address-bar-search" clear>
+                <div class="address-search">
+                  <div class="pos"><input type="text" class="address-search-input">
+                    <div class="cm-button address-button"><i class="fas fa-arrow-right"></i></div>
+                    <div class="address-short-btn"></div></div>
+                </div>
+                <div class="search-file-and-folder">
+                  <div class="pos"><input placeholder="Search.." type="text" class="files-search-input"><div class="cm-button file-search-button"><i class="fas fa-search"></i></div></div>
+                </div>
+              </div> -->
+              <div class="theme-structure big-file-manager">
+                <ul>
+                  <!-- <li class="file-sub-active show-up">
+                        <b>Project 01</b>
+                      </li> -->
+                  <li> <b>
+                    <div class="folder-col fileicon"><i><img src="images/icons/folder.svg" alt="Iavi"></i></div>
+                    <div class="folder-col crcname"><p>CFJKL Kigali</p></div>
+                    <div class="folder-col filename"><h3>Microsoft Teams Chat Files</h3></div>
+                    <div class="folder-col modifiedon"><p>Jan 26, 2023</p></div>
+                    <div class="folder-col modifiedby"><p>Team Iavi</p></div>
+                    <div class="folder-col filesize"><p>200 items</p></div>
+                    </b>
+                    <ul>
+                      <li><b>
+                        <div class="folder-col fileicon"><i><img src="images/icons/folder.svg" alt="Iavi"></i></div>
+                        <div class="folder-col crcname"><p>CFJKL Kigali 2</p></div>
+                        <div class="folder-col filename"><h3>Microsoft Teams Chat Files</h3></div>
+                        <div class="folder-col modifiedon"><p>Jan 26, 2023</p></div>
+                        <div class="folder-col modifiedby"><p>Team Iavi</p></div>
+                        <div class="folder-col filesize"><p>200 items</p></div>
+                      </b>
+                        <ul>
+                          <li><b>
+                            <div class="fileicon folder-col"><i><img src="images/icons/photo.svg" alt="Iavi"></i></div>
+                            <div class="folder-col crcname"><p>CFJKL Kigali 3</p></div>
+                            <div class="filename folder-col"><h3>File three</h3></div>
+                            <div class="modifiedon folder-col"><p>Jan 26, 2023</p></div>
+                            <div class="modifiedby folder-col"><p>Team Iavi</p></div>
+                            <div class="filesize folder-col"><p>200 KB</p></div>
+                          </b></li>
+                          <li><b>
+                            <div class="fileicon folder-col"><i><img src="images/icons/photo.svg" alt="Iavi"></i></div>
+                            <div class="folder-col crcname"><p>CFJKL Kigali 3</p></div>
+                            <div class="filename folder-col"><h3>File three</h3></div>
+                            <div class="modifiedon folder-col"><p>Jan 26, 2023</p></div>
+                            <div class="modifiedby folder-col"><p>Team Iavi</p></div>
+                            <div class="filesize folder-col"><p>200 KB</p></div>
+                          </b></li>
+                          <li><b>
+                            <div class="fileicon folder-col"><i><img src="images/icons/photo.svg" alt="Iavi"></i></div>
+                            <div class="folder-col crcname"><p>CFJKL Kigali 3</p></div>
+                            <div class="filename folder-col"><h3>File three</h3></div>
+                            <div class="modifiedon folder-col"><p>Jan 26, 2023</p></div>
+                            <div class="modifiedby folder-col"><p>Team Iavi</p></div>
+                            <div class="filesize folder-col"><p>200 KB</p></div>
+                          </b></li>
+                          <li><b>
+                            <div class="fileicon folder-col"><i><img src="images/icons/photo.svg" alt="Iavi"></i></div>
+                            <div class="folder-col crcname"><p>CFJKL Kigali 3</p></div>
+                            <div class="filename folder-col"><h3>File three</h3></div>
+                            <div class="modifiedon folder-col"><p>Jan 26, 2023</p></div>
+                            <div class="modifiedby folder-col"><p>Team Iavi</p></div>
+                            <div class="filesize folder-col"><p>200 KB</p></div>
+                          </b></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <b>
+                        <div class="folder-col fileicon"><i><img src="images/icons/folder.svg" alt="Iavi"></i></div>
+                        <div class="folder-col crcname"><p>CFJKL Kigali 2</p></div>
+                        <div class="folder-col filename"><h3>Microsoft Teams Chat Files</h3></div>
+                        <div class="folder-col modifiedon"><p>Jan 26, 2023</p></div>
+                        <div class="folder-col modifiedby"><p>Team Iavi</p></div>
+                        <div class="folder-col filesize"><p>200 items</p></div>
+                      </b>
+                        <ul>
+                          <li><b>
+                            <div class="folder-col fileicon"><i><img src="images/icons/pdf.svg" alt="Iavi"></i></div>
+                            <div class="folder-col crcname"><p>CFJKL Kigali 2</p></div>
+                            <div class="folder-col filename"><h3>A-1</h3></div>
+                            <div class="folder-col modifiedon"><p>Jan 26, 2023</p></div>
+                            <div class="folder-col modifiedby"><p>Team Iavi</p></div>
+                            <div class="folder-col filesize"><p>200 items</p></div>
+                          </b></li>
+                          <li><b>
+                            <div class="folder-col fileicon"><i><img src="images/icons/pdf.svg" alt="Iavi"></i></div>
+                        <div class="folder-col crcname"><p>CFJKL Kigali 2</p></div>
+                        <div class="folder-col filename"><h3>A-2</h3></div>
+                        <div class="folder-col modifiedon"><p>Jan 26, 2023</p></div>
+                        <div class="folder-col modifiedby"><p>Team Iavi</p></div>
+                        <div class="folder-col filesize"><p>200 items</p></div>
+                          </b></li>
+                          <li><b>
+                          <div class="folder-col fileicon"><i><img src="images/icons/folder.svg" alt="Iavi"></i></div>
+                        <div class="folder-col crcname"><p>CFJKL Kigali 2</p></div>
+                        <div class="folder-col filename"><h3>A-3</h3></div>
+                        <div class="folder-col modifiedon"><p>Jan 26, 2023</p></div>
+                        <div class="folder-col modifiedby"><p>Team Iavi</p></div>
+                        <div class="folder-col filesize"><p>200 items</p></div>
+                          </b>
+                            <ul>
+                              <li><b>
+                                <div class="folder-col fileicon"><i><img src="images/icons/docx.svg" alt="Iavi"></i></div>
+                                <div class="folder-col crcname"><p>CFJKL Kigali 2</p></div>
+                                <div class="folder-col filename"><h3>Microsoft Teams Chat Files</h3></div>
+                                <div class="folder-col modifiedon"><p>Jan 26, 2023</p></div>
+                                <div class="folder-col modifiedby"><p>Team Iavi</p></div>
+                                <div class="folder-col filesize"><p>1 items</p></div>
+                              </b></li>
+                              <li><b>
+                                <div class="folder-col fileicon"><i><img src="images/icons/docx.svg" alt="Iavi"></i></div>
+                                <div class="folder-col crcname"><p>CFJKL Kigali 2</p></div>
+                                <div class="folder-col filename"><h3>Microsoft Teams Chat Files</h3></div>
+                                <div class="folder-col modifiedon"><p>Jan 26, 2023</p></div>
+                                <div class="folder-col modifiedby"><p>Team Iavi</p></div>
+                                <div class="folder-col filesize"><p>1 items</p></div>
+                              </b></li>
+                              <li><b>
+                                <div class="folder-col fileicon"><i><img src="images/icons/docx.svg" alt="Iavi"></i></div>
+                                <div class="folder-col crcname"><p>CFJKL Kigali 2</p></div>
+                                <div class="folder-col filename"><h3>Microsoft Teams Chat Files</h3></div>
+                                <div class="folder-col modifiedon"><p>Jan 26, 2023</p></div>
+                                <div class="folder-col modifiedby"><p>Team Iavi</p></div>
+                                <div class="folder-col filesize"><p>1 items</p></div>
+                              </b>
+                                <ul>
+                                  <li><b>
+                                    <div class="folder-col fileicon"><i><img src="images/icons/docx.svg" alt="Iavi"></i></div>
+                                    <div class="folder-col crcname"><p>CFJKL Kigali 2</p></div>
+                                    <div class="folder-col filename"><h3>Microsoft Teams Chat Files</h3></div>
+                                    <div class="folder-col modifiedon"><p>Jan 26, 2023</p></div>
+                                    <div class="folder-col modifiedby"><p>Team Iavi</p></div>
+                                    <div class="folder-col filesize"><p>1 items</p></div>
+                                  </b></li>
+                                  <li><b>
+                                    <div class="folder-col fileicon"><i><img src="images/icons/docx.svg" alt="Iavi"></i></div>
+                                    <div class="folder-col crcname"><p>CFJKL Kigali 2</p></div>
+                                    <div class="folder-col filename"><h3>Microsoft Teams Chat Files</h3></div>
+                                    <div class="folder-col modifiedon"><p>Jan 26, 2023</p></div>
+                                    <div class="folder-col modifiedby"><p>Team Iavi</p></div>
+                                    <div class="folder-col filesize"><p>1 items</p></div>
+                                  </b></li>
+                                  <li><b>
+                                    <div class="folder-col fileicon"><i><img src="images/icons/docx.svg" alt="Iavi"></i></div>
+                                    <div class="folder-col crcname"><p>CFJKL Kigali 2</p></div>
+                                    <div class="folder-col filename"><h3>Microsoft Teams Chat Files</h3></div>
+                                    <div class="folder-col modifiedon"><p>Jan 26, 2023</p></div>
+                                    <div class="folder-col modifiedby"><p>Team Iavi</p></div>
+                                    <div class="folder-col filesize"><p>1 items</p></div>
+                                  </b></li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <b>
+                          <div class="folder-col fileicon"><i><img src="images/icons/folder.svg" alt="Iavi"></i></div>
+                          <div class="folder-col crcname"><p>CFJKL Kigali 2</p></div>
+                          <div class="folder-col filename"><h3>Microsoft Teams Chat Files</h3></div>
+                          <div class="folder-col modifiedon"><p>Jan 26, 2023</p></div>
+                          <div class="folder-col modifiedby"><p>Team Iavi</p></div>
+                          <div class="folder-col filesize"><p>200 items</p></div>
+                      </b>
+                    </li>
+                      <li><b>
+                        <div class="folder-col fileicon"><i><img src="images/icons/folder.svg" alt="Iavi"></i></div>
+                        <div class="folder-col crcname"><p>CFJKL Kigali 2</p></div>
+                        <div class="folder-col filename"><h3>Microsoft Teams Chat Files</h3></div>
+                        <div class="folder-col modifiedon"><p>Jan 26, 2023</p></div>
+                        <div class="folder-col modifiedby"><p>Team Iavi</p></div>
+                        <div class="folder-col filesize"><p>200 items</p></div>
+                      </b></li>
+                    </ul>
+                  </li>
+                  <li> <b>
+                    <div class="folder-col fileicon"><i><img src="images/icons/folder.svg" alt="Iavi"></i></div>
+                    <div class="folder-col crcname"><p>CFJKL Kigali</p></div>
+                    <div class="folder-col filename"><h3>Microsoft Teams Chat Files</h3></div>
+                    <div class="folder-col modifiedon"><p>Jan 26, 2023</p></div>
+                    <div class="folder-col modifiedby"><p>Team Iavi</p></div>
+                    <div class="folder-col filesize"><p>200 items</p></div>
+                    </b>
+                    <ul>
+                      <li><b>
+                        <div class="fileicon folder-col"><i><img src="images/icons/photo.svg" alt="Iavi"></i></div>
+                            <div class="folder-col crcname"><p>CFJKL Kigali 3</p></div>
+                            <div class="filename folder-col"><h3>File three</h3></div>
+                            <div class="modifiedon folder-col"><p>Jan 26, 2023</p></div>
+                            <div class="modifiedby folder-col"><p>Team Iavi</p></div>
+                            <div class="filesize folder-col"><p>200 KB</p></div>
+                      </b></li>
+                      <li><b>
+                        <div class="fileicon folder-col"><i><img src="images/icons/photo.svg" alt="Iavi"></i></div>
+                            <div class="folder-col crcname"><p>CFJKL Kigali 3</p></div>
+                            <div class="filename folder-col"><h3>File three</h3></div>
+                            <div class="modifiedon folder-col"><p>Jan 26, 2023</p></div>
+                            <div class="modifiedby folder-col"><p>Team Iavi</p></div>
+                            <div class="filesize folder-col"><p>200 KB</p></div>
+                      </b></li>
+                      <li><b>
+                        <div class="fileicon folder-col"><i><img src="images/icons/photo.svg" alt="Iavi"></i></div>
+                            <div class="folder-col crcname"><p>CFJKL Kigali 3</p></div>
+                            <div class="filename folder-col"><h3>File three</h3></div>
+                            <div class="modifiedon folder-col"><p>Jan 26, 2023</p></div>
+                            <div class="modifiedby folder-col"><p>Team Iavi</p></div>
+                            <div class="filesize folder-col"><p>200 KB</p></div>
+                      </b></li>
+                      <li><b>
+                        <div class="fileicon folder-col"><i><img src="images/icons/photo.svg" alt="Iavi"></i></div>
+                            <div class="folder-col crcname"><p>CFJKL Kigali 3</p></div>
+                            <div class="filename folder-col"><h3>File three</h3></div>
+                            <div class="modifiedon folder-col"><p>Jan 26, 2023</p></div>
+                            <div class="modifiedby folder-col"><p>Team Iavi</p></div>
+                            <div class="filesize folder-col"><p>200 KB</p></div>
+                      </b></li>
+                    </ul>
+                  </li>
+                  <li> <b>
+                    <div class="folder-col fileicon"><i><img src="images/icons/folder.svg" alt="Iavi"></i></div>
+                    <div class="folder-col crcname"><p>CFJKL Kigali</p></div>
+                    <div class="folder-col filename"><h3>Microsoft Teams Chat Files</h3></div>
+                    <div class="folder-col modifiedon"><p>Jan 26, 2023</p></div>
+                    <div class="folder-col modifiedby"><p>Team Iavi</p></div>
+                    <div class="folder-col filesize"><p>200 items</p></div>
+                    </b>
+                    <ul>
+                      <li><b>
+                        <div class="folder-col fileicon"><i><img src="images/icons/docx.svg" alt="Iavi"></i></div>
+                        <div class="folder-col crcname"><p>CFJKL Kigali 2</p></div>
+                        <div class="folder-col filename"><h3>File one</h3></div>
+                        <div class="folder-col modifiedon"><p>Jan 26, 2023</p></div>
+                        <div class="folder-col modifiedby"><p>Team Iavi</p></div>
+                        <div class="folder-col filesize"><p>200 items</p></div>
+                      </b></li>
+                      <li><b>
+                        <div class="folder-col fileicon"><i><img src="images/icons/docx.svg" alt="Iavi"></i></div>
+                        <div class="folder-col crcname"><p>CFJKL Kigali 2</p></div>
+                        <div class="folder-col filename"><h3>File Two</h3></div>
+                        <div class="folder-col modifiedon"><p>Jan 26, 2023</p></div>
+                        <div class="folder-col modifiedby"><p>Team Iavi</p></div>
+                        <div class="folder-col filesize"><p>200 items</p></div>
+                      </b></li>
+                      <li><b>
+                        <div class="folder-col fileicon"><i><img src="images/icons/docx.svg" alt="Iavi"></i></div>
+                        <div class="folder-col crcname"><p>CFJKL Kigali 2</p></div>
+                        <div class="folder-col filename"><h3>File Three</h3></div>
+                        <div class="folder-col modifiedon"><p>Jan 26, 2023</p></div>
+                        <div class="folder-col modifiedby"><p>Team Iavi</p></div>
+                        <div class="folder-col filesize"><p>200 items</p></div>
+                      </b></li>
+                      <li><b>
+                        <div class="folder-col fileicon"><i><img src="images/icons/docx.svg" alt="Iavi"></i></div>
+                        <div class="folder-col crcname"><p>CFJKL Kigali 2</p></div>
+                        <div class="folder-col filename"><h3>File Four</h3></div>
+                        <div class="folder-col modifiedon"><p>Jan 26, 2023</p></div>
+                        <div class="folder-col modifiedby"><p>Team Iavi</p></div>
+                        <div class="folder-col filesize"><p>200 items</p></div>
+                      </b></li>
+                    </ul>
+                  </li>
+                  <li> <b>
+                    <div class="folder-col fileicon"><i><img src="images/icons/folder.svg" alt="Iavi"></i></div>
+                    <div class="folder-col crcname"><p>CFJKL Kigali</p></div>
+                    <div class="folder-col filename"><h3>File Four</h3></div>
+                    <div class="folder-col modifiedon"><p>Jan 26, 2023</p></div>
+                    <div class="folder-col modifiedby"><p>Team Iavi</p></div>
+                    <div class="folder-col filesize"><p>200 items</p></div>
+                    </b> </li>
+                </ul>
+              </div>
+            </section>
 
+          </div>
+        </div>
       </div>
     </div>
     <!-- Row --> 
@@ -606,6 +621,7 @@
   
   <!-- CONTAINER END --> 
 </div>
+
 
   <footer class="footer-wrapper">
     <div class="container-fluid">
@@ -631,96 +647,141 @@
 </main>
 <div class="overlay-dark-sidebar"></div>
 
-<div class="modal fade" id="addfolder" tabindex="-1" aria-labelledby="addfolder" aria-hidden="true">
-  <div class="modal-dialog modal-lg modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Add Folder</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <form>
-          <div class="add_folder row align-items-center">
-          <div class="col-md-6 mb-2">
-            <label>Folder Name</label>
-            <input type="text" class="form-control" id="event-title" placeholder="">
-          </div>
-          <div class="col-md-6 mb-2">
-            <label>Upload Folder Icon</label>
-            <input type="file" class="form-control" id="uploadicon" placeholder="">
-          </div>
-          <div class="col-md-12"> <a class="btn btn-primary extra-fields-customer" href="javascript:void(0)"><i class="la la-plus"></i> Add Folder</a> </div>
+<div class="modal fade foldermodal" id="addfolder" tabindex="-1" aria-labelledby="addfolder" aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title" id="exampleModalLabel">Add New Folder</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <div class="modal-body">
+      <form id="step-step" class="add_folder row align-items-center">
+              <h3>Add folder</h3>
+              <section>
+                  <div class="col-md-12 mb-2">
+                    <label>Crc Name</label>
+                    <input type="text" class="form-control" id="event-title" placeholder="">
+                  </div>
+                  <div class="newinput">
+                    <div id="row">
+                      <div class="input-group mb-2">
+                        <div class="input-group-prepend">
+                          <div class="inputimg"><img src="images/icons/folder.svg" alt="Iavi"></div>
+                        </div>
+                        <input type="text" class="form-control m-input" placeholder="Folder name">
+                        <div class="input-group-prepend">
+                          <button class="btn btn-danger" id="DeleteRow" type="button"> <i class="fa fa-trash"></i></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <div class="col-lg-12">
+                      <div id="newinput" class="newinput"></div>
+                      <button class="rowAdder link-btn" type="button">Add Folder</button>
+                    </div>
+                  </div>
+              </section>
+              <h3>Upload Files</h3>
+              <section>
+                  <div class="col-md-12 mb-2">
+                    <div id="js-dropzone" class="dropzone dropmultiselect"></div>
+                  </div>
+              </section>
+          </form>
+      <!-- <form>
+        <div class="add_folder row align-items-center">
+        <div class="col-md-12 mb-2">
+          <label>Crc Name</label>
+          <input type="text" class="form-control" id="event-title" placeholder="">
         </div>
-        <div class="add_folder_dynamic"></div>
-        </form>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-primary">Save</button>
-      </div>
+        <div class="newinput">
+          <div id="row">
+            <div class="input-group mb-2">
+              <div class="input-group-prepend">
+                <div class="inputimg"><img src="images/icons/folder.svg" alt="Iavi"></div>
+              </div>
+              <input type="text" class="form-control m-input" placeholder="Folder name">
+              <div class="input-group-prepend">
+                <button class="btn btn-danger" id="DeleteRow" type="button"> <i class="fa fa-trash"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mb-3">
+          <div class="col-lg-12">
+            <div id="newinput" class="newinput"></div>
+            <button class="rowAdder link-btn" type="button">Add Folder</button>
+          </div>
+        </div>
+
+        <div class="col-md-12 mb-2">
+          <div id="js-dropzone" class="dropzone dropmultiselect"></div>
+        </div>
+        
+        <div class="btn-wrapper justify-content-end text-end">
+          <button type="button" class="btn btn-primary btn-border">Next</button>
+        </div>
+      </form> -->
     </div>
   </div>
 </div>
+</div>
+
 
 
 <!-- jQuery -->
 <script src="js/jquery.min.js" type="text/Javascript"></script>
-<script src="js/notification.js" type="text/Javascript"></script>
+<script src="js/folder.js" type="text/Javascript"></script>
 <script src="js/main.js" type="text/Javascript"></script>
+
+
 <script type="text/javascript">
-$( document ).ready(function() {
-  
-  // Folder on click
-  $('.folder').on( "click", function() {
-    
-      console.log( "Drill down" );
-      $('.level-up').removeClass('level-up');
-      $('.level-current').addClass('level-up');
-      $('.level-current').removeClass('level-current');       
-      $('.level-down').addClass('level-current');
-      $('.level-down').removeClass('level-down').next().addClass('level-down');
-    
-  });
-    
-  // Back on Click
-  $('.back').on( "click", function() {
-    if(
-      $('.level-current').is(':first-child')){
-       console.log( "Current is top" );
-    } 
-    else {
-      console.log( "Drill back up" );
-      $('.level-down').removeClass('level-down')
-      $('.level-current').addClass('level-down');
-      $('.level-current').removeClass('level-current');
-      $('.level-up').addClass('level-current');
-      $('.level-up').removeClass('level-up').prev().addClass('level-up');
-    }
-    
-  });
-  
+$("#step-step").steps({
+    headerTag: "h3",
+    bodyTag: "section",
+    transitionEffect: "fade",
+    autoFocus: true
 });
 </script>
 
 <script type="text/javascript">
-  $('.extra-fields-customer').click(function() {
-  $('.add_folder').clone().appendTo('.add_folder_dynamic');
-  $('.add_folder_dynamic .add_folder').addClass('single remove');
-  $('.single .extra-fields-customer').remove();
-  $('.single').append('<a href="#" class="remove-field btn-remove-folder btn btn-danger">Remove Folder</a>');
-  $('.add_folder_dynamic > .single').attr("class", "remove row align-items-center");
-  
-  $('.add_folder_dynamic input').each(function() {
-    var count = 0;
-    var fieldname = $(this).attr("name");
-    $(this).attr('name', fieldname + count );
-    count++;
-  });
+$(".rowAdder").click(function () {
+    newRowAdd =
+    '<div id="row"> <div class="input-group mb-2">' +
+    '<div class="input-group-prepend">' +
+    '<div class="inputimg"><img src="images/icons/folder.svg" alt="Iavi">' +
+    '</div></div>' +
+    '<input type="text" class="form-control m-input" placeholder="Folder name">' +
+    '<div class="input-group-prepend">' +
+    '<button class="btn btn-danger" id="DeleteRow" type="button">' +
+    '<i class="fa fa-trash"></i></button> </div>' +
+    ' </div> </div>';
+
+    $('#newinput, #newinput1').append(newRowAdd);
+    e.attr('id', 'myid');
 });
 
-$(document).on('click', '.remove-field', function(e) {
-  $(this).parent('.remove').remove();
-  e.preventDefault();
+$("body").on("click", "#DeleteRow", function () {
+    $(this).parents("#row").remove();
+})
+</script>
+
+<script type="text/javascript">
+var myDropzone = new Dropzone("#js-dropzone", { 
+  url: "/file/post",
+  maxFilesize: 5000,
+  dictDefaultMessage: "Drop your file here to upload (multiple files require being zipped)",
+  uploadMultiple: true,
+  addRemoveLinks: true
 });
+
+// Dropzone.options.myDropzone = {
+//    maxFilesize: 5000,
+//    dictDefaultMessage: "Drop your file here to upload (multiple files require being zipped)",
+//    uploadMultiple: true,
+//    addRemoveLinks: true
+// }
 </script>
 
 </body>
