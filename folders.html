@@ -297,8 +297,285 @@
     <!-- PAGE-HEADER -->
     <div class="page-header">
       <h1 class="page-title">Folder Structure</h1>
+      <div class="action-btn float-end"> 
+          <button  class="btn btn-sm btn-primary btn-add btn-border" data-bs-toggle="modal" data-bs-target="#addfolder"> <i class="la la-plus"></i> Add New</button>
+        </div>
     </div>
     <!-- PAGE-HEADER END --> 
+
+      <!-- Row -->
+  <div class="row row-sm">
+  <div class="col-lg-12">
+    <div class="card">
+      <div class="card-header d-flex justify-content-between">
+        <h3 class="card-title">My Files</h3>
+        <div>
+          <div class="multiselect-button col tabinputs d-flex">
+            <div class="form-group">
+              <input type="text" class="form-control" id="email" placeholder="Search...">
+            </div>
+            <div class="form-group select-field">
+              <select data-placeholder="Any Status" class="form-select">
+                <option>Filter By</option>
+                <option>Name</option>
+                <option>Crc list</option>
+              </select>
+            </div>
+            <div class="form-group select-field">
+              <select data-placeholder="Any Status" class="form-select">
+                <option>Filter By</option>
+                <option>Name</option>
+                <option>Crc list</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="table-responsive">
+          <table id="files" class="table table-striped foldertables">
+            <thead>
+              <tr>
+                <th class="border-bottom-0"><i class="icofont-file-file"></i></th>
+                <th class="border-bottom-0">Crc name</th>
+                <th class="border-bottom-0">Name</th>
+                <th class="border-bottom-0">Modified</th>
+                <th class="border-bottom-0">Modified By</th>
+                <th class="border-bottom-0">File size</th>
+                <th class="border-bottom-0">Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="fileicon"><i><img src="images/icons/folder.svg" alt="Iavi"></i></td>
+                <td class="crcname">CFJKL Kigali</td>
+                <td class="filename">Microsoft Teams Chat Files</td>
+                <td class="modifiedon">Jan 26, 2023</td>
+                <td class="modifiedby">Team Iavi</td>
+                <td class="filesize">200 items</td>
+                <td>
+                  <div class="dropdown no-arrow"> 
+                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i> </a>
+                    <div class="dropdown-menu dropdown-menu-right shadow" aria-labelledby="dropdownMenuLink">
+                      <div class="dropdown-header">Actions</div>
+                      <a class="dropdown-item" href="#"><i class="icofont-edit me-2"></i> Edit</a> 
+                      <a class="dropdown-item" href="#"><i class="icofont-ui-delete me-2"></i> Delete</a> 
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="fileicon"><i><img src="images/icons/folder.svg" alt="Iavi"></i></td>
+                <td class="crcname">CFJKL Kigali</td>
+                <td class="filename">Microsoft Teams Chat Files</td>
+                <td class="modifiedon">Jan 26, 2023</td>
+                <td class="modifiedby">Team Iavi</td>
+                <td class="filesize">200 items</td>
+                <td>
+                  <div class="dropdown no-arrow"> 
+                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i> </a>
+                    <div class="dropdown-menu dropdown-menu-right shadow" aria-labelledby="dropdownMenuLink">
+                      <div class="dropdown-header">Actions</div>
+                      <a class="dropdown-item" href="#"><i class="icofont-edit me-2"></i> Edit</a> 
+                      <a class="dropdown-item" href="#"><i class="icofont-ui-delete me-2"></i> Delete</a> 
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="fileicon"><i><img src="images/icons/folder.svg" alt="Iavi"></i></td>
+                <td class="crcname">CFJKL Kigali</td>
+                <td class="filename">Microsoft Teams Chat Files</td>
+                <td class="modifiedon">Jan 26, 2023</td>
+                <td class="modifiedby">Team Iavi</td>
+                <td class="filesize">200 items</td>
+                <td>
+                  <div class="dropdown no-arrow"> 
+                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i> </a>
+                    <div class="dropdown-menu dropdown-menu-right shadow" aria-labelledby="dropdownMenuLink">
+                      <div class="dropdown-header">Actions</div>
+                      <a class="dropdown-item" href="#"><i class="icofont-edit me-2"></i> Edit</a> 
+                      <a class="dropdown-item" href="#"><i class="icofont-ui-delete me-2"></i> Delete</a> 
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="fileicon"><i><img src="images/icons/folder.svg" alt="Iavi"></i></td>
+                <td class="crcname">CFJKL Kigali</td>
+                <td class="filename">Microsoft Teams Chat Files</td>
+                <td class="modifiedon">Jan 26, 2023</td>
+                <td class="modifiedby">Team Iavi</td>
+                <td class="filesize">200 items</td>
+                <td>
+                  <div class="dropdown no-arrow"> 
+                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i> </a>
+                    <div class="dropdown-menu dropdown-menu-right shadow" aria-labelledby="dropdownMenuLink">
+                      <div class="dropdown-header">Actions</div>
+                      <a class="dropdown-item" href="#"><i class="icofont-edit me-2"></i> Edit</a> 
+                      <a class="dropdown-item" href="#"><i class="icofont-ui-delete me-2"></i> Delete</a> 
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="fileicon"><i><img src="images/icons/folder.svg" alt="Iavi"></i></td>
+                <td class="crcname">CFJKL Kigali</td>
+                <td class="filename">Microsoft Teams Chat Files</td>
+                <td class="modifiedon">Jan 26, 2023</td>
+                <td class="modifiedby">Team Iavi</td>
+                <td class="filesize">200 items</td>
+                <td>
+                  <div class="dropdown no-arrow"> 
+                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i> </a>
+                    <div class="dropdown-menu dropdown-menu-right shadow" aria-labelledby="dropdownMenuLink">
+                      <div class="dropdown-header">Actions</div>
+                      <a class="dropdown-item" href="#"><i class="icofont-edit me-2"></i> Edit</a> 
+                      <a class="dropdown-item" href="#"><i class="icofont-ui-delete me-2"></i> Delete</a> 
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="fileicon"><i><img src="images/icons/folder.svg" alt="Iavi"></i></td>
+                <td class="crcname">CFJKL Kigali</td>
+                <td class="filename">Microsoft Teams Chat Files</td>
+                <td class="modifiedon">Jan 26, 2023</td>
+                <td class="modifiedby">Team Iavi</td>
+                <td class="filesize">200 items</td>
+                <td>
+                  <div class="dropdown no-arrow"> 
+                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i> </a>
+                    <div class="dropdown-menu dropdown-menu-right shadow" aria-labelledby="dropdownMenuLink">
+                      <div class="dropdown-header">Actions</div>
+                      <a class="dropdown-item" href="#"><i class="icofont-edit me-2"></i> Edit</a> 
+                      <a class="dropdown-item" href="#"><i class="icofont-ui-delete me-2"></i> Delete</a> 
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="fileicon"><i><img src="images/icons/folder.svg" alt="Iavi"></i></td>
+                <td class="crcname">CFJKL Kigali</td>
+                <td class="filename">Microsoft Teams Chat Files</td>
+                <td class="modifiedon">Jan 26, 2023</td>
+                <td class="modifiedby">Team Iavi</td>
+                <td class="filesize">200 items</td>
+                <td>
+                  <div class="dropdown no-arrow"> 
+                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i> </a>
+                    <div class="dropdown-menu dropdown-menu-right shadow" aria-labelledby="dropdownMenuLink">
+                      <div class="dropdown-header">Actions</div>
+                      <a class="dropdown-item" href="#"><i class="icofont-edit me-2"></i> Edit</a> 
+                      <a class="dropdown-item" href="#"><i class="icofont-ui-delete me-2"></i> Delete</a> 
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="fileicon"><i><img src="images/icons/folder.svg" alt="Iavi"></i></td>
+                <td class="crcname">CFJKL Kigali</td>
+                <td class="filename">Microsoft Teams Chat Files</td>
+                <td class="modifiedon">Jan 26, 2023</td>
+                <td class="modifiedby">Team Iavi</td>
+                <td class="filesize">200 items</td>
+                <td>
+                  <div class="dropdown no-arrow"> 
+                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i> </a>
+                    <div class="dropdown-menu dropdown-menu-right shadow" aria-labelledby="dropdownMenuLink">
+                      <div class="dropdown-header">Actions</div>
+                      <a class="dropdown-item" href="#"><i class="icofont-edit me-2"></i> Edit</a> 
+                      <a class="dropdown-item" href="#"><i class="icofont-ui-delete me-2"></i> Delete</a> 
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="fileicon"><i><img src="images/icons/folder.svg" alt="Iavi"></i></td>
+                <td class="crcname">CFJKL Kigali</td>
+                <td class="filename">Microsoft Teams Chat Files</td>
+                <td class="modifiedon">Jan 26, 2023</td>
+                <td class="modifiedby">Team Iavi</td>
+                <td class="filesize">200 items</td>
+                <td>
+                  <div class="dropdown no-arrow"> 
+                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i> </a>
+                    <div class="dropdown-menu dropdown-menu-right shadow" aria-labelledby="dropdownMenuLink">
+                      <div class="dropdown-header">Actions</div>
+                      <a class="dropdown-item" href="#"><i class="icofont-edit me-2"></i> Edit</a> 
+                      <a class="dropdown-item" href="#"><i class="icofont-ui-delete me-2"></i> Delete</a> 
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="fileicon"><i><img src="images/icons/folder.svg" alt="Iavi"></i></td>
+                <td class="crcname">CFJKL Kigali</td>
+                <td class="filename">Microsoft Teams Chat Files</td>
+                <td class="modifiedon">Jan 26, 2023</td>
+                <td class="modifiedby">Team Iavi</td>
+                <td class="filesize">200 items</td>
+                <td>
+                  <div class="dropdown no-arrow"> 
+                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i> </a>
+                    <div class="dropdown-menu dropdown-menu-right shadow" aria-labelledby="dropdownMenuLink">
+                      <div class="dropdown-header">Actions</div>
+                      <a class="dropdown-item" href="#"><i class="icofont-edit me-2"></i> Edit</a> 
+                      <a class="dropdown-item" href="#"><i class="icofont-ui-delete me-2"></i> Delete</a> 
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="fileicon"><i><img src="images/icons/folder.svg" alt="Iavi"></i></td>
+                <td class="crcname">CFJKL Kigali</td>
+                <td class="filename">Microsoft Teams Chat Files</td>
+                <td class="modifiedon">Jan 26, 2023</td>
+                <td class="modifiedby">Team Iavi</td>
+                <td class="filesize">200 items</td>
+                <td>
+                  <div class="dropdown no-arrow"> 
+                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i> </a>
+                    <div class="dropdown-menu dropdown-menu-right shadow" aria-labelledby="dropdownMenuLink">
+                      <div class="dropdown-header">Actions</div>
+                      <a class="dropdown-item" href="#"><i class="icofont-edit me-2"></i> Edit</a> 
+                      <a class="dropdown-item" href="#"><i class="icofont-ui-delete me-2"></i> Delete</a> 
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="col-md-12 col-lg-12">
+              <nav aria-label="Page navigation" class="float-end">
+                  <ul class="pagination pagination-success mb-1 pagination-table">
+                      <li class="page-item page-0">
+                          <a aria-label="Next" class="page-link" href="javascript:void(0)"><i class="fa fa-angle-left"></i></a>
+                      </li>
+                      <li class="page-item">
+                          <a aria-label="Last" class="page-link" href="javascript:void(0)"><i class="fa fa-angle-double-left"></i></a>
+                      </li>
+                      <li class="page-item active">
+                          <a class="page-link" href="javascript:void(0)">4</a>
+                      </li>
+                      <li class="page-item disabled"><span class="page-link">...</span></li>
+                      <li class="page-item">
+                          <a class="page-link" href="javascript:void(0)">10</a>
+                      </li>
+                      <li class="page-item page-0">
+                          <a aria-label="Next" class="page-link" href="javascript:void(0)"><i class="fa fa-angle-right"></i></a>
+                      </li>
+                      <li class="page-item">
+                          <a aria-label="Last" class="page-link" href="javascript:void(0)"><i class="fa fa-angle-double-right"></i></a>
+                      </li>
+                  </ul>
+              </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
     
     <!-- Row -->
     <div class="row">
@@ -336,16 +613,6 @@
                 </div>
                 <!-- .tile.folder --> 
               </div>
-              <!-- <div class="cm-address-bar-search" clear>
-                <div class="address-search">
-                  <div class="pos"><input type="text" class="address-search-input">
-                    <div class="cm-button address-button"><i class="fas fa-arrow-right"></i></div>
-                    <div class="address-short-btn"></div></div>
-                </div>
-                <div class="search-file-and-folder">
-                  <div class="pos"><input placeholder="Search.." type="text" class="files-search-input"><div class="cm-button file-search-button"><i class="fas fa-search"></i></div></div>
-                </div>
-              </div> -->
               <div class="theme-structure big-file-manager">
                 <ul>
                   <!-- <li class="file-sub-active show-up">
