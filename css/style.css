@@ -2590,7 +2590,7 @@ a.sidebar-toggle img {
 .dropdown-custom .dropdown-wrapper {
   position: absolute;
   right: 0;
-  top: 54px;
+  top:40px;
   min-width: 360px;
   transition: all 0.3s ease;
   visibility: hidden;
@@ -2841,6 +2841,7 @@ a.sidebar-toggle img {
 @media only screen and (max-width: 1599px) {
   .sidebar.collapsed .sidebar__menu-group .has-child ul li a {
     padding: 6px 0;
+    color:#000;
   }
 }
 .sidebar.collapsed .sidebar__menu-group .has-child ul li a:hover, 
@@ -8397,6 +8398,21 @@ body{
 .add_folder.wizard {
     border: none;
     background-color: #fff;
+}
+.pagination-table .page-link:hover,
+.pagination-table .page-item.active .page-link {
+    background-color: #18558c;
+    border-color: #18558c;
+}
+.foldertables.table tr td:last-child {
+    text-align: left;
+}
+.multiselect-button .form-group{
+  margin:0 10px;
+}
+.multiselect-button .form-control,
+.multiselect-button .form-select{
+  font-size:14px;
 }
 
 

@@ -18,7 +18,7 @@
     });
 
     /* feather icon */
-  feather.replace();
+    feather.replace();
 
     /* sidebar collapse  */
   const sidebarToggle = document.querySelector(".sidebar-toggle");
@@ -130,6 +130,23 @@
     e.preventDefault();
     $(".mobile-nav-wrapper").removeClass("show");
   });
+
+  /* Submenu position relative to it's parent */
+    let submenus = document.querySelectorAll('.sidebar li.has-child');
+    let direction = document.querySelector('html').getAttribute('dir');
+    submenus.forEach(item => {
+      item.addEventListener('mouseover', function () {
+        let menuItem = this;
+        let menuItemRect = menuItem.getBoundingClientRect()
+        let submenuWrapper = menuItem.querySelector('ul');
+        submenuWrapper.style.top = `${menuItemRect.top}px`;
+        if(direction === 'ltr'){
+          submenuWrapper.style.left = `${menuItemRect.left + Math.round(menuItem.offsetWidth * 0.75) + 10}px`;
+        }else if(direction === 'rtl'){
+          submenuWrapper.style.right = `${Math.round(menuItem.offsetWidth * 0.75) + 10}px`;
+        }
+      })
+    });
 
   /* Mail Compose Rich-text*/
   $('#mail-message, #mail-reply-message')
