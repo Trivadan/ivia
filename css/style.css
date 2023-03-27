@@ -4548,8 +4548,8 @@ div.table-responsive>div.dataTables_wrapper>div.row>div[class^=col-]:last-child 
 }
 .page-item.active .page-link {
     color: #fff;
-    background-color: #0668f6;
-    border-color:#0668f6;
+    background-color: #18558c;
+    border-color: #18558c;
 }
 .page-item.disabled .page-link {
     color: #ced4da;
@@ -7061,8 +7061,9 @@ ul.list-inline li {
     font-weight: normal;
     font-style: normal;
 }
-.fileicon img{
-  display: block;
+.fileicon img {
+    height: 20px;
+    display: block;
 }
 .filename{
   width:300px;
@@ -8318,11 +8319,6 @@ body{
     background: #d9d9d9;
 }
 /*-------Search----------------|END-----*/
-
-
-
-
-
 
 @media(max-width:767px){
 .append-option-box {
