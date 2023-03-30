@@ -8411,6 +8411,17 @@ body{
   font-size:14px;
 }
 
+.atbd-select .select2-container--default .select2-selection--multiple {
+    height: 38px;
+}
+.atbd-select  .select2-container--default .select2-selection--multiple .select2-selection__choice {
+    height: 18px;
+    font-size: 13px;
+}
+.atbd-select .select2-container--default.select2-container--focus .select2-selection--multiple, 
+.atbd-select .select2-container--default.select2-container--focus .select2-selection--single {
+    border: 1px solid #000;
+}
 
 
 /* ---------------------------------------------------
