@@ -226,8 +226,10 @@ input:focus, textarea:focus, .form-control:focus {
   z-index: 2;
   color:#FFF;
 }
-.lms-login-register .hero-wrap .hero-content h1{
-  margin-bottom:15px;
+.lms-login-register .hero-wrap .hero-content h1 {
+    margin-bottom:15px;
+    text-transform: uppercase;
+    font-size:32px;
 }
 .lms-login-register .hero-wrap .hero-content p{
 }
@@ -6678,11 +6680,11 @@ ul.list-inline li {
 }
 .wizard>.steps>ul li .title {
     margin-left: 5px;
-/*    white-space: nowrap;*/
     transition: all 0.2s ease-in-out;
     margin: 0;
     min-height: auto;
-        font-size: 14px;
+    font-size: 13px;
+    font-weight: 600;
 }
 .wizard>.steps>ul li+li {
     margin-left: 5px;
@@ -6866,7 +6868,7 @@ ul.list-inline li {
 }
 @media (min-width: 992px) {
 .wizard>.steps>ul li+li {
-    margin-left: 30px;
+    margin-left:15px;
 }
 }
 @media (min-width: 1200px) {
@@ -6886,14 +6888,12 @@ ul.list-inline li {
 }
 }
 @media (min-width: 576px) {
-.wizard>.steps a .number,
-.wizard>.steps a:hover .number,
-.wizard>.steps a:active .number {
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 2.2;
-  width: 34px;
-  height: 34px;
+.wizard>.steps a .number, .wizard>.steps a:hover .number, .wizard>.steps a:active .number {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.5;
+    width: 25px;
+    height: 25px;
 }
 }
 @media (min-width: 992px) {

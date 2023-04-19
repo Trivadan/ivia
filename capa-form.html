@@ -791,6 +791,7 @@
                     </div>
                   </div>
                 </section>
+                
                 <h3 class="wizard-dsc">Investigative actions and root cause</h3>
                 <section>
                   <div class="form-modal formsection">
@@ -837,7 +838,37 @@
                     </div>
                   </div>
                 </section>
+
                 <h3>Supporting documents</h3>
+                <section>
+                  <h4 class="wizard-dsc">Table for supporting documents:</h4>
+                  <div class="form-modal formsection"> 
+                    <!-- Dynamic input-->
+                    <div class="row">
+                      <div class="attachement_records">
+                        <div class="row align-items-center mb-2 bt-2">
+                          <div class="col">
+                            <div class="form-group">
+                              <label for="attachment_filename" class="form-label">Attachment#</label>
+                              <input class="form-control" type="file" id="attachment_filename">
+                            </div>
+                          </div>
+                          <div class="col">
+                            <div class="form-group">
+                              <label for="attachment_description" class="form-label">Description of attachments</label>
+                              <input type="text" class="form-control" id="attachment_description" placeholder="">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-3"> <a class="btn btn-primary attachement-fields-customer" href="javascript:void(0)"><i class="la la-plus"></i> Add Documents</a> </div>
+                      </div>
+                      <div class="attachment_records_dynamic"></div>
+                    </div>
+                    <!--End Dynamic input-->
+                  </div>
+                </section>
+
+                <h3>Study Impact</h3>
                 <section>
                   <h4 class="wizard-dsc">Table for supporting documents:</h4>
                   <div class="form-modal formsection"> 
