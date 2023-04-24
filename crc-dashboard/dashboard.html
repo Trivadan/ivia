@@ -20,7 +20,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 <link href="css/style.min.css" rel="stylesheet">
-<link rel="stylesheet" href="css/fullcalendar@5.2.0.css">
+<link href="assets/morrisjs/morris.css" rel="stylesheet">
 <link href="css/style.css" rel="stylesheet">
 
 <!--Javascript-->
@@ -318,147 +318,173 @@
           </section>
 
           <!-- Row -->
-      <div class="row">
-        <div class="col-xl-3 col-md-6 mb-2"> 
-          <!-- Card Start  -->
-          <div class="card">
-            <div class="card-header cardheader-center">
-              <h3 class="card-title">EQA Numbers</h3>
-              <div class="dropdown no-arrow"> 
-                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fas fa-ellipsis-h fa-sm fa-fw text-gray-400"></i> </a>
-                    <div class="dropdown-menu dropdown-menu-right shadow" aria-labelledby="dropdownMenuLink">
-                      <div class="dropdown-header">Actions</div>
-                      <a class="dropdown-item" href="#"><i class="icofont-edit me-2"></i> Edit</a> 
-                      <a class="dropdown-item" href="#"><i class="icofont-plus me-2"></i> Add</a> 
-                      <a class="dropdown-item" href="#"><i class="icofont-ui-delete me-2"></i> Delete</a> 
+        <div class="row">
+          <div class="col-lg-6 d-flex align-items-stretch">
+            <div class="row">
+          <div class="col-lg-6 mb-2">
+            <!-- Card Start  -->
+            <div class="card">
+              <div class="card-header cardheader-center">
+                <h3 class="card-title">EQA Numbers</h3>
+                <div class="dropdown no-arrow">
+                  <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false"> <i
+                      class="fas fa-ellipsis-h fa-sm fa-fw text-gray-400"></i> </a>
+                  <div class="dropdown-menu dropdown-menu-right shadow" aria-labelledby="dropdownMenuLink">
+                    <div class="dropdown-header">Actions</div>
+                    <a class="dropdown-item" href="#"><i class="icofont-edit me-2"></i> Edit</a>
+                    <a class="dropdown-item" href="#"><i class="icofont-plus me-2"></i> Add</a>
+                    <a class="dropdown-item" href="#"><i class="icofont-ui-delete me-2"></i> Delete</a>
                   </div>
-                  </div>
-            </div>
-            <div class="card-body">
-              <div class="overview-content">
-                <h2>836</h2>
-                <div class="lms-details-time"> <span class="color-success"><i class="las la-arrow-up"></i> <strong>25%</strong></span></div>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="overview-content">
+                  <h2>836</h2>
+                  <div class="lms-details-time"> <span class="color-success"><i class="las la-arrow-up"></i>
+                      <strong>25%</strong></span></div>
+                </div>
               </div>
             </div>
+            <!-- Card 2 End  -->
           </div>
-          <!-- Card 2 End  --> 
+          <div class="col-lg-6 mb-2">
+            <!-- Card Start  -->
+            <div class="card">
+              <div class="card-header cardheader-center">
+                <h3 class="card-title">Number of Programs</h3>
+                <div class="dropdown no-arrow">
+                  <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false"> <i
+                      class="fas fa-ellipsis-h fa-sm fa-fw text-gray-400"></i> </a>
+                  <div class="dropdown-menu dropdown-menu-right shadow" aria-labelledby="dropdownMenuLink">
+                    <div class="dropdown-header">Actions</div>
+                    <a class="dropdown-item" href="#"><i class="icofont-edit me-2"></i> Edit</a>
+                    <a class="dropdown-item" href="#"><i class="icofont-plus me-2"></i> Add</a>
+                    <a class="dropdown-item" href="#"><i class="icofont-ui-delete me-2"></i> Delete</a>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="overview-content">
+                  <h2>12</h2>
+                  <div class="lms-details-time"> <span class="color-primary"><i class="las la-arrow-up"></i>
+                      <strong>140%</strong></span></div>
+                </div>
+              </div>
+            </div>
+            <!-- Card 2 End  -->
+          </div>
+          <div class="col-lg-6 mb-2">
+            <!-- Card Start  -->
+            <div class="card">
+              <div class="card-header cardheader-center">
+                <h3 class="card-title">Active Users</h3>
+                <div class="dropdown no-arrow">
+                  <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false"> <i
+                      class="fas fa-ellipsis-h fa-sm fa-fw text-gray-400"></i> </a>
+                  <div class="dropdown-menu dropdown-menu-right shadow" aria-labelledby="dropdownMenuLink">
+                    <div class="dropdown-header">Actions</div>
+                    <a class="dropdown-item" href="#"><i class="icofont-edit me-2"></i> Edit</a>
+                    <a class="dropdown-item" href="#"><i class="icofont-plus me-2"></i> Add</a>
+                    <a class="dropdown-item" href="#"><i class="icofont-ui-delete me-2"></i> Delete</a>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="overview-content">
+                  <h2>34%</h2>
+                  <div class="lms-details-time"> <span class="color-warning"><i class="las la-arrow-up"></i>
+                      <strong>13%</strong></span></div>
+                </div>
+              </div>
+            </div>
+            <!-- Card 2 End  -->
+          </div>
+          <div class="col-lg-6 mb-2">
+            <!-- Card Start  -->
+            <div class="card">
+              <div class="card-header cardheader-center">
+                <h3 class="card-title">Turn Around Time</h3>
+                <div class="dropdown no-arrow">
+                  <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false"> <i
+                      class="fas fa-ellipsis-h fa-sm fa-fw text-gray-400"></i> </a>
+                  <div class="dropdown-menu dropdown-menu-right shadow" aria-labelledby="dropdownMenuLink">
+                    <div class="dropdown-header">Actions</div>
+                    <a class="dropdown-item" href="#"><i class="icofont-edit me-2"></i> Edit</a>
+                    <a class="dropdown-item" href="#"><i class="icofont-plus me-2"></i> Add</a>
+                    <a class="dropdown-item" href="#"><i class="icofont-ui-delete me-2"></i> Delete</a>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="overview-content">
+                  <h2>12 <span>min</span></h2>
+                  <div class="lms-details-time"> <span class="color-danger"><i class="las la-arrow-up"></i>
+                      <strong>45%</strong></span></div>
+                </div>
+              </div>
+            </div>
+            <!-- Card 2 End  -->
+          </div>
         </div>
-        <div class="col-xl-3 col-md-6 mb-2"> 
-          <!-- Card Start  -->
-          <div class="card">
-            <div class="card-header cardheader-center">
-              <h3 class="card-title">Number of Programs</h3>
-              <div class="dropdown no-arrow"> 
-                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fas fa-ellipsis-h fa-sm fa-fw text-gray-400"></i> </a>
-                    <div class="dropdown-menu dropdown-menu-right shadow" aria-labelledby="dropdownMenuLink">
-                      <div class="dropdown-header">Actions</div>
-                      <a class="dropdown-item" href="#"><i class="icofont-edit me-2"></i> Edit</a> 
-                      <a class="dropdown-item" href="#"><i class="icofont-plus me-2"></i> Add</a> 
-                      <a class="dropdown-item" href="#"><i class="icofont-ui-delete me-2"></i> Delete</a> 
-                  </div>
-                  </div>
-            </div>
-            <div class="card-body">
-              <div class="overview-content">
-                <h2>12</h2>
-                <div class="lms-details-time"> <span class="color-darkblue"><i class="las la-arrow-up"></i> <strong>140%</strong></span></div>
-              </div>
-            </div>
-          </div>
-          <!-- Card 2 End  --> 
         </div>
-        <div class="col-xl-3 col-md-6 mb-2"> 
+        <div class="col-lg-6 d-flex align-items-stretch">
           <!-- Card Start  -->
-          <div class="card">
-            <div class="card-header cardheader-center">
-              <h3 class="card-title">Active Users</h3>
-              <div class="dropdown no-arrow"> 
-                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fas fa-ellipsis-h fa-sm fa-fw text-gray-400"></i> </a>
-                    <div class="dropdown-menu dropdown-menu-right shadow" aria-labelledby="dropdownMenuLink">
-                      <div class="dropdown-header">Actions</div>
-                      <a class="dropdown-item" href="#"><i class="icofont-edit me-2"></i> Edit</a> 
-                      <a class="dropdown-item" href="#"><i class="icofont-plus me-2"></i> Add</a> 
-                      <a class="dropdown-item" href="#"><i class="icofont-ui-delete me-2"></i> Delete</a> 
+            <div class="card">
+              <div class="card-header cardheader-center">
+                <h3 class="card-title">EQA Form Usage</h3>
+                <div class="dropdown no-arrow">
+                  <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false"> <i
+                      class="fas fa-ellipsis-h fa-sm fa-fw text-gray-400"></i> </a>
+                  <div class="dropdown-menu dropdown-menu-right shadow" aria-labelledby="dropdownMenuLink">
+                    <div class="dropdown-header">Actions</div>
+                    <a class="dropdown-item" href="#"><i class="icofont-edit me-2"></i> Edit</a>
+                    <a class="dropdown-item" href="#"><i class="icofont-plus me-2"></i> Add</a>
+                    <a class="dropdown-item" href="#"><i class="icofont-ui-delete me-2"></i> Delete</a>
                   </div>
-                  </div>
-            </div>
-            <div class="card-body">
-              <div class="overview-content">
-                <h2>34%</h2>
-                <div class="lms-details-time"> <span class="color-warning"><i class="las la-arrow-up"></i> <strong>13%</strong></span></div>
+                </div>
+              </div>
+              <div class="card-body">
+                <div>
+                   <canvas id="mychart7"></canvas>
+                </div>
               </div>
             </div>
-          </div>
-          <!-- Card 2 End  --> 
+            <!-- Card 2 End  -->
         </div>
-        <div class="col-xl-3 col-md-6 mb-2"> 
-          <!-- Card Start  -->
+        </div>
+
+        <div class="row row-sm">
+        <div class="col-lg-12">
           <div class="card">
-            <div class="card-header cardheader-center">
-              <h3 class="card-title">Turn Around Time</h3>
-              <div class="dropdown no-arrow"> 
-                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fas fa-ellipsis-h fa-sm fa-fw text-gray-400"></i> </a>
-                    <div class="dropdown-menu dropdown-menu-right shadow" aria-labelledby="dropdownMenuLink">
-                      <div class="dropdown-header">Actions</div>
-                      <a class="dropdown-item" href="#"><i class="icofont-edit me-2"></i> Edit</a> 
-                      <a class="dropdown-item" href="#"><i class="icofont-plus me-2"></i> Add</a> 
-                      <a class="dropdown-item" href="#"><i class="icofont-ui-delete me-2"></i> Delete</a> 
-                  </div>
-                  </div>
-            </div>
-            <div class="card-body">
-              <div class="overview-content">
-                <h2>12 <span>min</span></h2>
-                <div class="lms-details-time"> <span class="color-blue"><i class="las la-arrow-up"></i> <strong>45%</strong></span></div>
+              <div class="card-header cardheader-center">
+                <div class="col-lg-6 d-flex justify-content-between">
+                  <h3 class="card-title">Top Performers</h3>
+                  <select class="selct-card">
+                    <option>One year</option>
+                    <option>Two years</option>
+                    <option>Three years</option>
+                    <option>Four years</option>
+                  </select>
+                </div>
+                <div class="ml-auto">
+                  <ul class="list-inline font-12 chartlines">
+                    <li><i class="fa fa-circle color-blue-chart"></i> Performer one</li>
+                    <li><i class="fa fa-circle color-red-chart"></i> Performer two</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card-body">
+                <di class="position-relative">
+                  <div id="morris-area-chart" style="height:400px;"></div>
               </div>
             </div>
-          </div>
-          <!-- Card 2 End  --> 
         </div>
       </div>
-
-          <!-- <section class="card-section card-two-section mb-5">
-            <div class="container">
-              <div class="row">
-                <div class="col-lg-6 d-flex align-items-stretch">
-                  <div class="card-wrapper card-white">
-                    <div class="row align-items-center">
-                      <div class="col-lg-5 text-center">
-                        <div class="card__thumb">
-                          <img src="images/svg/survey.svg" alt="">
-                        </div>
-                      </div>
-                      <div class="col-lg-7">
-                          <div class="card-info p-0 mb-25">
-                            <h2 class="card-title">Programs</h2>
-                            <p class="card-description">View lists of details programs that has been listed</p>
-                            <a href="#" class="readmore default-readmore"><i data-feather="arrow-right-circle"></i> View programs</a>
-                          </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-6 d-flex align-items-stretch">
-                  <div class="card-wrapper card-white">
-                    <div class="row align-items-center">
-                      <div class="col-lg-5 text-center">
-                        <div class="card__thumb">
-                          <img src="images/svg/rate-project.svg" alt="">
-                        </div>
-                      </div>
-                      <div class="col-lg-7">
-                          <div class="card-info p-0 mb-25">
-                            <h2 class="card-title">EQA Providers</h2>
-                            <p class="card-description">View list of EQA providers that are available</p>
-                            <a href="#" class="readmore default-readmore"><i data-feather="arrow-right-circle"></i> View Providers</a>
-                          </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section> -->
 
       <div class="row row-sm">
         <div class="col-lg-12">
@@ -616,6 +642,15 @@
 
 <!-- jQuery -->
 <script src="js/jquery.min.js" type="text/Javascript"></script>
+
+<!--morris JavaScript -->
+<script src="assets/raphael/raphael-min.js"></script>
+<script src="assets/morrisjs/morris.min.js"></script>
+<script src="assets/jquery-sparkline/jquery.sparkline.min.js"></script>
+<script src="js/dashboard.js" type="text/Javascript"></script>
+
+<script src="assets/chart/js/Chart.min.js"></script>
+<script src="js/charts.js"></script>
 
 <!-- DATA TABLE JS-->
 <script src="assets/datatable/js/jquery.dataTables.min.js"></script>

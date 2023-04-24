@@ -8480,6 +8480,15 @@ body{
     display: flex;
     justify-content: space-between;
 }
+.chartlines li i{
+  font-size:11px;
+}
+.color-blue-chart{
+  color:#2586DB;
+}
+.color-red-chart{
+  color:#f62d51;
+}
 
 
 
