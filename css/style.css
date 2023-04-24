@@ -8422,6 +8422,21 @@ body{
 .atbd-select .select2-container--default.select2-container--focus .select2-selection--single {
     border: 1px solid #000;
 }
+.danger{
+  color:#dc3545;
+}
+.primary{
+  color:#18558c;
+}
+.success{
+  color:#28a745;
+}
+.warning{
+  color:#ffc107;
+}
+.light{
+  color:#f8f9fa;
+}
 
 
 /* ---------------------------------------------------
