@@ -492,6 +492,16 @@
                           <input type="number" class="form-control" id="year" placeholder="">
                         </div>
                       </div>
+                      <!-- <h3>Add Field</h3> -->
+                      <section>
+                          </div>
+                          <div class="mb-3">
+                            <div class="col-lg-12">
+                              <div id="newinput" class="newinput"></div>
+                              <button class="rowAdder link-btn" type="button">Add Programme</button>
+                            </div>
+                          </div>
+                      </section>
                       <div class="modal-footer">
                           <button type="button" class="btn btn-outline-secondary btn-border" data-bs-dismiss="modal">Cancel</button>
                           <button type="button" class="btn btn-primary btn-border">Save</button>
@@ -526,12 +536,30 @@
 
 <script src="js/main.js" type="text/Javascript"></script>
 <script type="text/javascript">
-$("#select-tag").select2({
-    placeholder: "Select deliverable",
-    dropdownCssClass: "tag",
-    // tags: ["red", "green", "blue"],
-    allowClear: true,
-  })
+$(".rowAdder").click(function () {
+    newRowAdd =
+    '<div id="row"> <div class="row input-group mb-2">' +
+    '<div class="col-5">' +
+    // ''<input type="text" class="form-control m-input" placeholder="Folder name"> +
+    '<select data-placeholder="Country" class="form-select" ><option disabled>Select Programme</option><option>Full Blood Count</option><option>Urine Pregnancy</option> </select>' +
+    '</div>' +
+    '<div class="col-5">' +
+    // ''<input type="text" class="form-control m-input" placeholder="Folder name"> +
+    '<input type="text" class="form-control m-input" placeholder="Frequency/Year">' +
+    '</div>' +
+    '<div class="col-2">' +
+    '<button class="btn btn-danger" id="DeleteRow" type="button">' +
+    '<i class="fa fa-trash"></i></button> </div>' +
+    ' </div> </div>';
+
+    $('#newinput, #newinput1').append(newRowAdd);
+    e.attr('id', 'myid');
+});
+
+$("body").on("click", "#DeleteRow", function () {
+    $(this).parents("#row").remove();
+})
+
 </script>
 </body>
 
