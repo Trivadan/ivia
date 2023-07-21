@@ -8568,7 +8568,7 @@ body{
   margin-left: 15px;
 }
 ul.filem-iconarea li img {
-    width: 25px;
+    width: 22px;
 }
 ul.filem-iconarea li{
   display:inline-block;
@@ -8582,6 +8582,21 @@ ul.filem-iconarea li{
     height: 42px;
     padding: 0 0.445rem;
 }
+.fileM-grid-wrapper .theme-structure.big-file-manager{
+  overflow: unset;
+}
+.fileM-grid-wrapper .big-file-manager.theme-structure ul > li > b {
+    background: #ededed;
+    margin-bottom: 3px;
+}
+.fileM-grid-wrapper .dropdown {
+    display: inline-block;
+    float: right;
+    position: relative;
+    top: 12px;
+    margin-right: 10px;
+}
+
 
 /* ---------------------------------------------------
     MEDIAQUERIES
